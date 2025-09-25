@@ -1,14 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Evaluación Competencial</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herramienta de Evaluación Competencial</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <h1>Herramienta de Evaluación Competencial</h1>
-  <div id="app"></div>
+  <div id="app">
+    <select id="cursoSelect"></select>
+    <select id="areaSelect"></select>
+    <div id="output"></div>
+    <button id="exportPdf">Exportar a PDF</button>
+  </div>
+  <script src="html2pdf.bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
