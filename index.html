@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Evaluación Competencial</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Herramienta de Evaluación Competencial</h1>
-  <div id="app"></div>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planificador de Evaluación Competencial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-content">
+        <div>
+          <p class="eyebrow">Decreto 107/2022 · Junta de Extremadura</p>
+          <h1>Planificador de evaluación competencial</h1>
+          <p class="lead">
+            Diseña tu planificación de criterios, indicadores y tareas para cualquier curso y área de Educación Primaria.
+          </p>
+        </div>
+        <button id="exportPdf" class="btn btn-primary" disabled>
+          Exportar planificación a PDF
+        </button>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="panel" aria-labelledby="seleccion-titulo">
+        <div class="panel-header">
+          <h2 id="seleccion-titulo">1. Selecciona el escenario de evaluación</h2>
+          <p>Recorre los desplegables de izquierda a derecha para filtrar las competencias específicas disponibles.</p>
+        </div>
+        <div class="selectors">
+          <div class="selector">
+            <label for="courseSelect">Curso</label>
+            <select id="courseSelect" class="field" disabled></select>
+          </div>
+          <div class="selector">
+            <label for="areaSelect">Área</label>
+            <select id="areaSelect" class="field" disabled></select>
+          </div>
+          <div class="selector">
+            <label for="trimesterSelect">Trimestre</label>
+            <select id="trimesterSelect" class="field" disabled></select>
+          </div>
+          <div class="selector">
+            <label for="competenciaSelect">Competencia específica</label>
+            <select id="competenciaSelect" class="field" disabled></select>
+          </div>
+        </div>
+        <div id="selectionSummary" class="selection-summary" aria-live="polite"></div>
+      </section>
+
+      <section id="competenciaDetails" class="panel" aria-live="polite"></section>
+    </main>
+
+    <footer class="app-footer">
+      <small>Herramienta de apoyo docente para la programación competencial · No almacena datos de alumnado.</small>
+    </footer>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="main.js" defer></script>
+  </body>
 </html>

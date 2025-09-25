@@ -1,76 +1,3933 @@
 {
-  "Matemáticas": {
-    "5º": {
-      "CE1": {
-        "descripcion": "Resolver problemas utilizando operaciones básicas.",
-        "criterios": {
-          "1.1": {
-            "descripcion": "Elige y aplica estrategias adecuadas.",
-            "saberes_basicos": [
-              "Suma",
-              "Resta",
-              "Multiplicación",
-              "División"
-            ],
-            "competencias_clave": [
-              "STEM",
-              "CD"
-            ]
-          },
-          "1.2": {
-            "descripcion": "Comprueba la validez del resultado.",
-            "saberes_basicos": [
-              "Estimación",
-              "Comprobación de errores"
-            ],
-            "competencias_clave": [
-              "STEM"
-            ]
-          }
+  "areas": [
+    {
+      "nombre": "Lengua Castellana y Literatura",
+      "cursos": [
+        {
+          "curso": "1º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral y escrita",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender y producir textos orales y escritos adecuados a situaciones habituales del aula, según el nivel competencial de 1º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Identifica la idea principal y detalles relevantes en textos sencillos escuchados o leídos en el aula.",
+                  "saberesBasicos": [
+                    "Estrategias de escucha activa",
+                    "Comprensión de instrucciones orales",
+                    "Lectura guiada de textos breves"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CP",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Produce mensajes orales claros y textos breves con intención comunicativa.",
+                  "saberesBasicos": [
+                    "Planificación de intervenciones orales",
+                    "Uso de vocabulario básico",
+                    "Estructuras oracionales sencillas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Producción escrita creativa",
+              "trimestre": "2º trimestre",
+              "descripcion": "Crear textos escritos con coherencia, adecuación y corrección, ajustándose a modelos del nivel.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Planifica y redacta textos narrativos sencillos incorporando elementos básicos de cohesión.",
+                  "saberesBasicos": [
+                    "Estructura del cuento",
+                    "Marcadores temporales básicos",
+                    "Revisión guiada del texto"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza la ortografía natural y reglada propia del curso en la redacción de textos.",
+                  "saberesBasicos": [
+                    "Ortografía natural",
+                    "Uso de mayúsculas y signos",
+                    "Presentación limpia del texto"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Educación literaria y disfrute lector",
+              "trimestre": "3º trimestre",
+              "descripcion": "Desarrollar el gusto por la lectura y la valoración de obras literarias adecuadas a su edad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Participa en experiencias lectoras compartiendo opiniones y argumentos sencillos.",
+                  "saberesBasicos": [
+                    "Club de lectura en el aula",
+                    "Registro de lecturas",
+                    "Expresión de emociones ante la lectura"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Crea producciones literarias breves a partir de modelos o estímulos dados.",
+                  "saberesBasicos": [
+                    "Recursos literarios elementales",
+                    "Juego dramático",
+                    "Reescritura creativa"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "2º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral y escrita",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender y producir textos orales y escritos adecuados a situaciones habituales del aula, según el nivel competencial de 2º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Distingue ideas principales y secundarias en textos orales y escritos breves.",
+                  "saberesBasicos": [
+                    "Organizadores gráficos sencillos",
+                    "Escucha activa y preguntas",
+                    "Lectura compartida"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CP",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comunica mensajes orales y escritos con coherencia y vocabulario adecuado.",
+                  "saberesBasicos": [
+                    "Planificación de exposiciones",
+                    "Vocabulario temático",
+                    "Coherencia textual"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Producción escrita creativa",
+              "trimestre": "2º trimestre",
+              "descripcion": "Crear textos escritos con coherencia, adecuación y corrección, ajustándose a modelos del nivel.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Redacta textos narrativos y descriptivos incorporando conectores básicos.",
+                  "saberesBasicos": [
+                    "Estructura narrativa",
+                    "Adjetivación",
+                    "Revisión en pareja"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Aplica las normas ortográficas del curso en la revisión de sus textos.",
+                  "saberesBasicos": [
+                    "Acentuación básica",
+                    "Signos de puntuación",
+                    "Autocorrección"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Educación literaria y disfrute lector",
+              "trimestre": "3º trimestre",
+              "descripcion": "Desarrollar el gusto por la lectura y la valoración de obras literarias adecuadas a su edad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Argumenta sus preferencias lectoras empleando un vocabulario variado.",
+                  "saberesBasicos": [
+                    "Clubs de lectura",
+                    "Mapas de personajes",
+                    "Rutas lectoras"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Elabora creaciones literarias respetando estructuras sencillas.",
+                  "saberesBasicos": [
+                    "Poemas rimados",
+                    "Historias colaborativas",
+                    "Ilustración de textos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "3º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral y escrita",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender y producir textos orales y escritos adecuados a situaciones habituales del aula, según el nivel competencial de 3º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Extrae información explícita e implícita de textos de distinta tipología.",
+                  "saberesBasicos": [
+                    "Lectura inferencial",
+                    "Técnicas de toma de notas",
+                    "Escucha crítica"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CP"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comunica oralmente resúmenes y opiniones con vocabulario preciso.",
+                  "saberesBasicos": [
+                    "Resúmenes orales",
+                    "Debates guiados",
+                    "Vocabulario específico"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Producción escrita creativa",
+              "trimestre": "2º trimestre",
+              "descripcion": "Crear textos escritos con coherencia, adecuación y corrección, ajustándose a modelos del nivel.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Redacta textos informativos y argumentativos breves respetando la estructura del género.",
+                  "saberesBasicos": [
+                    "Estructura expositiva",
+                    "Uso de conectores",
+                    "Fuentes de información fiables"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Revisa y mejora sus textos a partir de la retroalimentación recibida.",
+                  "saberesBasicos": [
+                    "Rúbricas de autoevaluación",
+                    "Corrección entre iguales",
+                    "Versiones sucesivas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Educación literaria y disfrute lector",
+              "trimestre": "3º trimestre",
+              "descripcion": "Desarrollar el gusto por la lectura y la valoración de obras literarias adecuadas a su edad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Analiza personajes y escenarios de obras infantiles justificando sus valoraciones.",
+                  "saberesBasicos": [
+                    "Fichas literarias",
+                    "Comparación de obras",
+                    "Lectura expresiva"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Produce textos literarios incorporando recursos expresivos básicos.",
+                  "saberesBasicos": [
+                    "Figuras literarias simples",
+                    "Escritura creativa",
+                    "Microcuentos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "4º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral y escrita",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender y producir textos orales y escritos adecuados a situaciones habituales del aula, según el nivel competencial de 4º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Interpreta textos informativos identificando la intención comunicativa y datos relevantes.",
+                  "saberesBasicos": [
+                    "Lectura crítica",
+                    "Preguntas literales e inferenciales",
+                    "Organizadores gráficos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CP"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Realiza exposiciones orales incorporando apoyos visuales.",
+                  "saberesBasicos": [
+                    "Planificación de presentaciones",
+                    "Uso de TIC para comunicar",
+                    "Lenguaje no verbal"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Producción escrita creativa",
+              "trimestre": "2º trimestre",
+              "descripcion": "Crear textos escritos con coherencia, adecuación y corrección, ajustándose a modelos del nivel.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Produce textos expositivos y argumentativos que integran información de diversas fuentes.",
+                  "saberesBasicos": [
+                    "Selección de información",
+                    "Esquemas previos",
+                    "Citación básica"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Aplicar normas gramaticales y ortográficas en sus producciones escritas.",
+                  "saberesBasicos": [
+                    "Concordancia",
+                    "Acentuación",
+                    "Puntuación avanzada"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Educación literaria y disfrute lector",
+              "trimestre": "3º trimestre",
+              "descripcion": "Desarrollar el gusto por la lectura y la valoración de obras literarias adecuadas a su edad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Valora críticamente textos literarios relacionándolos con experiencias personales.",
+                  "saberesBasicos": [
+                    "Diarios de lectura",
+                    "Círculos literarios",
+                    "Argumentación oral"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Realiza producciones creativas en distintos formatos literarios.",
+                  "saberesBasicos": [
+                    "Poesía visual",
+                    "Teatro leído",
+                    "Narrativa digital"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "5º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral y escrita",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender y producir textos orales y escritos adecuados a situaciones académicas variadas, según el nivel competencial de 5º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Analiza textos informativos y literarios identificando propósito, estructura y recursos lingüísticos.",
+                  "saberesBasicos": [
+                    "Lectura crítica",
+                    "Recursos expresivos",
+                    "Análisis de noticias"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CP"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Realiza presentaciones orales estructuradas con soporte digital y lenguaje preciso.",
+                  "saberesBasicos": [
+                    "Diseño de presentaciones",
+                    "Guion oral",
+                    "Comunicación verbal y no verbal"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Producción escrita creativa",
+              "trimestre": "2º trimestre",
+              "descripcion": "Crear textos escritos con coherencia, adecuación y corrección, ajustándose a modelos del nivel.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Elabora textos expositivos y argumentativos incorporando citas y referencias básicas.",
+                  "saberesBasicos": [
+                    "Organizadores previos",
+                    "Conectores argumentativos",
+                    "Normas básicas de citación"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Revisa de manera autónoma la coherencia, cohesión y corrección ortográfica de sus textos.",
+                  "saberesBasicos": [
+                    "Listas de cotejo",
+                    "Procesos de revisión",
+                    "Herramientas digitales de corrección"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Educación literaria y disfrute lector",
+              "trimestre": "3º trimestre",
+              "descripcion": "Desarrollar el gusto por la lectura y la valoración de obras literarias adecuadas a su edad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Relaciona obras literarias con contextos socioculturales y comparte lecturas argumentadas.",
+                  "saberesBasicos": [
+                    "Contextualización histórica",
+                    "Reseñas orales",
+                    "Foros literarios"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Produce creaciones literarias en distintos soportes aplicando recursos expresivos.",
+                  "saberesBasicos": [
+                    "Narrativa transmedia",
+                    "Podcast literario",
+                    "Ilustración y texto"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "6º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral y escrita",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender y producir textos orales y escritos adecuados a situaciones académicas variadas, según el nivel competencial de 6º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Analiza textos de diferentes géneros identificando estructura, punto de vista y recursos lingüísticos.",
+                  "saberesBasicos": [
+                    "Análisis crítico",
+                    "Géneros discursivos",
+                    "Comparación de fuentes"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CP"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Expone oralmente informaciones con rigor, apoyándose en recursos digitales y retóricos.",
+                  "saberesBasicos": [
+                    "Oratoria",
+                    "Soportes multimedia",
+                    "Estrategias de argumentación"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Producción escrita creativa",
+              "trimestre": "2º trimestre",
+              "descripcion": "Crear textos escritos con coherencia, adecuación y corrección, ajustándose a modelos del nivel.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Elabora textos argumentativos sustentando opiniones con datos y referencias.",
+                  "saberesBasicos": [
+                    "Búsqueda de fuentes",
+                    "Organización de argumentos",
+                    "Citación y bibliografía"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Produce textos creativos en diferentes géneros aplicando procesos de escritura completos.",
+                  "saberesBasicos": [
+                    "Planificación, redacción y revisión",
+                    "Lenguaje figurado",
+                    "Colaboración en proyectos literarios"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Educación literaria y disfrute lector",
+              "trimestre": "3º trimestre",
+              "descripcion": "Desarrollar el gusto por la lectura y la valoración de obras literarias adecuadas a su edad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Analiza críticamente textos literarios y establece conexiones con otras manifestaciones culturales.",
+                  "saberesBasicos": [
+                    "Comparación de obras",
+                    "Contextualización cultural",
+                    "Debates literarios"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Crea proyectos literarios colaborativos incorporando herramientas digitales.",
+                  "saberesBasicos": [
+                    "Producción multimedia",
+                    "Escritura colaborativa",
+                    "Difusión de producciones"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
         }
-      }
-    }
-  },
-  "Lengua Castellana y Literatura": {
-    "6º": {
-      "CE3": {
-        "descripcion": "Escribir textos de forma coherente y adecuada.",
-        "criterios": {
-          "3.1": {
-            "descripcion": "Planifica la escritura ajustándose al propósito.",
-            "saberes_basicos": [
-              "Estructura textual",
-              "Coherencia",
-              "Cohesión"
-            ],
-            "competencias_clave": [
-              "CCL",
-              "CD"
-            ]
-          }
+      ]
+    },
+    {
+      "nombre": "Matemáticas",
+      "cursos": [
+        {
+          "curso": "1º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Resolución de problemas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Resolver problemas sencillos aplicando estrategias de cálculo y razonamiento propias del curso.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Selecciona y aplica estrategias básicas para resolver problemas de suma y resta.",
+                  "saberesBasicos": [
+                    "Estrategias de conteo",
+                    "Representación con material manipulativo",
+                    "Lectura comprensiva del enunciado"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Explica verbalmente el procedimiento seguido y comprueba la solución obtenida.",
+                  "saberesBasicos": [
+                    "Verificación de resultados",
+                    "Lenguaje matemático básico",
+                    "Trabajo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Sentido numérico",
+              "trimestre": "2º trimestre",
+              "descripcion": "Comprender el valor de los números y sus relaciones mediante diferentes representaciones.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Lee, escribe y ordena números naturales hasta el 99 utilizando distintos soportes.",
+                  "saberesBasicos": [
+                    "Recta numérica",
+                    "Composición y descomposición de números",
+                    "Material base diez"
+                  ],
+                  "competenciasClave": [
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza estrategias personales para sumar y restar mentalmente con fluidez.",
+                  "saberesBasicos": [
+                    "Cálculo mental",
+                    "Redondeos y estimaciones",
+                    "Juegos matemáticos"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CP"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Sentido espacial",
+              "trimestre": "3º trimestre",
+              "descripcion": "Reconocer y describir figuras geométricas y situaciones espaciales del entorno cercano.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Identifica figuras geométricas planas en objetos cotidianos describiendo sus características.",
+                  "saberesBasicos": [
+                    "Figuras planas básicas",
+                    "Geometría manipulativa",
+                    "Vocabulario geométrico"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Construye figuras y patrones sencillos empleando material manipulativo o digital.",
+                  "saberesBasicos": [
+                    "Tangram y geoplano",
+                    "Patrones repetitivos",
+                    "Aplicaciones de geometría"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "2º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Resolución de problemas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Resolver problemas de suma y resta con distintas estrategias de cálculo y razonamiento.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Selecciona operaciones adecuadas para resolver problemas aritméticos.",
+                  "saberesBasicos": [
+                    "Comprensión de enunciados",
+                    "Modelización con dibujos",
+                    "Expresión de estrategias"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comprueba la validez de los resultados mediante estimación o cálculo inverso.",
+                  "saberesBasicos": [
+                    "Estimaciones",
+                    "Operación inversa",
+                    "Resolución cooperativa"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Sentido numérico",
+              "trimestre": "2º trimestre",
+              "descripcion": "Comprender el valor de los números y sus relaciones mediante diferentes representaciones.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Lee, escribe y ordena números naturales hasta el 999 utilizando distintos soportes.",
+                  "saberesBasicos": [
+                    "Recta numérica",
+                    "Descomposición canónica",
+                    "Comparación de números"
+                  ],
+                  "competenciasClave": [
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Aplica estrategias de cálculo mental y algoritmos escritos en sumas y restas.",
+                  "saberesBasicos": [
+                    "Algoritmos en rejilla",
+                    "Cálculo mental con descomposición",
+                    "Uso de material manipulativo"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CP"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Sentido espacial",
+              "trimestre": "3º trimestre",
+              "descripcion": "Reconocer y describir figuras geométricas y situaciones espaciales del entorno cercano.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Reconoce polígonos y cuerpos geométricos describiendo propiedades básicas.",
+                  "saberesBasicos": [
+                    "Clasificación de polígonos",
+                    "Elementos de un polígono",
+                    "Construcción con sólidos"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Realiza construcciones geométricas sencillas en soporte físico o digital.",
+                  "saberesBasicos": [
+                    "Simetrías",
+                    "Geoplano",
+                    "Software de geometría"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "3º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Resolución de problemas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Resolver problemas de las operaciones básicas utilizando estrategias variadas.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Selecciona y aplica operaciones adecuadas en problemas de varias etapas.",
+                  "saberesBasicos": [
+                    "Comprensión de enunciados",
+                    "Organización de datos",
+                    "Estimación previa"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Justifica la solución mediante explicaciones orales o escritas.",
+                  "saberesBasicos": [
+                    "Argumentación matemática",
+                    "Revisión de resultados",
+                    "Trabajo colaborativo"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Sentido numérico",
+              "trimestre": "2º trimestre",
+              "descripcion": "Desarrollar el sentido del número natural y decimal en diferentes contextos.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Lee, escribe y compara números naturales y decimales con apoyo de representaciones gráficas.",
+                  "saberesBasicos": [
+                    "Recta numérica",
+                    "Fracciones equivalentes",
+                    "Representación gráfica"
+                  ],
+                  "competenciasClave": [
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Resuelve operaciones básicas con números naturales y decimales aplicados a situaciones reales.",
+                  "saberesBasicos": [
+                    "Cálculo con decimales",
+                    "Resolución de medidas",
+                    "Problemas contextualizados"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CP"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Sentido espacial",
+              "trimestre": "3º trimestre",
+              "descripcion": "Describir y representar figuras geométricas y cuerpos en distintos soportes.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Clasifica polígonos y cuerpos según sus elementos y propiedades.",
+                  "saberesBasicos": [
+                    "Elementos de los polígonos",
+                    "Desarrollo de cuerpos",
+                    "Relación entre figuras"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Utiliza instrumentos y herramientas digitales para construir figuras geométricas.",
+                  "saberesBasicos": [
+                    "Regla y compás",
+                    "Geogebra básico",
+                    "Cálculo de perímetros"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "4º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Resolución de problemas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Resolver problemas de operaciones combinadas y magnitudes mediante estrategias variadas.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Selecciona operaciones combinadas adecuadas justificando el proceso seguido.",
+                  "saberesBasicos": [
+                    "Jerarquía de operaciones",
+                    "Planificación de la resolución",
+                    "Representación de datos"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Valora la razonabilidad de los resultados utilizando estrategias de verificación.",
+                  "saberesBasicos": [
+                    "Estimaciones",
+                    "Operación inversa",
+                    "Explicación del proceso"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Sentido numérico",
+              "trimestre": "2º trimestre",
+              "descripcion": "Comprender y operar con números naturales, fracciones y decimales.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Compara y ordena fracciones y decimales utilizando representaciones gráficas.",
+                  "saberesBasicos": [
+                    "Fracciones equivalentes",
+                    "Diagramas circulares",
+                    "Recta numérica"
+                  ],
+                  "competenciasClave": [
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Resuelve operaciones con fracciones y decimales en contextos cotidianos.",
+                  "saberesBasicos": [
+                    "Operaciones con fracciones",
+                    "Problemas de medidas",
+                    "Proporcionalidad directa"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CP"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Sentido espacial",
+              "trimestre": "3º trimestre",
+              "descripcion": "Analizar figuras geométricas planas y cuerpos desde distintas perspectivas.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Calcula perímetros y áreas de figuras planas sencillas utilizando fórmulas adecuadas.",
+                  "saberesBasicos": [
+                    "Fórmulas de áreas",
+                    "Descomposición de figuras",
+                    "Medidas de superficie"
+                  ],
+                  "competenciasClave": [
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Representa cuerpos geométricos y vistas desarrollando la visualización espacial.",
+                  "saberesBasicos": [
+                    "Proyecciones",
+                    "Maquetas",
+                    "Herramientas digitales 3D"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "5º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Resolución de problemas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Resolver problemas de la vida cotidiana que implican operaciones combinadas y proporciones.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Plantea y resuelve problemas de varias etapas explicando la estrategia utilizada.",
+                  "saberesBasicos": [
+                    "Organización de información",
+                    "Modelización",
+                    "Justificación de resultados"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Evalúa la coherencia de los resultados usando distintos métodos de verificación.",
+                  "saberesBasicos": [
+                    "Estimaciones",
+                    "Comprobación con TIC",
+                    "Revisión en grupo"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Sentido numérico",
+              "trimestre": "2º trimestre",
+              "descripcion": "Comprender y operar con fracciones, decimales y porcentajes en contextos variados.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Relaciona fracciones, decimales y porcentajes aplicándolos en situaciones reales.",
+                  "saberesBasicos": [
+                    "Equivalencias",
+                    "Problemas con descuentos",
+                    "Representaciones gráficas"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza diferentes estrategias de cálculo para operaciones con números racionales.",
+                  "saberesBasicos": [
+                    "Cálculo mental avanzado",
+                    "Algoritmos escritos",
+                    "Herramientas digitales"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CP",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Sentido espacial",
+              "trimestre": "3º trimestre",
+              "descripcion": "Analizar figuras y cuerpos geométricos empleando propiedades y transformaciones.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Calcula áreas y volúmenes de figuras y cuerpos sencillos en contextos prácticos.",
+                  "saberesBasicos": [
+                    "Volumen de prismas",
+                    "Descomposición de figuras",
+                    "Unidades de medida"
+                  ],
+                  "competenciasClave": [
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Aplica transformaciones geométricas para resolver situaciones espaciales.",
+                  "saberesBasicos": [
+                    "Traslaciones y simetrías",
+                    "Plano cartesiano",
+                    "Diseño asistido por ordenador"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "6º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Resolución de problemas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Resolver problemas complejos de la vida cotidiana utilizando estrategias avanzadas.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Modeliza y resuelve problemas de varias etapas justificando cada decisión.",
+                  "saberesBasicos": [
+                    "Modelización matemática",
+                    "Organización de estrategias",
+                    "Revisión crítica"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Evalúa la validez de las soluciones comparando métodos alternativos.",
+                  "saberesBasicos": [
+                    "Contrastación de estrategias",
+                    "Debate matemático",
+                    "Autoevaluación"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Sentido numérico",
+              "trimestre": "2º trimestre",
+              "descripcion": "Operar con fracciones, decimales y porcentajes en contextos interdisciplinares.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Aplica relaciones entre fracciones, decimales y porcentajes en proyectos reales.",
+                  "saberesBasicos": [
+                    "Proporcionalidad",
+                    "Porcentajes en estadística",
+                    "Tablas y gráficas"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Selecciona estrategias de cálculo adecuadas justificando su elección.",
+                  "saberesBasicos": [
+                    "Cálculo mental",
+                    "Herramientas digitales",
+                    "Optimización de estrategias"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Sentido espacial",
+              "trimestre": "3º trimestre",
+              "descripcion": "Analizar y representar figuras y cuerpos geométricos en situaciones técnicas y artísticas.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Aplica fórmulas para calcular áreas y volúmenes en proyectos interdisciplinares.",
+                  "saberesBasicos": [
+                    "Área y volumen de cuerpos",
+                    "Escalas y planos",
+                    "Medición con TIC"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Utiliza software de geometría para visualizar transformaciones y diseños.",
+                  "saberesBasicos": [
+                    "Transformaciones geométricas",
+                    "Diseño 3D",
+                    "Interpretación de planos"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
         }
-      }
-    }
-  },
-  "Inglés": {
-    "4º": {
-      "CE2": {
-        "descripcion": "Comprender y usar expresiones orales cotidianas.",
-        "criterios": {
-          "2.1": {
-            "descripcion": "Participa en intercambios comunicativos.",
-            "saberes_basicos": [
-              "Saludarse",
-              "Despedirse",
-              "Pedir ayuda"
-            ],
-            "competencias_clave": [
-              "CCL",
-              "CEC"
-            ]
-          }
+      ]
+    },
+    {
+      "nombre": "Conocimiento del Medio",
+      "cursos": [
+        {
+          "curso": "1º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Exploración del entorno",
+              "trimestre": "1º trimestre",
+              "descripcion": "Observar y describir elementos del entorno natural y social inmediato.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Reconoce características básicas de seres vivos y objetos del entorno.",
+                  "saberesBasicos": [
+                    "Sentidos y observación",
+                    "Clasificación simple",
+                    "Respeto por el entorno"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Describe rutinas y espacios cotidianos utilizando vocabulario adecuado.",
+                  "saberesBasicos": [
+                    "Orientación en el espacio",
+                    "Rutinas diarias",
+                    "Expresión oral"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CP"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Hábitos saludables",
+              "trimestre": "2º trimestre",
+              "descripcion": "Adoptar hábitos de vida saludable relacionados con la alimentación, el descanso y la actividad física.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Identifica alimentos saludables y planifica menús equilibrados.",
+                  "saberesBasicos": [
+                    "Grupos de alimentos",
+                    "Pirámide alimentaria",
+                    "Higiene personal"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Explica pautas básicas de descanso y actividad física.",
+                  "saberesBasicos": [
+                    "Rutinas de descanso",
+                    "Importancia del juego activo",
+                    "Prevención de riesgos"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Respeto y convivencia",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en la vida del aula y la comunidad con actitudes de respeto y cooperación.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Participa en actividades de aula mostrando actitudes de cooperación y respeto.",
+                  "saberesBasicos": [
+                    "Normas básicas",
+                    "Trabajo cooperativo",
+                    "Resolución de conflictos"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Reconoce instituciones y servicios del entorno cercano y su función.",
+                  "saberesBasicos": [
+                    "Servicios comunitarios",
+                    "Profesiones",
+                    "Participación ciudadana"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "2º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Exploración del entorno",
+              "trimestre": "1º trimestre",
+              "descripcion": "Identificar elementos del entorno natural y social y analizar relaciones sencillas.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Describe paisajes y elementos naturales del entorno próximo.",
+                  "saberesBasicos": [
+                    "Componentes del paisaje",
+                    "Observación directa",
+                    "Cuaderno de campo"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Reconoce cambios en los seres vivos asociados a las estaciones.",
+                  "saberesBasicos": [
+                    "Ciclos vitales",
+                    "Estaciones del año",
+                    "Registro de observaciones"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Hábitos saludables",
+              "trimestre": "2º trimestre",
+              "descripcion": "Valorar prácticas saludables relacionadas con la alimentación, la higiene y la seguridad.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Planifica rutinas saludables de alimentación e higiene.",
+                  "saberesBasicos": [
+                    "Menús equilibrados",
+                    "Higiene corporal",
+                    "Prevención de enfermedades"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Propone medidas de prevención ante situaciones de riesgo doméstico.",
+                  "saberesBasicos": [
+                    "Seguridad en el hogar",
+                    "Teléfonos de emergencia",
+                    "Conductas responsables"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Respeto y convivencia",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en iniciativas de mejora del entorno con actitudes de corresponsabilidad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Identifica normas de convivencia y las aplica en situaciones reales.",
+                  "saberesBasicos": [
+                    "Derechos de la infancia",
+                    "Participación democrática",
+                    "Resolución dialogada"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Colabora en proyectos ambientales o sociales del centro educativo.",
+                  "saberesBasicos": [
+                    "Proyectos de aula",
+                    "Reciclaje",
+                    "Aprendizaje servicio"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "STEM"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "3º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Investigación del medio",
+              "trimestre": "1º trimestre",
+              "descripcion": "Analizar fenómenos naturales y sociales mediante estrategias de indagación.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Formula preguntas e hipótesis sencillas para investigar un fenómeno cercano.",
+                  "saberesBasicos": [
+                    "Método científico escolar",
+                    "Instrumentos de observación",
+                    "Registro de datos"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Presenta conclusiones utilizando lenguaje oral, escrito y gráfico.",
+                  "saberesBasicos": [
+                    "Gráficos sencillos",
+                    "Informes científicos",
+                    "Presentaciones orales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Salud y bienestar",
+              "trimestre": "2º trimestre",
+              "descripcion": "Adoptar hábitos saludables y analizar la influencia del entorno en la salud personal.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Relaciona hábitos cotidianos con el bienestar físico y emocional.",
+                  "saberesBasicos": [
+                    "Hábitos posturales",
+                    "Gestión emocional",
+                    "Prevención de enfermedades"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Diseña propuestas de mejora del entorno escolar para fomentar la salud.",
+                  "saberesBasicos": [
+                    "Diagnóstico participativo",
+                    "Campañas de sensibilización",
+                    "Trabajo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Ciudadanía activa",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en acciones responsables relacionadas con el patrimonio y la sostenibilidad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Reconoce manifestaciones culturales y patrimoniales de Extremadura y valora su conservación.",
+                  "saberesBasicos": [
+                    "Patrimonio local",
+                    "Mapas y planos",
+                    "Identidad cultural"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CCL",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Propone acciones para el cuidado del entorno natural y social cercano.",
+                  "saberesBasicos": [
+                    "ODS en el aula",
+                    "Proyectos colaborativos",
+                    "Evaluación del impacto"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "STEM"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "4º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Investigación del medio",
+              "trimestre": "1º trimestre",
+              "descripcion": "Planificar investigaciones sobre fenómenos naturales y sociales relevantes.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Diseña experiencias de observación seleccionando instrumentos adecuados.",
+                  "saberesBasicos": [
+                    "Diseño experimental",
+                    "Uso de TIC",
+                    "Registro de variables"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comunica resultados empleando tablas, gráficas y recursos digitales.",
+                  "saberesBasicos": [
+                    "Interpretación de datos",
+                    "Infografías",
+                    "Presentaciones colaborativas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Salud y bienestar",
+              "trimestre": "2º trimestre",
+              "descripcion": "Comprender factores que influyen en la salud personal y colectiva.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Analiza situaciones de riesgo y propone medidas preventivas.",
+                  "saberesBasicos": [
+                    "Primeros auxilios básicos",
+                    "Higiene postural",
+                    "Uso responsable de la tecnología"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Planifica campañas de promoción de la salud en el entorno escolar.",
+                  "saberesBasicos": [
+                    "Planificación de proyectos",
+                    "Comunicación audiovisual",
+                    "Evaluación de impacto"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Ciudadanía activa",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en proyectos de mejora del entorno desde la perspectiva de la sostenibilidad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Investiga problemas ambientales locales y propone soluciones viables.",
+                  "saberesBasicos": [
+                    "Investigación acción",
+                    "Mapas de agentes",
+                    "Evaluación ambiental"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Difunde iniciativas de cuidado del patrimonio cultural y natural.",
+                  "saberesBasicos": [
+                    "Producciones digitales",
+                    "Campañas comunicativas",
+                    "Trabajo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CD"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "5º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Investigación del medio",
+              "trimestre": "1º trimestre",
+              "descripcion": "Interpretar fenómenos naturales y sociales mediante procesos de indagación complejos.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Formula hipótesis fundamentadas y diseña planes de investigación.",
+                  "saberesBasicos": [
+                    "Planteamiento de problemas",
+                    "Diseño de experimentos",
+                    "Análisis de datos"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comunica resultados utilizando diversos formatos y soportes.",
+                  "saberesBasicos": [
+                    "Informes digitales",
+                    "Presentaciones multimedia",
+                    "Divulgación científica"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Salud y bienestar",
+              "trimestre": "2º trimestre",
+              "descripcion": "Evaluar hábitos y factores que inciden en la salud individual y colectiva.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Analiza información científica para argumentar sobre hábitos saludables.",
+                  "saberesBasicos": [
+                    "Lectura crítica",
+                    "Fuentes fiables",
+                    "Debates saludables"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Participa en proyectos colaborativos de promoción de la salud.",
+                  "saberesBasicos": [
+                    "Diseño de campañas",
+                    "Aprendizaje-servicio",
+                    "Evaluación participativa"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Ciudadanía activa",
+              "trimestre": "3º trimestre",
+              "descripcion": "Impulsar acciones sostenibles y solidarias en contextos cercanos.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Analiza retos sociales y ambientales proponiendo soluciones creativas.",
+                  "saberesBasicos": [
+                    "Pensamiento de diseño",
+                    "ODS",
+                    "Trabajo colaborativo"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Difunde propuestas de transformación social utilizando herramientas digitales.",
+                  "saberesBasicos": [
+                    "Comunicación digital",
+                    "Narrativa audiovisual",
+                    "Evaluación del impacto"
+                  ],
+                  "competenciasClave": [
+                    "CD",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "6º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Investigación del medio",
+              "trimestre": "1º trimestre",
+              "descripcion": "Abordar proyectos de investigación sobre problemáticas científicas y sociales actuales.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Integra métodos científicos y sociales para estudiar fenómenos complejos.",
+                  "saberesBasicos": [
+                    "Métodos de investigación",
+                    "Análisis de datos",
+                    "Tecnologías de recogida de información"
+                  ],
+                  "competenciasClave": [
+                    "STEM",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comunica resultados a distintos públicos utilizando formatos innovadores.",
+                  "saberesBasicos": [
+                    "Divulgación científica",
+                    "Infografías interactivas",
+                    "Presentaciones orales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CE"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Salud y bienestar",
+              "trimestre": "2º trimestre",
+              "descripcion": "Valorar críticamente hábitos y entornos que inciden en la salud y el bienestar.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Evalúa información científica para tomar decisiones saludables fundamentadas.",
+                  "saberesBasicos": [
+                    "Análisis de datos",
+                    "Contraste de fuentes",
+                    "Pensamiento crítico"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Diseña propuestas de intervención para la mejora de la salud comunitaria.",
+                  "saberesBasicos": [
+                    "Aprendizaje-servicio",
+                    "Gestión de proyectos",
+                    "Evaluación participativa"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CPSAA",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Ciudadanía activa",
+              "trimestre": "3º trimestre",
+              "descripcion": "Promover acciones transformadoras comprometidas con la sostenibilidad y la igualdad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Argumenta sobre problemas globales conectándolos con realidades locales.",
+                  "saberesBasicos": [
+                    "Agenda 2030",
+                    "Pensamiento sistémico",
+                    "Competencia social"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CCL",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Coordina acciones colectivas para la mejora del entorno.",
+                  "saberesBasicos": [
+                    "Gestión participativa",
+                    "Comunicación digital",
+                    "Evaluación colaborativa"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CD",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            }
+          ]
         }
-      }
+      ]
+    },
+    {
+      "nombre": "Lengua Extranjera: Inglés",
+      "cursos": [
+        {
+          "curso": "1º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender mensajes orales sencillos sobre rutinas y temas cercanos.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Identifica información general y específica en canciones y rutinas del aula.",
+                  "saberesBasicos": [
+                    "Rutinas del aula",
+                    "Songs and chants",
+                    "Comandos básicos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Responde a instrucciones sencillas relacionadas con la vida diaria.",
+                  "saberesBasicos": [
+                    "Imperatives",
+                    "Gestos de apoyo",
+                    "Juegos de dramatización"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Interaccionar oralmente en situaciones comunicativas cotidianas.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Participa en intercambios orales breves sobre gustos y rutinas.",
+                  "saberesBasicos": [
+                    "Chunks comunicativos",
+                    "Role plays",
+                    "Vocabulario cotidiano"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Pronuncia y entona de forma comprensible palabras y frases básicas.",
+                  "saberesBasicos": [
+                    "Phonics básicos",
+                    "Songs",
+                    "Técnicas de repetición"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Comprensión y expresión escrita",
+              "trimestre": "3º trimestre",
+              "descripcion": "Comprender y escribir palabras y frases aisladas sobre temas cercanos.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Reconoce vocabulario e instrucciones en soportes visuales sencillos.",
+                  "saberesBasicos": [
+                    "Flashcards",
+                    "Wall displays",
+                    "Mini dialogues"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Escribe palabras y frases modelo con apoyo visual.",
+                  "saberesBasicos": [
+                    "Copying",
+                    "Labelling",
+                    "Dictation games"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "2º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender mensajes orales sencillos relacionados con experiencias personales.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Identifica información esencial en diálogos y vídeos adaptados.",
+                  "saberesBasicos": [
+                    "Storytelling",
+                    "Visual aids",
+                    "Listening for gist"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Responde de forma adecuada a preguntas sencillas sobre experiencias personales.",
+                  "saberesBasicos": [
+                    "Question words",
+                    "Turn taking",
+                    "Interaction games"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Interactuar en conversaciones guiadas sobre temas cotidianos.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Participa en diálogos breves intercambiando información personal.",
+                  "saberesBasicos": [
+                    "Role cards",
+                    "Class surveys",
+                    "Chunks funcionales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Pronuncia con claridad vocabulario y estructuras trabajadas.",
+                  "saberesBasicos": [
+                    "Phonics intermedio",
+                    "Drilling",
+                    "Songs and chants"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Comprensión y expresión escrita",
+              "trimestre": "3º trimestre",
+              "descripcion": "Comprender textos breves y producir mensajes sencillos sobre temas cotidianos.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Comprende textos breves identificando información específica.",
+                  "saberesBasicos": [
+                    "Reading strategies",
+                    "Matching exercises",
+                    "Picture dictionaries"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Escribe frases y textos guiados con estructuras básicas.",
+                  "saberesBasicos": [
+                    "Writing frames",
+                    "Sentence builders",
+                    "Peer correction"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "3º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender mensajes orales breves sobre temas familiares y académicos.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Extrae información global y específica de grabaciones adaptadas.",
+                  "saberesBasicos": [
+                    "Listening for details",
+                    "Audio scripts",
+                    "Language ladders"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Identifica expresiones de cortesía y fórmulas sociales.",
+                  "saberesBasicos": [
+                    "Functional language",
+                    "Dialogues",
+                    "Drama techniques"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Interacción oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Participar en conversaciones sencillas sobre experiencias y planes.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Hace preguntas y responde utilizando estructuras básicas correctas.",
+                  "saberesBasicos": [
+                    "Question patterns",
+                    "Pair interviews",
+                    "Interactive games"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza estrategias para mantener la comunicación (repetir, pedir ayuda, gestos).",
+                  "saberesBasicos": [
+                    "Communication strategies",
+                    "Clarification",
+                    "Body language"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Comprensión y expresión escrita",
+              "trimestre": "3º trimestre",
+              "descripcion": "Comprender y producir textos breves adaptados a su nivel.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Comprende textos breves identificando ideas principales.",
+                  "saberesBasicos": [
+                    "Reading comprehension",
+                    "Graphic organizers",
+                    "Context clues"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Escribe textos guiados organizados en párrafos sencillos.",
+                  "saberesBasicos": [
+                    "Paragraph structure",
+                    "Writing plans",
+                    "Editing checklists"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "4º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender mensajes orales de dificultad creciente en diferentes soportes.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Identifica información relevante en podcasts y vídeos adaptados.",
+                  "saberesBasicos": [
+                    "Predicting content",
+                    "Listening logs",
+                    "Audio-visual support"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Reconoce intenciones comunicativas básicas (invitar, agradecer, solicitar).",
+                  "saberesBasicos": [
+                    "Functional expressions",
+                    "Role plays",
+                    "Language noticing"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Interacción oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Mantener conversaciones sencillas para intercambiar información y opiniones.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Participa en diálogos planificados utilizando estrategias de cooperación.",
+                  "saberesBasicos": [
+                    "Cooperative speaking",
+                    "Information gap activities",
+                    "Debate corners"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Pronuncia y entona con claridad integrando patrones de ritmo e intonación.",
+                  "saberesBasicos": [
+                    "Stress and rhythm",
+                    "Pronunciation apps",
+                    "Shadowing"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Comprensión y expresión escrita",
+              "trimestre": "3º trimestre",
+              "descripcion": "Comprender textos adaptados y producir textos breves cohesionados.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Identifica información e ideas principales en textos de diferentes géneros.",
+                  "saberesBasicos": [
+                    "Genre awareness",
+                    "Text mapping",
+                    "Reading strategies"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Redacta textos breves cohesionados aplicando estructuras estudiadas.",
+                  "saberesBasicos": [
+                    "Writing process",
+                    "Collaborative writing",
+                    "Digital tools"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "5º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender mensajes orales sobre temas familiares y algunos desconocidos.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Analiza ideas principales y detalles relevantes en textos orales adaptados.",
+                  "saberesBasicos": [
+                    "Note-taking",
+                    "Listening strategies",
+                    "Multimedia resources"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Infere significados apoyándose en elementos lingüísticos y no lingüísticos.",
+                  "saberesBasicos": [
+                    "Context clues",
+                    "Paralinguistic cues",
+                    "Prediction"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Interacción oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Participar en conversaciones guiadas y simulaciones sobre temas variados.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Expresa opiniones y justifica ideas con frases conectadas.",
+                  "saberesBasicos": [
+                    "Opinion language",
+                    "Debate formats",
+                    "Collaborative tasks"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Mantiene la interacción empleando estrategias de cooperación comunicativa.",
+                  "saberesBasicos": [
+                    "Repair strategies",
+                    "Active listening",
+                    "Peer support"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Comprensión y expresión escrita",
+              "trimestre": "3º trimestre",
+              "descripcion": "Comprender y producir textos cohesionados sobre temas cercanos e interdisciplinares.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Comprende textos adaptados identificando intención y organización.",
+                  "saberesBasicos": [
+                    "Text typology",
+                    "Graphic organizers",
+                    "Critical reading"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Redacta textos cohesionados aplicando el proceso completo de escritura.",
+                  "saberesBasicos": [
+                    "Drafting and revising",
+                    "Peer feedback",
+                    "Digital portfolios"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "6º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Comprensión oral",
+              "trimestre": "1º trimestre",
+              "descripcion": "Comprender mensajes orales de complejidad creciente relacionados con experiencias y contenidos curriculares.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Identifica información explícita e implícita en textos orales adaptados.",
+                  "saberesBasicos": [
+                    "Listening logs",
+                    "Inference tasks",
+                    "Interactive platforms"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Analiza actitudes y propósitos del hablante en situaciones comunicativas.",
+                  "saberesBasicos": [
+                    "Discourse markers",
+                    "Listening for attitude",
+                    "Intonation cues"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Interacción oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Participar activamente en intercambios orales sobre temas curriculares y personales.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Sostiene conversaciones espontáneas utilizando recursos lingüísticos variados.",
+                  "saberesBasicos": [
+                    "Discourse strategies",
+                    "Conversation clubs",
+                    "Project presentations"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza estrategias de cooperación y reparación para garantizar la comunicación.",
+                  "saberesBasicos": [
+                    "Clarification techniques",
+                    "Paraphrasing",
+                    "Collaborative dialogues"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Comprensión y expresión escrita",
+              "trimestre": "3º trimestre",
+              "descripcion": "Comprender y producir textos cohesionados en diferentes géneros y soportes.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Analiza textos adaptados identificando estructura, propósito e información implícita.",
+                  "saberesBasicos": [
+                    "Critical reading",
+                    "Genre analysis",
+                    "Text annotation"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Produce textos cohesionados aplicando el proceso completo de escritura y herramientas digitales.",
+                  "saberesBasicos": [
+                    "Writing process",
+                    "Collaborative editing",
+                    "Digital publishing"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Educación Física",
+      "cursos": [
+        {
+          "curso": "1º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Salud y condición física",
+              "trimestre": "1º trimestre",
+              "descripcion": "Adquirir hábitos saludables relacionados con la actividad física cotidiana.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Reconoce beneficios de la actividad física y hábitos saludables.",
+                  "saberesBasicos": [
+                    "Rutinas de higiene",
+                    "Hábitos posturales",
+                    "Juegos de activación"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Participa en calentamientos sencillos siguiendo indicaciones.",
+                  "saberesBasicos": [
+                    "Movilidad articular",
+                    "Respiración",
+                    "Ejercicios dinámicos"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Coordinación y habilidades motrices",
+              "trimestre": "2º trimestre",
+              "descripcion": "Desarrollar habilidades motrices básicas a través del juego.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Realiza desplazamientos y saltos adaptándose a distintas situaciones.",
+                  "saberesBasicos": [
+                    "Desplazamientos",
+                    "Saltos",
+                    "Circuitos motores"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Coordina habilidades básicas con y sin implementos.",
+                  "saberesBasicos": [
+                    "Manipulación de objetos",
+                    "Juegos de lanzamiento",
+                    "Equilibrio"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Juego y convivencia",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en juegos cooperativos y reglados mostrando actitudes de respeto.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Cumple normas básicas y respeta a los compañeros en juegos colectivos.",
+                  "saberesBasicos": [
+                    "Juegos cooperativos",
+                    "Resolución de conflictos",
+                    "Respeto a las normas"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Participa en juegos tradicionales extremeños valorando su riqueza cultural.",
+                  "saberesBasicos": [
+                    "Juegos populares",
+                    "Cultura extremeña",
+                    "Trabajo en equipo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "2º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Salud y condición física",
+              "trimestre": "1º trimestre",
+              "descripcion": "Adoptar hábitos saludables relacionados con la actividad física y el descanso.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Identifica y aplica rutinas de calentamiento y vuelta a la calma.",
+                  "saberesBasicos": [
+                    "Calentamiento general",
+                    "Respiración",
+                    "Estiramientos básicos"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Valora la importancia del descanso y la hidratación en la práctica física.",
+                  "saberesBasicos": [
+                    "Hábitos saludables",
+                    "Autopercepción del esfuerzo",
+                    "Registro de actividad"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Coordinación y habilidades motrices",
+              "trimestre": "2º trimestre",
+              "descripcion": "Mejorar habilidades motrices básicas con y sin implementos.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Coordina habilidades básicas en situaciones de oposición simple.",
+                  "saberesBasicos": [
+                    "Juegos de persecución",
+                    "Cambios de dirección",
+                    "Control corporal"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza implementos ligeros con precisión creciente.",
+                  "saberesBasicos": [
+                    "Pelotas y aros",
+                    "Circuitos de habilidades",
+                    "Juegos de puntería"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Juego y convivencia",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en juegos reglados mostrando actitudes de respeto y cooperación.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Respeta normas y roles en juegos cooperativos y de oposición.",
+                  "saberesBasicos": [
+                    "Roles de juego",
+                    "Resolución dialogada",
+                    "Fair play"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Valora el patrimonio lúdico tradicional de la comunidad.",
+                  "saberesBasicos": [
+                    "Juegos tradicionales",
+                    "Danzas populares",
+                    "Patrimonio cultural"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "3º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Salud y condición física",
+              "trimestre": "1º trimestre",
+              "descripcion": "Planificar rutinas básicas de actividad física saludable.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Realiza calentamientos y ejercicios de movilidad de forma autónoma.",
+                  "saberesBasicos": [
+                    "Movilidad articular",
+                    "Control de la postura",
+                    "Respiración"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Monitoriza su esfuerzo utilizando escalas sencillas.",
+                  "saberesBasicos": [
+                    "Escala de esfuerzo",
+                    "Frecuencia cardiaca",
+                    "Diario de actividad"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Habilidades motrices",
+              "trimestre": "2º trimestre",
+              "descripcion": "Perfeccionar habilidades motrices en situaciones cooperativas y de oposición.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Coordina habilidades de desplazamiento, salto y lanzamiento en juegos reducidos.",
+                  "saberesBasicos": [
+                    "Circuitos combinados",
+                    "Juegos deportivos",
+                    "Control corporal"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza estrategias básicas en juegos colectivos.",
+                  "saberesBasicos": [
+                    "Toma de decisiones",
+                    "Apoyos y desmarques",
+                    "Comunicación gestual"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Juego y convivencia",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar activamente mostrando actitudes de respeto, cooperación y equidad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Acepta y respeta distintos niveles de habilidad en el grupo.",
+                  "saberesBasicos": [
+                    "Inclusión en el juego",
+                    "Gestión emocional",
+                    "Trabajo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Propone mejoras para favorecer la convivencia en actividades motrices.",
+                  "saberesBasicos": [
+                    "Mediación",
+                    "Resolución de conflictos",
+                    "Evaluación grupal"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "4º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Salud y condición física",
+              "trimestre": "1º trimestre",
+              "descripcion": "Planificar y ejecutar rutinas de actividad física saludable con autonomía.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Diseña sesiones sencillas de acondicionamiento físico.",
+                  "saberesBasicos": [
+                    "Planificación",
+                    "Control de la intensidad",
+                    "Evaluación del progreso"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Argumenta la importancia de hábitos saludables basándose en evidencias.",
+                  "saberesBasicos": [
+                    "Estilos de vida",
+                    "Prevención de lesiones",
+                    "Fuentes fiables"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Habilidades motrices",
+              "trimestre": "2º trimestre",
+              "descripcion": "Perfeccionar habilidades motrices específicas en situaciones deportivas.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Aplica habilidades motrices en situaciones de juego real adaptando estrategias.",
+                  "saberesBasicos": [
+                    "Táctica básica",
+                    "Reglamentos",
+                    "Roles en el equipo"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Utiliza implementos con precisión y control.",
+                  "saberesBasicos": [
+                    "Coordinación óculo-manual",
+                    "Juegos modificados",
+                    "Feedback entre iguales"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Juego, convivencia y valores",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en actividades físicas fomentando la convivencia y la igualdad de oportunidades.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Promueve la igualdad y la inclusión durante la práctica motriz.",
+                  "saberesBasicos": [
+                    "Diseño de reglas",
+                    "Mediación",
+                    "Trabajo colaborativo"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Evalúa la convivencia en las actividades físicas proponiendo mejoras.",
+                  "saberesBasicos": [
+                    "Autoevaluación",
+                    "Coevaluación",
+                    "Planes de mejora"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "5º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Salud y condición física",
+              "trimestre": "1º trimestre",
+              "descripcion": "Gestionar la práctica de actividad física saludable de forma autónoma.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Diseña y ejecuta rutinas de acondicionamiento adaptadas a sus necesidades.",
+                  "saberesBasicos": [
+                    "Planificación",
+                    "Control de intensidad",
+                    "Evaluación del progreso"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Analiza indicadores básicos de salud relacionados con la actividad física.",
+                  "saberesBasicos": [
+                    "Frecuencia cardiaca",
+                    "Test de condición física",
+                    "Hábitos saludables"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Habilidades motrices",
+              "trimestre": "2º trimestre",
+              "descripcion": "Perfeccionar habilidades motrices en contextos deportivos y expresivos.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Aplica estrategias individuales y colectivas en juegos y deportes.",
+                  "saberesBasicos": [
+                    "Táctica colectiva",
+                    "Roles ofensivos y defensivos",
+                    "Comunicación motriz"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CEC"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Integra habilidades motrices en actividades expresivas y rítmicas.",
+                  "saberesBasicos": [
+                    "Expresión corporal",
+                    "Ritmo y coordinación",
+                    "Coreografías"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Juego, convivencia y valores",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en actividades físicas promoviendo la convivencia, la igualdad y la sostenibilidad.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Organiza actividades motrices promoviendo la inclusión y la sostenibilidad.",
+                  "saberesBasicos": [
+                    "Diseño de actividades",
+                    "Uso responsable de materiales",
+                    "Trabajo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Evalúa la convivencia y propone mejoras a partir de la reflexión colectiva.",
+                  "saberesBasicos": [
+                    "Diarios reflexivos",
+                    "Autoevaluación",
+                    "Acuerdos de grupo"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "6º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Salud y condición física",
+              "trimestre": "1º trimestre",
+              "descripcion": "Gestionar la actividad física saludable aplicando criterios de autonomía y seguridad.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Elabora y evalúa programas personales de actividad física saludable.",
+                  "saberesBasicos": [
+                    "Objetivos personales",
+                    "Planificación semanal",
+                    "Evaluación de resultados"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Argumenta decisiones relacionadas con hábitos saludables basadas en evidencias científicas.",
+                  "saberesBasicos": [
+                    "Investigación aplicada",
+                    "Fuentes fiables",
+                    "Comunicación oral"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CCL"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Habilidades motrices",
+              "trimestre": "2º trimestre",
+              "descripcion": "Perfeccionar habilidades motrices en entornos deportivos y naturales.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Integra habilidades motrices en deportes y actividades en la naturaleza.",
+                  "saberesBasicos": [
+                    "Orientación",
+                    "Actividades al aire libre",
+                    "Seguridad"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Aplica estrategias avanzadas en juegos y deportes colectivos.",
+                  "saberesBasicos": [
+                    "Táctica avanzada",
+                    "Trabajo en equipo",
+                    "Análisis del juego"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Juego, convivencia y valores",
+              "trimestre": "3º trimestre",
+              "descripcion": "Participar en actividades físicas con una actitud crítica, solidaria y respetuosa.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Analiza la práctica físico-deportiva desde una perspectiva de igualdad e inclusión.",
+                  "saberesBasicos": [
+                    "Perspectiva de género",
+                    "Deporte inclusivo",
+                    "Reflexión crítica"
+                  ],
+                  "competenciasClave": [
+                    "CPSAA",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Planifica iniciativas de actividad física solidaria o sostenible.",
+                  "saberesBasicos": [
+                    "Proyectos de servicio",
+                    "Responsabilidad social",
+                    "Evaluación del impacto"
+                  ],
+                  "competenciasClave": [
+                    "CE",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Educación Artística",
+      "cursos": [
+        {
+          "curso": "1º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Expresión plástica",
+              "trimestre": "1º trimestre",
+              "descripcion": "Explorar materiales y técnicas básicas para crear producciones plásticas.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Experimenta con materiales y herramientas para crear composiciones sencillas.",
+                  "saberesBasicos": [
+                    "Técnicas pictóricas básicas",
+                    "Colores primarios",
+                    "Manipulación segura"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Describe oralmente su producción y la de sus compañeros con vocabulario básico.",
+                  "saberesBasicos": [
+                    "Vocabulario plástico",
+                    "Escucha activa",
+                    "Respeto por las producciones"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión musical",
+              "trimestre": "2º trimestre",
+              "descripcion": "Interpretar y crear piezas musicales sencillas utilizando la voz y el cuerpo.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Participa en interpretaciones vocales y rítmicas manteniendo el pulso y la entonación.",
+                  "saberesBasicos": [
+                    "Pulso y acento",
+                    "Canciones infantiles",
+                    "Percusión corporal"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Improvisa sonidos y movimientos sencillos para expresar emociones.",
+                  "saberesBasicos": [
+                    "Improvisación",
+                    "Sonidos del entorno",
+                    "Expresión corporal"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Apreciación artística",
+              "trimestre": "3º trimestre",
+              "descripcion": "Observar y valorar manifestaciones artísticas cercanas.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Reconoce elementos artísticos en obras y espacios del entorno.",
+                  "saberesBasicos": [
+                    "Obras extremeñas",
+                    "Patrimonio local",
+                    "Visitas culturales"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Expresa opiniones y emociones ante manifestaciones artísticas.",
+                  "saberesBasicos": [
+                    "Lenguaje artístico",
+                    "Diario creativo",
+                    "Asamblea artística"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "2º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Expresión plástica",
+              "trimestre": "1º trimestre",
+              "descripcion": "Experimentar con técnicas y materiales combinados para producir obras propias.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Aplica técnicas plásticas sencillas para representar ideas y emociones.",
+                  "saberesBasicos": [
+                    "Collage",
+                    "Relieves sencillos",
+                    "Color y textura"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comparte procesos de creación y valora los de sus compañeros.",
+                  "saberesBasicos": [
+                    "Lenguaje plástico",
+                    "Crítica constructiva",
+                    "Respeto artístico"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión musical",
+              "trimestre": "2º trimestre",
+              "descripcion": "Interpretar y crear piezas musicales sencillas combinando voz, instrumentos y movimiento.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Interpreta piezas vocales e instrumentales sencillas en grupo.",
+                  "saberesBasicos": [
+                    "Lenguaje musical básico",
+                    "Instrumentos escolares",
+                    "Dinámicas de ensayo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Crea acompañamientos rítmicos y melódicos sencillos.",
+                  "saberesBasicos": [
+                    "Improvisación guiada",
+                    "Composición colectiva",
+                    "Grabación de audio"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Apreciación artística",
+              "trimestre": "3º trimestre",
+              "descripcion": "Valorar obras y manifestaciones artísticas del entorno y de otras culturas.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Identifica elementos artísticos y culturales en manifestaciones diversas.",
+                  "saberesBasicos": [
+                    "Arte extremeño",
+                    "Festividades",
+                    "Museos virtuales"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Elabora producciones críticas sencillas sobre experiencias artísticas.",
+                  "saberesBasicos": [
+                    "Crónica artística",
+                    "Diario de arte",
+                    "Formatos digitales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "3º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Expresión plástica",
+              "trimestre": "1º trimestre",
+              "descripcion": "Experimentar con técnicas plásticas bidimensionales y tridimensionales.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Integra técnicas diversas en proyectos plásticos cooperativos.",
+                  "saberesBasicos": [
+                    "Técnicas mixtas",
+                    "Modelado",
+                    "Diseño colaborativo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Presenta procesos creativos justificando elecciones expresivas.",
+                  "saberesBasicos": [
+                    "Portfolio artístico",
+                    "Lenguaje visual",
+                    "Exposiciones en el aula"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión musical",
+              "trimestre": "2º trimestre",
+              "descripcion": "Interpretar y crear piezas musicales colectivas empleando diferentes recursos.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Interpreta piezas vocales e instrumentales con acompañamiento rítmico.",
+                  "saberesBasicos": [
+                    "Lenguaje musical",
+                    "Agrupaciones",
+                    "Coordinación"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Crea composiciones sencillas utilizando recursos digitales.",
+                  "saberesBasicos": [
+                    "Apps musicales",
+                    "Secuenciadores",
+                    "Edición de audio"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Apreciación artística",
+              "trimestre": "3º trimestre",
+              "descripcion": "Analizar y valorar manifestaciones artísticas y culturales.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Analiza obras artísticas identificando elementos expresivos.",
+                  "saberesBasicos": [
+                    "Análisis de obras",
+                    "Lenguaje artístico",
+                    "Interpretaciones personales"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Elabora producciones críticas utilizando distintos formatos.",
+                  "saberesBasicos": [
+                    "Crítica audiovisual",
+                    "Blogs artísticos",
+                    "Presentaciones digitales"
+                  ],
+                  "competenciasClave": [
+                    "CD",
+                    "CEC",
+                    "CCL"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "4º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Expresión plástica",
+              "trimestre": "1º trimestre",
+              "descripcion": "Desarrollar proyectos creativos aplicando técnicas plásticas variadas.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Diseña proyectos visuales colectivos con un propósito comunicativo.",
+                  "saberesBasicos": [
+                    "Diseño gráfico",
+                    "Storyboard",
+                    "Arte colaborativo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Experimenta con materiales y soportes alternativos justificando sus decisiones.",
+                  "saberesBasicos": [
+                    "Materiales reciclados",
+                    "Instalaciones efímeras",
+                    "Proceso creativo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión musical",
+              "trimestre": "2º trimestre",
+              "descripcion": "Interpretar y crear producciones musicales cooperativas.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Participa en agrupaciones vocales e instrumentales con coordinación rítmica.",
+                  "saberesBasicos": [
+                    "Arreglos musicales",
+                    "Dinámica de ensayo",
+                    "Interpretación en público"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Crea piezas musicales colectivas utilizando herramientas tecnológicas.",
+                  "saberesBasicos": [
+                    "Edición digital",
+                    "Looping",
+                    "Producción sonora"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CD"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Apreciación artística",
+              "trimestre": "3º trimestre",
+              "descripcion": "Interpretar críticamente manifestaciones artísticas de diferentes contextos.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Relaciona obras con su contexto histórico y cultural.",
+                  "saberesBasicos": [
+                    "Historia del arte",
+                    "Contextualización",
+                    "Análisis crítico"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Argumenta opiniones fundamentadas sobre producciones artísticas.",
+                  "saberesBasicos": [
+                    "Debates artísticos",
+                    "Ensayo visual",
+                    "Portafolio reflexivo"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "5º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Expresión plástica",
+              "trimestre": "1º trimestre",
+              "descripcion": "Planificar y desarrollar proyectos artísticos personales y colectivos.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Diseña proyectos visuales con intencionalidad comunicativa y estética.",
+                  "saberesBasicos": [
+                    "Diseño visual",
+                    "Planificación",
+                    "Gestión del proceso creativo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Evalúa críticamente productos artísticos propios y ajenos.",
+                  "saberesBasicos": [
+                    "Criterios estéticos",
+                    "Retroalimentación",
+                    "Curaduría escolar"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión musical",
+              "trimestre": "2º trimestre",
+              "descripcion": "Interpretar y crear composiciones musicales con distintos recursos tecnológicos.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Coordina agrupaciones musicales aplicando dinámicas de ensayo.",
+                  "saberesBasicos": [
+                    "Dirección básica",
+                    "Arreglos",
+                    "Ensayo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Produce composiciones musicales integrando recursos digitales.",
+                  "saberesBasicos": [
+                    "Software musical",
+                    "Grabación multipista",
+                    "Edición de audio"
+                  ],
+                  "competenciasClave": [
+                    "CD",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Apreciación artística",
+              "trimestre": "3º trimestre",
+              "descripcion": "Analizar críticamente manifestaciones artísticas y culturales contemporáneas.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Investiga artistas y movimientos artísticos contemporáneos.",
+                  "saberesBasicos": [
+                    "Investigación artística",
+                    "Curaduría digital",
+                    "Presentación multimedia"
+                  ],
+                  "competenciasClave": [
+                    "CD",
+                    "CEC",
+                    "CCL"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Argumenta valoraciones estéticas fundamentadas.",
+                  "saberesBasicos": [
+                    "Debate artístico",
+                    "Ensayo crítico",
+                    "Portafolio reflexivo"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CEC"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "curso": "6º",
+          "competencias": [
+            {
+              "codigo": "CE1",
+              "titulo": "Expresión plástica",
+              "trimestre": "1º trimestre",
+              "descripcion": "Gestionar proyectos artísticos personales con intencionalidad comunicativa.",
+              "criterios": [
+                {
+                  "codigo": "1.1",
+                  "descripcion": "Elabora proyectos visuales complejos aplicando procesos de investigación y creación.",
+                  "saberesBasicos": [
+                    "Investigación artística",
+                    "Diseño visual avanzado",
+                    "Presentación profesional"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CD"
+                  ]
+                },
+                {
+                  "codigo": "1.2",
+                  "descripcion": "Comunica y difunde producciones artísticas utilizando medios diversos.",
+                  "saberesBasicos": [
+                    "Portafolio digital",
+                    "Exposiciones",
+                    "Difusión en redes"
+                  ],
+                  "competenciasClave": [
+                    "CD",
+                    "CEC",
+                    "CCL"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE2",
+              "titulo": "Expresión musical",
+              "trimestre": "2º trimestre",
+              "descripcion": "Diseñar, interpretar y producir composiciones musicales colectivas.",
+              "criterios": [
+                {
+                  "codigo": "2.1",
+                  "descripcion": "Organiza agrupaciones musicales distribuyendo roles y responsabilidades.",
+                  "saberesBasicos": [
+                    "Producción musical",
+                    "Liderazgo compartido",
+                    "Ensayo autónomo"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "2.2",
+                  "descripcion": "Produce composiciones musicales integrando tecnología y recursos sonoros diversos.",
+                  "saberesBasicos": [
+                    "Secuenciación",
+                    "Edición de audio",
+                    "Sonorización"
+                  ],
+                  "competenciasClave": [
+                    "CD",
+                    "CEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE3",
+              "titulo": "Apreciación artística",
+              "trimestre": "3º trimestre",
+              "descripcion": "Interpretar críticamente producciones artísticas desde diferentes perspectivas.",
+              "criterios": [
+                {
+                  "codigo": "3.1",
+                  "descripcion": "Analiza producciones artísticas considerando contexto, intención y lenguaje.",
+                  "saberesBasicos": [
+                    "Análisis crítico",
+                    "Contextualización",
+                    "Debate artístico"
+                  ],
+                  "competenciasClave": [
+                    "CEC",
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "3.2",
+                  "descripcion": "Elabora críticas y reseñas utilizando medios digitales.",
+                  "saberesBasicos": [
+                    "Crítica digital",
+                    "Podcast cultural",
+                    "Blogs artísticos"
+                  ],
+                  "competenciasClave": [
+                    "CD",
+                    "CEC",
+                    "CCL"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
-  }
+  ]
 }
