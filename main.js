@@ -11,18 +11,39 @@ const state = {
 };
 
 const selectors = {
-  course: document.getElementById("courseSelect"),
-  area: document.getElementById("areaSelect"),
-  trimester: document.getElementById("trimesterSelect"),
-  competencia: document.getElementById("competenciaSelect")
+  course: null,
+  area: null,
+  trimester: null,
+  competencia: null
 };
 
-const summaryBox = document.getElementById("selectionSummary");
-const detailsPanel = document.getElementById("competenciaDetails");
-const exportBtn = document.getElementById("exportPdf");
+let summaryBox = null;
+let detailsPanel = null;
+let exportBtn = null;
 
-resetSelectors();
-loadData();
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeApp);
+} else {
+  initializeApp();
+}
+
+function initializeApp() {
+  selectors.course = document.getElementById("courseSelect");
+  selectors.area = document.getElementById("areaSelect");
+  selectors.trimester = document.getElementById("trimesterSelect");
+  selectors.competencia = document.getElementById("competenciaSelect");
+  summaryBox = document.getElementById("selectionSummary");
+  detailsPanel = document.getElementById("competenciaDetails");
+  exportBtn = document.getElementById("exportPdf");
+
+  if (!selectors.course || !selectors.area || !selectors.trimester || !selectors.competencia || !summaryBox || !detailsPanel || !exportBtn) {
+    console.error("No se pudieron localizar los elementos principales de la interfaz.");
+    return;
+  }
+
+  resetSelectors();
+  loadData();
+}
 
 function loadData() {
   summaryBox.innerHTML = `<p class="info-text">Cargando datos curriculares...</p>`;
