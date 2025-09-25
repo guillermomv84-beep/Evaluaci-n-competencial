@@ -1,0 +1,76 @@
+{
+  "Matemáticas": {
+    "5º": {
+      "CE1": {
+        "descripcion": "Resolver problemas utilizando operaciones básicas.",
+        "criterios": {
+          "1.1": {
+            "descripcion": "Elige y aplica estrategias adecuadas.",
+            "saberes_basicos": [
+              "Suma",
+              "Resta",
+              "Multiplicación",
+              "División"
+            ],
+            "competencias_clave": [
+              "STEM",
+              "CD"
+            ]
+          },
+          "1.2": {
+            "descripcion": "Comprueba la validez del resultado.",
+            "saberes_basicos": [
+              "Estimación",
+              "Comprobación de errores"
+            ],
+            "competencias_clave": [
+              "STEM"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Lengua Castellana y Literatura": {
+    "6º": {
+      "CE3": {
+        "descripcion": "Escribir textos de forma coherente y adecuada.",
+        "criterios": {
+          "3.1": {
+            "descripcion": "Planifica la escritura ajustándose al propósito.",
+            "saberes_basicos": [
+              "Estructura textual",
+              "Coherencia",
+              "Cohesión"
+            ],
+            "competencias_clave": [
+              "CCL",
+              "CD"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Inglés": {
+    "4º": {
+      "CE2": {
+        "descripcion": "Comprender y usar expresiones orales cotidianas.",
+        "criterios": {
+          "2.1": {
+            "descripcion": "Participa en intercambios comunicativos.",
+            "saberes_basicos": [
+              "Saludarse",
+              "Despedirse",
+              "Pedir ayuda"
+            ],
+            "competencias_clave": [
+              "CCL",
+              "CEC"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
