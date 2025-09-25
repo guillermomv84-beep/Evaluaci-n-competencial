@@ -18,6 +18,7 @@ const selectors = {
 };
 
 let summaryBox = null;
+let overviewPanel = null;
 let detailsPanel = null;
 let exportBtn = null;
 
@@ -33,10 +34,20 @@ function initializeApp() {
   selectors.trimester = document.getElementById("trimesterSelect");
   selectors.competencia = document.getElementById("competenciaSelect");
   summaryBox = document.getElementById("selectionSummary");
+  overviewPanel = document.getElementById("competenciasOverview");
   detailsPanel = document.getElementById("competenciaDetails");
   exportBtn = document.getElementById("exportPdf");
 
-  if (!selectors.course || !selectors.area || !selectors.trimester || !selectors.competencia || !summaryBox || !detailsPanel || !exportBtn) {
+  if (
+    !selectors.course ||
+    !selectors.area ||
+    !selectors.trimester ||
+    !selectors.competencia ||
+    !summaryBox ||
+    !overviewPanel ||
+    !detailsPanel ||
+    !exportBtn
+  ) {
     console.error("No se pudieron localizar los elementos principales de la interfaz.");
     return;
   }
@@ -86,6 +97,7 @@ function initializeSelectors() {
   }
   renderCompetencia();
   updateSelectionSummary();
+  updateCompetenciasOverview();
 }
 
 function resetSelectors() {
@@ -103,6 +115,9 @@ function resetSelectors() {
   selectors.competencia.innerHTML = `<option value="">Selecciona una competencia específica...</option>`;
   selectors.competencia.disabled = true;
   toggleExport(false);
+  if (overviewPanel) {
+    overviewPanel.innerHTML = `<p class="info-text">Selecciona un curso y un área para revisar las competencias disponibles por trimestre.</p>`;
+  }
 }
 
 function showDataLoadError(error, options = {}) {
@@ -227,6 +242,7 @@ function handleCourseChange() {
   renderCompetencia();
   updateSelectionSummary();
   toggleExport(false);
+  updateCompetenciasOverview();
 }
 
 function updateAreaOptions() {
@@ -260,6 +276,7 @@ function handleAreaChange() {
   renderCompetencia();
   updateSelectionSummary();
   toggleExport(false);
+  updateCompetenciasOverview();
 }
 
 function updateTrimesterOptions() {
@@ -302,48 +319,84 @@ function handleTrimesterChange() {
   renderCompetencia();
   updateSelectionSummary();
   toggleExport(false);
+  updateCompetenciasOverview();
 }
 
 function updateCompetenciaOptions() {
-  selectors.competencia.innerHTML = `<option value="">Selecciona una competencia específica...</option>`;
-  selectors.competencia.disabled = !(state.selectedCourse && state.selectedArea && state.selectedTrimester);
-  if (!state.selectedCourse || !state.selectedArea || !state.selectedTrimester) {
+  const needsTrimester = !state.selectedTrimester;
+  const placeholder = needsTrimester
+    ? "Selecciona un trimestre para ver sus competencias..."
+    : "Selecciona una competencia específica...";
+  selectors.competencia.innerHTML = `<option value="">${placeholder}</option>`;
+  selectors.competencia.disabled = true;
+
+  if (!state.selectedCourse || !state.selectedArea) {
     return;
   }
+
   const courseData = getSelectedCourseData();
-  if (!courseData) {
+  if (!courseData || !Array.isArray(courseData.competencias)) {
     return;
   }
-  const competencias = courseData.competencias.filter(
-    (competencia) => competencia.trimestre === state.selectedTrimester
-  );
+
+  if (needsTrimester) {
+    return;
+  }
+
+  const competencias = courseData.competencias
+    .filter((competencia) => competencia.trimestre === state.selectedTrimester)
+    .sort((a, b) => a.codigo.localeCompare(b.codigo, "es", { numeric: true, sensitivity: "base" }));
+
+  if (!competencias.length) {
+    const option = document.createElement("option");
+    option.value = "";
+    option.disabled = true;
+    option.textContent = "No hay competencias disponibles en este trimestre";
+    selectors.competencia.append(option);
+    return;
+  }
+
   competencias.forEach((competencia) => {
     const option = document.createElement("option");
-    option.value = competencia.codigo;
+    option.value = `${competencia.codigo}::${competencia.trimestre}`;
     option.textContent = `${competencia.codigo} · ${competencia.titulo}`;
     option.dataset.trimestre = competencia.trimestre;
     selectors.competencia.append(option);
   });
-  selectors.competencia.disabled = !competencias.length;
+
+  selectors.competencia.disabled = false;
 }
 
 function handleCompetenciaChange() {
-  const code = selectors.competencia.value;
+  const rawValue = selectors.competencia.value;
   const courseData = getSelectedCourseData();
-  if (!code || !courseData) {
+  if (!rawValue || !courseData) {
     state.selectedCompetencia = null;
     resetPlanning();
     renderCompetencia();
     updateSelectionSummary();
     toggleExport(false);
+    updateCompetenciasOverview();
     return;
   }
-  const competencia = courseData.competencias.find((item) => item.codigo === code && item.trimestre === state.selectedTrimester);
+  const [code, encodedTrimester] = rawValue.split("::");
+  const selectedOption = selectors.competencia.selectedOptions[0];
+  const trimesterFromOption = selectedOption?.dataset.trimestre || encodedTrimester || state.selectedTrimester;
+  const competencia = courseData.competencias.find(
+    (item) => item.codigo === code && item.trimestre === trimesterFromOption
+  );
+  if (competencia && trimesterFromOption && trimesterFromOption !== state.selectedTrimester) {
+    state.selectedTrimester = trimesterFromOption;
+    if (selectors.trimester.value !== trimesterFromOption) {
+      selectors.trimester.value = trimesterFromOption;
+    }
+  }
   state.selectedCompetencia = competencia || null;
   resetPlanning();
   renderCompetencia();
   updateSelectionSummary();
   toggleExport(Boolean(state.selectedCompetencia));
+  updateCompetenciasOverview();
 }
 
 function getSelectedCourseData() {
@@ -360,11 +413,95 @@ function updateSelectionSummary() {
   const rows = [];
   rows.push(`<span><strong>Curso:</strong> ${state.selectedCourse || "-"}</span>`);
   rows.push(`<span><strong>Área:</strong> ${state.selectedArea || "-"}</span>`);
-  rows.push(`<span><strong>Trimestre:</strong> ${state.selectedTrimester || "-"}</span>`);
+  const trimesterLabel = state.selectedCompetencia?.trimestre || state.selectedTrimester || "-";
+  rows.push(`<span><strong>Trimestre:</strong> ${trimesterLabel}</span>`);
   rows.push(
     `<span><strong>Competencia específica:</strong> ${state.selectedCompetencia ? `${state.selectedCompetencia.codigo} · ${state.selectedCompetencia.titulo}` : "-"}</span>`
   );
   summaryBox.innerHTML = rows.map((row) => `<div>${row}</div>`).join("");
+}
+
+function updateCompetenciasOverview() {
+  if (!overviewPanel) {
+    return;
+  }
+
+  overviewPanel.innerHTML = "";
+
+  if (!state.selectedCourse) {
+    overviewPanel.innerHTML = `<p class="info-text">Selecciona un curso para consultar las competencias específicas disponibles.</p>`;
+    return;
+  }
+
+  if (!state.selectedArea) {
+    overviewPanel.innerHTML = `<p class="info-text">Elige un área para listar las competencias específicas de cada trimestre.</p>`;
+    return;
+  }
+
+  const courseData = getSelectedCourseData();
+  if (!courseData || !Array.isArray(courseData.competencias) || !courseData.competencias.length) {
+    overviewPanel.innerHTML = `<p class="info-text">No hay competencias registradas para esta combinación en el archivo <strong>data.json</strong>.</p>`;
+    return;
+  }
+
+  const heading = document.createElement("h3");
+  heading.className = "overview-title";
+  heading.textContent = "Competencias específicas por trimestre";
+  overviewPanel.appendChild(heading);
+
+  const groups = new Map();
+  courseData.competencias.forEach((competencia) => {
+    const trimester = competencia.trimestre || "Sin trimestre definido";
+    if (!groups.has(trimester)) {
+      groups.set(trimester, []);
+    }
+    groups.get(trimester).push(competencia);
+  });
+
+  const selectedTrimester = state.selectedCompetencia?.trimestre || state.selectedTrimester;
+
+  Array.from(groups.entries())
+    .sort((a, b) => trimesterOrder(a[0]) - trimesterOrder(b[0]))
+    .forEach(([trimester, competencias]) => {
+      const section = document.createElement("section");
+      section.className = "competencias-trimestre";
+      if (trimester === selectedTrimester) {
+        section.classList.add("active");
+      }
+
+      const trimesterHeading = document.createElement("h4");
+      trimesterHeading.textContent = trimester;
+      section.appendChild(trimesterHeading);
+
+      const list = document.createElement("div");
+      list.className = "competencias-grid";
+
+      competencias
+        .slice()
+        .sort((a, b) => a.codigo.localeCompare(b.codigo, "es", { numeric: true, sensitivity: "base" }))
+        .forEach((competencia) => {
+          const card = document.createElement("article");
+          card.className = "competencia-resumen";
+
+          const code = document.createElement("span");
+          code.className = "competencia-resumen-codigo";
+          code.textContent = competencia.codigo;
+
+          const title = document.createElement("h5");
+          title.className = "competencia-resumen-titulo";
+          title.textContent = competencia.titulo;
+
+          const description = document.createElement("p");
+          description.className = "competencia-resumen-descripcion";
+          description.textContent = competencia.descripcion;
+
+          card.append(code, title, description);
+          list.appendChild(card);
+        });
+
+      section.appendChild(list);
+      overviewPanel.appendChild(section);
+    });
 }
 
 function renderCompetencia() {
@@ -394,7 +531,7 @@ function renderCompetencia() {
   meta.innerHTML = `
     <span class="meta-tag">Curso ${state.selectedCourse}</span>
     <span class="meta-tag">${state.selectedArea}</span>
-    <span class="meta-tag">${state.selectedTrimester}</span>
+    <span class="meta-tag">${state.selectedCompetencia?.trimestre || state.selectedTrimester}</span>
   `;
   header.appendChild(meta);
   wrapper.appendChild(header);
@@ -443,7 +580,8 @@ function resetPlanning() {
 }
 
 function buildCriterionId(competenciaCode, criterioCode) {
-  return `${state.selectedArea}__${state.selectedCourse}__${state.selectedTrimester}__${competenciaCode}__${criterioCode}`;
+  const trimester = state.selectedCompetencia?.trimestre || state.selectedTrimester;
+  return `${state.selectedArea}__${state.selectedCourse}__${trimester}__${competenciaCode}__${criterioCode}`;
 }
 
 function getOrCreatePlanEntry(id, criterio, editable) {
@@ -457,7 +595,7 @@ function getOrCreatePlanEntry(id, criterio, editable) {
       origen: editable ? "personalizado" : "decreto",
       area: state.selectedArea,
       curso: state.selectedCourse,
-      trimestre: state.selectedTrimester,
+      trimestre: state.selectedCompetencia?.trimestre || state.selectedTrimester,
       competencia: state.selectedCompetencia?.codigo || "",
       competenciaTitulo: state.selectedCompetencia?.titulo || "",
       indicadores: []
@@ -466,7 +604,7 @@ function getOrCreatePlanEntry(id, criterio, editable) {
     const entry = state.planning.criterios[id];
     entry.area = state.selectedArea;
     entry.curso = state.selectedCourse;
-    entry.trimestre = state.selectedTrimester;
+    entry.trimestre = state.selectedCompetencia?.trimestre || state.selectedTrimester;
     entry.competencia = state.selectedCompetencia?.codigo || entry.competencia;
     entry.competenciaTitulo = state.selectedCompetencia?.titulo || entry.competenciaTitulo;
   }
@@ -628,24 +766,30 @@ function updatePlanSummary() {
   }
 
   container.innerHTML = "";
+  const entries = Object.values(state.planning.criterios || {});
+  container.appendChild(generatePlanSummary(entries));
+}
+
+function generatePlanSummary(entries) {
+  const fragment = document.createDocumentFragment();
 
   const title = document.createElement("h3");
   title.className = "plan-summary-title";
   title.textContent = "Resumen de la planificación";
-  container.appendChild(title);
+  fragment.appendChild(title);
 
-  const entries = Object.values(state.planning.criterios || {});
   const entriesWithIndicators = entries.filter((entry) => entry.indicadores.length);
 
   if (!entriesWithIndicators.length) {
     const empty = document.createElement("p");
     empty.className = "info-text";
     empty.textContent = "Añade indicadores de logro para que aparezcan resumidos aquí.";
-    container.appendChild(empty);
-    return;
+    fragment.appendChild(empty);
+    return fragment;
   }
 
   entriesWithIndicators
+    .slice()
     .sort((a, b) => {
       const aLabel = a.codigo || a.descripcion || "";
       const bLabel = b.codigo || b.descripcion || "";
@@ -715,8 +859,197 @@ function updatePlanSummary() {
       });
 
       block.appendChild(list);
-      container.appendChild(block);
+      fragment.appendChild(block);
     });
+
+  return fragment;
+}
+
+function buildPrintablePlan() {
+  const competencia = state.selectedCompetencia;
+  if (!competencia) {
+    return null;
+  }
+
+  const entries = Object.values(state.planning.criterios || {});
+  const printable = document.createElement("article");
+  printable.className = "printable-report";
+
+  const header = document.createElement("header");
+  header.className = "printable-header";
+
+  const heading = document.createElement("h2");
+  heading.textContent = "Planificación de evaluación competencial";
+  header.appendChild(heading);
+
+  const context = document.createElement("p");
+  context.className = "printable-context";
+  context.textContent = `${state.selectedArea} · Curso ${state.selectedCourse}`;
+  header.appendChild(context);
+
+  const meta = document.createElement("ul");
+  meta.className = "printable-meta";
+  [
+    ["Curso", state.selectedCourse || "-"],
+    ["Área", state.selectedArea || "-"],
+    ["Trimestre", competencia.trimestre || state.selectedTrimester || "-"],
+    ["Competencia", `${competencia.codigo} · ${competencia.titulo}`]
+  ].forEach(([label, value]) => {
+    const item = document.createElement("li");
+    item.innerHTML = `<strong>${label}:</strong> ${value}`;
+    meta.appendChild(item);
+  });
+  header.appendChild(meta);
+
+  const timestamp = document.createElement("p");
+  timestamp.className = "printable-date";
+  timestamp.textContent = `Generado el ${new Date().toLocaleString("es-ES")}`;
+  header.appendChild(timestamp);
+
+  printable.appendChild(header);
+
+  if (competencia.descripcion) {
+    const description = document.createElement("p");
+    description.className = "printable-description";
+    description.textContent = competencia.descripcion;
+    printable.appendChild(description);
+  }
+
+  const criteriaSection = document.createElement("section");
+  criteriaSection.className = "printable-criteria";
+
+  if (!entries.length) {
+    const empty = document.createElement("p");
+    empty.className = "printable-indicators-empty";
+    empty.textContent = "No se registraron criterios para esta competencia en la planificación actual.";
+    printable.appendChild(empty);
+  } else {
+    entries.forEach((entry) => {
+      const card = document.createElement("article");
+      card.className = "printable-criterion";
+
+      const cardHeader = document.createElement("header");
+      cardHeader.className = "printable-criterion-header";
+
+      const title = document.createElement("h3");
+      title.textContent = entry.codigo ? `Criterio ${entry.codigo}` : "Criterio personalizado";
+      cardHeader.appendChild(title);
+
+      const origin = document.createElement("span");
+      origin.className = "printable-origin";
+      origin.textContent = entry.origen === "personalizado" ? "Personalizado" : "Decreto 107/2022";
+      cardHeader.appendChild(origin);
+
+      card.appendChild(cardHeader);
+
+      if (entry.descripcion) {
+        const description = document.createElement("p");
+        description.className = "printable-criterion-description";
+        description.textContent = entry.descripcion;
+        card.appendChild(description);
+      }
+
+      const saberesBlock = createPrintableTagList(entry.saberesBasicos, "Saberes básicos asociados");
+      if (saberesBlock) {
+        card.appendChild(saberesBlock);
+      }
+
+      const competenciasBlock = createPrintableTagList(entry.competenciasClave, "Competencias clave vinculadas");
+      if (competenciasBlock) {
+        card.appendChild(competenciasBlock);
+      }
+
+      card.appendChild(createPrintableIndicators(entry));
+      criteriaSection.appendChild(card);
+    });
+
+    printable.appendChild(criteriaSection);
+  }
+
+  const summarySection = document.createElement("section");
+  summarySection.className = "plan-summary printable-summary";
+  summarySection.appendChild(generatePlanSummary(entries));
+  printable.appendChild(summarySection);
+
+  return printable;
+}
+
+function createPrintableTagList(items, label) {
+  if (!Array.isArray(items) || !items.length) {
+    return null;
+  }
+  const block = document.createElement("div");
+  block.className = "printable-tags-block";
+
+  const heading = document.createElement("h4");
+  heading.textContent = label;
+  block.appendChild(heading);
+
+  const list = document.createElement("ul");
+  list.className = "printable-tags";
+  items.forEach((item) => {
+    const tag = document.createElement("li");
+    tag.textContent = item;
+    list.appendChild(tag);
+  });
+  block.appendChild(list);
+  return block;
+}
+
+function createPrintableIndicators(entry) {
+  const container = document.createElement("div");
+  container.className = "printable-indicators";
+
+  const heading = document.createElement("h4");
+  heading.textContent = "Indicadores planificados";
+  container.appendChild(heading);
+
+  if (!entry.indicadores.length) {
+    const empty = document.createElement("p");
+    empty.className = "printable-indicators-empty";
+    empty.textContent = "Aún no se han añadido indicadores de logro para este criterio.";
+    container.appendChild(empty);
+    return container;
+  }
+
+  const table = document.createElement("table");
+  table.className = "printable-table";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Indicador</th>
+        <th>Tarea</th>
+        <th>Instrumento</th>
+        <th>Ponderación</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  `;
+
+  const tbody = table.querySelector("tbody");
+  entry.indicadores.forEach((indicator) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${indicator.indicador}</td>
+      <td>${indicator.tarea}</td>
+      <td>${indicator.instrumento}</td>
+      <td>${indicator.ponderacion}%</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  container.appendChild(table);
+
+  const total = entry.indicadores.reduce((sum, indicator) => sum + Number(indicator.ponderacion || 0), 0);
+  const totalElement = document.createElement("p");
+  totalElement.className = "printable-total";
+  totalElement.textContent = `Ponderación total: ${total}%`;
+  if (total > 100) {
+    totalElement.classList.add("over");
+  }
+  container.appendChild(totalElement);
+
+  return container;
 }
 
 function parseList(value) {
@@ -918,10 +1251,13 @@ function toggleExport(enable) {
 }
 
 function handleExportToPdf() {
-  const target = detailsPanel.querySelector(".pdf-export");
-  if (!target) {
+  const printable = buildPrintablePlan();
+  if (!printable) {
     return;
   }
+
+  document.body.appendChild(printable);
+
   const filenameSafeArea = state.selectedArea ? state.selectedArea.replace(/\s+/g, "-") : "plan";
   const filenameSafeCourse = state.selectedCourse ? state.selectedCourse.replace(/\s+/g, "-") : "curso";
   const filenameSafeCompetencia = state.selectedCompetencia
@@ -932,9 +1268,22 @@ function handleExportToPdf() {
     margin: 0.5,
     filename: `planificacion-${filenameSafeArea}-${filenameSafeCourse}-${filenameSafeCompetencia}.pdf`,
     image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true },
+    html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
     jsPDF: { unit: "cm", format: "a4", orientation: "portrait" }
   };
 
-  html2pdf().set(options).from(target).save();
+  const shouldReenable = Boolean(state.selectedCompetencia);
+  exportBtn.disabled = true;
+
+  html2pdf()
+    .set(options)
+    .from(printable)
+    .save()
+    .catch((error) => {
+      console.error("No se pudo generar el PDF", error);
+    })
+    .finally(() => {
+      printable.remove();
+      toggleExport(shouldReenable);
+    });
 }
