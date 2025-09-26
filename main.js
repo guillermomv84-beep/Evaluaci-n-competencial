@@ -323,12 +323,8 @@ function handleTrimesterChange() {
 }
 
 function updateCompetenciaOptions() {
-  const needsTrimester = !state.selectedTrimester;
-  const showAllCompetencias = !needsTrimester && trimesterOrder(state.selectedTrimester) === 1;
-  const placeholder = needsTrimester
-    ? "Selecciona un trimestre para ver sus competencias..."
-    : showAllCompetencias
-    ? "Selecciona una competencia específica de cualquier trimestre..."
+  const placeholder = state.selectedTrimester
+    ? "Selecciona una competencia específica (se muestran todas)"
     : "Selecciona una competencia específica...";
   selectors.competencia.innerHTML = `<option value="">${placeholder}</option>`;
   selectors.competencia.disabled = true;
@@ -342,14 +338,8 @@ function updateCompetenciaOptions() {
     return;
   }
 
-  if (needsTrimester) {
-    return;
-  }
-
   const competencias = courseData.competencias
-    .filter((competencia) =>
-      showAllCompetencias ? true : competencia.trimestre === state.selectedTrimester
-    )
+    .slice()
     .sort((a, b) => {
       const trimesterDiff = trimesterOrder(a.trimestre) - trimesterOrder(b.trimestre);
       if (trimesterDiff !== 0) return trimesterDiff;
@@ -360,19 +350,17 @@ function updateCompetenciaOptions() {
     const option = document.createElement("option");
     option.value = "";
     option.disabled = true;
-    option.textContent = "No hay competencias disponibles en este trimestre";
+    option.textContent = "No hay competencias disponibles para esta selección";
     selectors.competencia.append(option);
     return;
   }
 
   competencias.forEach((competencia) => {
     const option = document.createElement("option");
-    option.value = `${competencia.codigo}::${competencia.trimestre}`;
-    const prefix = showAllCompetencias
-      ? `${competencia.trimestre || "-"} · ${competencia.codigo}`
-      : competencia.codigo;
-    option.textContent = `${prefix} · ${competencia.titulo}`;
-    option.dataset.trimestre = competencia.trimestre;
+    option.value = competencia.codigo;
+    const trimesterLabel = competencia.trimestre ? `${competencia.trimestre} · ` : "";
+    option.textContent = `${trimesterLabel}${competencia.codigo} · ${competencia.titulo}`;
+    option.dataset.trimestre = competencia.trimestre || "";
     selectors.competencia.append(option);
   });
 
@@ -391,18 +379,7 @@ function handleCompetenciaChange() {
     updateCompetenciasOverview();
     return;
   }
-  const [code, encodedTrimester] = rawValue.split("::");
-  const selectedOption = selectors.competencia.selectedOptions[0];
-  const trimesterFromOption = selectedOption?.dataset.trimestre || encodedTrimester || state.selectedTrimester;
-  const competencia = courseData.competencias.find(
-    (item) => item.codigo === code && item.trimestre === trimesterFromOption
-  );
-  if (competencia && trimesterFromOption && trimesterFromOption !== state.selectedTrimester) {
-    state.selectedTrimester = trimesterFromOption;
-    if (selectors.trimester.value !== trimesterFromOption) {
-      selectors.trimester.value = trimesterFromOption;
-    }
-  }
+  const competencia = courseData.competencias.find((item) => item.codigo === rawValue);
   state.selectedCompetencia = competencia || null;
   resetPlanning();
   renderCompetencia();
