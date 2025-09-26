@@ -10,11 +10,11 @@
               "codigo": "CE1.1",
               "titulo": "Comprensión de mensajes orales cotidianos",
               "trimestre": "1º trimestre",
-              "descripcion": "Comprender e interpretar mensajes orales en contextos del aula y de la vida cotidiana propios de 1º de Primaria, aplicando estrategias básicas de escucha activa.",
+              "descripcion": "Comprender e interpretar mensajes orales en contextos del aula y de la vida cotidiana propios de 1.º de Primaria, aplicando estrategias básicas de escucha activa.",
               "criterios": [
                 {
                   "codigo": "C1.1.1",
-                  "descripcion": "Reconoce la idea principal y detalles relevantes en instrucciones, relatos o explicaciones adaptadas a 1º de Primaria.",
+                  "descripcion": "Identifica la idea principal y los detalles relevantes en instrucciones, relatos o explicaciones sencillas adaptadas a 1.º de Primaria.",
                   "saberesBasicos": [
                     "Estrategias de escucha activa y toma de turnos",
                     "Vocabulario oral propio de rutinas escolares",
@@ -30,13 +30,27 @@
                   "codigo": "C1.1.2",
                   "descripcion": "Responde a preguntas sencillas demostrando comprensión global y específica de los mensajes orales.",
                   "saberesBasicos": [
-                    "Formulación de preguntas y respuestas",
-                    "Recursos paralingüísticos: gestos y entonación",
-                    "Apoyos visuales para la comprensión"
+                    "Preguntas básicas para verificar la comprensión",
+                    "Lenguaje corporal y paralingüístico",
+                    "Conectores causales y consecutivos básicos"
                   ],
                   "competenciasClave": [
                     "CCL",
-                    "CP",
+                    "CPSAA",
+                    "CC"
+                  ]
+                },
+                {
+                  "codigo": "C1.1.3",
+                  "descripcion": "Sigue instrucciones orales de dos o tres pasos en situaciones significativas del aula.",
+                  "saberesBasicos": [
+                    "Secuenciación de acciones",
+                    "Vocabulario específico de tareas escolares",
+                    "Atención y memoria auditiva"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM",
                     "CPSAA"
                   ]
                 }
@@ -44,125 +58,129 @@
             },
             {
               "codigo": "CE1.2",
-              "titulo": "Lectura expresiva de textos literarios y funcionales",
+              "titulo": "Producción de textos orales sencillos",
               "trimestre": "1º trimestre",
-              "descripcion": "Leer en voz alta y en silencio diferentes tipos de textos adecuados a 1º de Primaria, aplicando estrategias de comprensión lectora y una entonación adecuada.",
+              "descripcion": "Expresar ideas, vivencias y conocimientos mediante textos orales breves y coherentes propios de 1.º de Primaria.",
               "criterios": [
                 {
                   "codigo": "C1.2.1",
-                  "descripcion": "Lee en voz alta con ritmo, entonación y pronunciación comprensible textos literarios o informativos propios de 1º de Primaria.",
+                  "descripcion": "Organiza el discurso con un inicio, desarrollo y cierre claro en exposiciones orales breves.",
                   "saberesBasicos": [
-                    "Convenciones básicas de la lectura expresiva",
-                    "Recursos prosódicos: pausas, intensidad y ritmo",
-                    "Géneros literarios breves adecuados a la edad"
+                    "Planificación básica de intervenciones orales",
+                    "Uso de apoyos visuales sencillos",
+                    "Adecuación al propósito comunicativo"
                   ],
                   "competenciasClave": [
                     "CCL",
-                    "CCEC",
+                    "CD",
                     "CPSAA"
                   ]
                 },
                 {
                   "codigo": "C1.2.2",
-                  "descripcion": "Aplica estrategias de comprensión antes, durante y después de la lectura para interpretar el sentido global y detalles de textos breves.",
+                  "descripcion": "Pronuncia con claridad y utiliza un vocabulario adecuado a la situación comunicativa.",
                   "saberesBasicos": [
-                    "Predicciones a partir del título e imágenes",
-                    "Identificación de personajes, escenarios y hechos",
-                    "Organizadores gráficos sencillos"
+                    "Articulación y entonación",
+                    "Léxico frecuente en contextos escolares",
+                    "Recursos expresivos básicos"
                   ],
                   "competenciasClave": [
                     "CCL",
-                    "CD",
-                    "CP"
-                  ]
-                }
-              ]
-            },
-            {
-              "codigo": "CE2.1",
-              "titulo": "Producción de textos escritos planificados",
-              "trimestre": "2º trimestre",
-              "descripcion": "Planificar, redactar y revisar textos escritos de diferente tipología propios de 1º de Primaria, atendiendo a la coherencia, cohesión y corrección ortográfica.",
-              "criterios": [
-                {
-                  "codigo": "C2.1.1",
-                  "descripcion": "Planifica textos breves estableciendo propósito, destinatario y estructura básica con ayuda de modelos.",
-                  "saberesBasicos": [
-                    "Estrategias de planificación: lluvia de ideas y esquemas",
-                    "Organización en párrafos breves",
-                    "Uso de conectores básicos de orden"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CPSAA",
-                    "CD"
-                  ]
-                },
-                {
-                  "codigo": "C2.1.2",
-                  "descripcion": "Redacta textos propios del aula con léxico apropiado, ortografía básica y signos de puntuación elementales.",
-                  "saberesBasicos": [
-                    "Normas ortográficas ajustadas a 1º de Primaria",
-                    "Corrección y revisión con apoyo de listas de cotejo",
-                    "Herramientas digitales básicas de edición"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CD",
-                    "CP"
-                  ]
-                }
-              ]
-            },
-            {
-              "codigo": "CE2.2",
-              "titulo": "Interacción oral y escucha activa",
-              "trimestre": "2º trimestre",
-              "descripcion": "Participar en conversaciones, debates y exposiciones sencillas mostrando actitudes de escucha activa y respeto hacia las aportaciones de los demás.",
-              "criterios": [
-                {
-                  "codigo": "C2.2.1",
-                  "descripcion": "Expone ideas y experiencias propias con un vocabulario adecuado y una estructura básica de introducción, desarrollo y cierre.",
-                  "saberesBasicos": [
-                    "Planificación de intervenciones orales breves",
-                    "Uso de apoyos visuales sencillos",
-                    "Normas de cortesía lingüística"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CC",
                     "CPSAA"
                   ]
                 },
                 {
-                  "codigo": "C2.2.2",
-                  "descripcion": "Escucha de forma activa, respeta turnos de palabra y reformula aportaciones para comprobar la comprensión compartida.",
+                  "codigo": "C1.2.3",
+                  "descripcion": "Utiliza estrategias de planificación y autoevaluación para mejorar sus intervenciones orales.",
                   "saberesBasicos": [
-                    "Técnicas de escucha empática",
-                    "Estrategias de reformulación y síntesis",
-                    "Lenguaje corporal y gestual como apoyo"
+                    "Listas de control orales",
+                    "Feedback entre iguales",
+                    "Rúbricas sencillas de expresión oral"
                   ],
                   "competenciasClave": [
                     "CCL",
                     "CPSAA",
-                    "CC"
+                    "CE"
                   ]
                 }
               ]
             },
             {
-              "codigo": "CE3.1",
-              "titulo": "Reflexión sobre la lengua y ampliación léxica",
-              "trimestre": "3º trimestre",
-              "descripcion": "Analizar aspectos básicos del funcionamiento de la lengua y ampliar el vocabulario activo y pasivo vinculándolo a los saberes de 1º de Primaria.",
+              "codigo": "CE1.3",
+              "titulo": "Interacción y diálogo en situaciones cotidianas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Participar en intercambios comunicativos respetando las normas básicas de interacción propias de 1.º de Primaria.",
               "criterios": [
                 {
-                  "codigo": "C3.1.1",
-                  "descripcion": "Identifica familias léxicas, campos semánticos y relaciones de significado en palabras presentes en los textos trabajados.",
+                  "codigo": "C1.3.1",
+                  "descripcion": "Respeta los turnos de palabra y escucha activamente a sus interlocutores.",
                   "saberesBasicos": [
-                    "Formación de palabras: prefijos y sufijos frecuentes",
-                    "Uso del diccionario en formato papel y digital",
-                    "Relaciones semánticas básicas"
+                    "Normas de cortesía",
+                    "Lenguaje no verbal",
+                    "Frases para iniciar y finalizar conversaciones"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.3.2",
+                  "descripcion": "Formula preguntas y respuestas pertinentes para avanzar en la conversación.",
+                  "saberesBasicos": [
+                    "Interrogativos básicos",
+                    "Expresiones para solicitar aclaraciones",
+                    "Estrategias de cooperación lingüística"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.3.3",
+                  "descripcion": "Resuelve pequeños conflictos comunicativos utilizando un lenguaje respetuoso.",
+                  "saberesBasicos": [
+                    "Vocabulario emocional",
+                    "Formulación de disculpas y acuerdos",
+                    "Mediación lingüística básica"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CSC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.4",
+              "titulo": "Comprensión lectora de textos escritos",
+              "trimestre": "1º trimestre",
+              "descripcion": "Leer e interpretar textos sencillos de distintos géneros adecuados a 1.º de Primaria, aplicando estrategias básicas de comprensión.",
+              "criterios": [
+                {
+                  "codigo": "C1.4.1",
+                  "descripcion": "Identifica la idea principal y las ideas secundarias en textos narrativos y expositivos breves.",
+                  "saberesBasicos": [
+                    "Estrategias de prelectura y anticipación",
+                    "Identificación de palabras clave",
+                    "Uso de ilustraciones y paratextos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CP",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.4.2",
+                  "descripcion": "Relaciona información explícita e implícita utilizando organizadores gráficos sencillos.",
+                  "saberesBasicos": [
+                    "Mapas conceptuales básicos",
+                    "Tablas de doble entrada",
+                    "Frases con conectores causales y temporales"
                   ],
                   "competenciasClave": [
                     "CCL",
@@ -171,12 +189,256 @@
                   ]
                 },
                 {
-                  "codigo": "C3.1.2",
-                  "descripcion": "Aplica conocimientos gramaticales elementales para mejorar sus textos orales y escritos.",
+                  "codigo": "C1.4.3",
+                  "descripcion": "Extrae conclusiones y emite opiniones personales fundamentadas en la lectura.",
                   "saberesBasicos": [
-                    "Clases de palabras y concordancia",
-                    "Puntuación básica para clarificar significados",
-                    "Reflexión metalingüística adaptada a 1º de Primaria"
+                    "Expresión de valoraciones",
+                    "Justificación con evidencias",
+                    "Debates guiados sobre lecturas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CSC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.5",
+              "titulo": "Fluidez y hábitos lectores",
+              "trimestre": "2º trimestre",
+              "descripcion": "Desarrollar hábitos lectores y fluidez adecuada al nivel de 1.º de Primaria, utilizando estrategias de lectura expresiva.",
+              "criterios": [
+                {
+                  "codigo": "C1.5.1",
+                  "descripcion": "Lee en voz alta con ritmo, entonación y pronunciación adecuados.",
+                  "saberesBasicos": [
+                    "Lectura expresiva",
+                    "Puntuación básica",
+                    "Prácticas de teatro leído"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.5.2",
+                  "descripcion": "Selecciona lecturas de forma autónoma y mantiene un registro de sus preferencias lectoras.",
+                  "saberesBasicos": [
+                    "Diarios de lectura",
+                    "Recomendaciones entre iguales",
+                    "Gestión del rincón de lectura"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.5.3",
+                  "descripcion": "Comparte impresiones sobre sus lecturas en conversaciones o murales colectivos.",
+                  "saberesBasicos": [
+                    "Clubes de lectura escolares",
+                    "Lenguaje para expresar opiniones",
+                    "Recursos visuales para reseñas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.6",
+              "titulo": "Educación literaria y tradición oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Disfrutar de manifestaciones literarias infantiles y participar en experiencias de creación vinculadas a 1.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.6.1",
+                  "descripcion": "Reconoce personajes, escenarios y estructura básica de relatos, poemas y textos teatrales infantiles.",
+                  "saberesBasicos": [
+                    "Elementos de la narración",
+                    "Recursos poéticos básicos",
+                    "Estructura del texto teatral"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.6.2",
+                  "descripcion": "Recrea de forma oral o escrita cuentos, rimas o pequeñas obras teatrales.",
+                  "saberesBasicos": [
+                    "Dramatización y juego simbólico",
+                    "Poemas y retahílas",
+                    "Transformación creativa de relatos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.6.3",
+                  "descripcion": "Relaciona las obras leídas con experiencias personales o con otras manifestaciones artísticas.",
+                  "saberesBasicos": [
+                    "Conexiones intertextuales",
+                    "Vínculos con música y artes plásticas",
+                    "Valoración de la diversidad cultural"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE",
+                    "CC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.7",
+              "titulo": "Planificación de textos escritos",
+              "trimestre": "2º trimestre",
+              "descripcion": "Planificar textos escritos sencillos adecuados al propósito comunicativo y al destinatario en 1.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.7.1",
+                  "descripcion": "Genera ideas y organiza la información en esquemas o listas previas a la escritura.",
+                  "saberesBasicos": [
+                    "Tormenta de ideas",
+                    "Organizadores previos",
+                    "Estructura básica de distintos géneros"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "C1.7.2",
+                  "descripcion": "Adapta el texto al destinatario utilizando fórmulas y registros adecuados.",
+                  "saberesBasicos": [
+                    "Saludos y despedidas",
+                    "Pronombres personales",
+                    "Recursos para contextualizar"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.7.3",
+                  "descripcion": "Integra vocabulario aprendido y estructuras básicas en sus planificaciones.",
+                  "saberesBasicos": [
+                    "Campos semánticos",
+                    "Concordancia básica",
+                    "Conectores temporales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.8",
+              "titulo": "Redacción y revisión de textos",
+              "trimestre": "3º trimestre",
+              "descripcion": "Producir textos escritos cohesionados y revisarlos aplicando estrategias básicas de mejora en 1.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.8.1",
+                  "descripcion": "Escribe textos narrativos, expositivos y descriptivos con coherencia y cohesión básicas.",
+                  "saberesBasicos": [
+                    "Párrafo y oraciones",
+                    "Signos de puntuación",
+                    "Conectores básicos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.8.2",
+                  "descripcion": "Utiliza herramientas de revisión (listas, parejas, rúbricas) para mejorar su texto.",
+                  "saberesBasicos": [
+                    "Listas de control de escritura",
+                    "Corrección entre iguales",
+                    "Procesadores de texto sencillos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.8.3",
+                  "descripcion": "Integra sugerencias del profesorado y del grupo para elaborar versiones mejoradas.",
+                  "saberesBasicos": [
+                    "Feedback formativo",
+                    "Plan de mejora",
+                    "Estrategias de metacognición"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.9",
+              "titulo": "Comunicación multimodal y dramatización",
+              "trimestre": "3º trimestre",
+              "descripcion": "Integrar lenguaje verbal, corporal y visual en producciones multimodales ajustadas a 1.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.9.1",
+                  "descripcion": "Elabora presentaciones sencillas combinando texto, imagen y sonido.",
+                  "saberesBasicos": [
+                    "Cartelería y murales",
+                    "Aplicaciones digitales básicas",
+                    "Elementos paraverbales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.9.2",
+                  "descripcion": "Participa en dramatizaciones colectivas expresando emociones y mensajes claros.",
+                  "saberesBasicos": [
+                    "Expresión corporal",
+                    "Gestión del espacio escénico",
+                    "Trabajo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.9.3",
+                  "descripcion": "Evalúa la eficacia comunicativa de producciones propias y ajenas con ayuda de rúbricas sencillas.",
+                  "saberesBasicos": [
+                    "Criterios de calidad multimodal",
+                    "Autoevaluación guiada",
+                    "Uso responsable de imágenes y sonidos"
                   ],
                   "competenciasClave": [
                     "CCL",
@@ -187,37 +449,99 @@
               ]
             },
             {
-              "codigo": "CE3.2",
-              "titulo": "Educación literaria y creatividad",
+              "codigo": "CE1.10",
+              "titulo": "Alfabetización mediática y pensamiento crítico",
               "trimestre": "3º trimestre",
-              "descripcion": "Disfrutar de la literatura y producir creaciones propias empleando recursos expresivos ajustados a 1º de Primaria.",
+              "descripcion": "Analizar mensajes de medios y soportes digitales sencillos, valorando su intención y fiabilidad en 1.º de Primaria.",
               "criterios": [
                 {
-                  "codigo": "C3.2.1",
-                  "descripcion": "Lee, comenta y recomienda obras literarias diversas mostrando actitud crítica y gusto por la lectura.",
+                  "codigo": "C1.10.1",
+                  "descripcion": "Reconoce informaciones relevantes en mensajes audiovisuales cotidianos.",
                   "saberesBasicos": [
-                    "Autores y obras representativas de la literatura infantil",
-                    "Clubs de lectura y recomendaciones literarias",
-                    "Recursos expresivos y figuras sencillas"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CCEC",
-                    "CPSAA"
-                  ]
-                },
-                {
-                  "codigo": "C3.2.2",
-                  "descripcion": "Crea textos literarios propios (poemas, cuentos, diálogos) empleando recursos expresivos y estrategias de revisión.",
-                  "saberesBasicos": [
-                    "Taller de escritura creativa",
-                    "Uso de recursos literarios básicos",
-                    "Publicación y difusión en formatos diversos"
+                    "Elementos básicos de los medios",
+                    "Diferencia entre opinión e información",
+                    "Mensajes publicitarios sencillos"
                   ],
                   "competenciasClave": [
                     "CCL",
                     "CD",
-                    "CCEC"
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.10.2",
+                  "descripcion": "Contrasta fuentes sencillas con ayuda del docente para validar la información.",
+                  "saberesBasicos": [
+                    "Búsqueda guiada de información",
+                    "Comparación de mensajes",
+                    "Seguridad y privacidad básicas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "C1.10.3",
+                  "descripcion": "Expresa opiniones fundamentadas sobre mensajes mediáticos y su impacto.",
+                  "saberesBasicos": [
+                    "Lenguaje valorativo",
+                    "Respeto a la diversidad",
+                    "Uso ético de la información"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CSC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.11",
+              "titulo": "Reflexión sobre la lengua y enriquecimiento léxico",
+              "trimestre": "3º trimestre",
+              "descripcion": "Reflexionar sobre el funcionamiento de la lengua y ampliar el repertorio léxico propio de 1.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.11.1",
+                  "descripcion": "Reconoce y utiliza estructuras morfosintácticas básicas (sujeto, predicado, género, número).",
+                  "saberesBasicos": [
+                    "Partes de la oración",
+                    "Concordancia",
+                    "Uso de tiempos verbales frecuentes"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "C1.11.2",
+                  "descripcion": "Amplía su vocabulario mediante el uso de campos semánticos y familias de palabras.",
+                  "saberesBasicos": [
+                    "Familias léxicas",
+                    "Sinónimos y antónimos",
+                    "Prefijos y sufijos frecuentes"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.11.3",
+                  "descripcion": "Utiliza diccionarios impresos o digitales para resolver dudas léxicas y ortográficas.",
+                  "saberesBasicos": [
+                    "Manejo de diccionarios",
+                    "Herramientas digitales básicas",
+                    "Ortografía visual"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CPSAA"
                   ]
                 }
               ]
@@ -231,11 +555,11 @@
               "codigo": "CE1.1",
               "titulo": "Comprensión de mensajes orales cotidianos",
               "trimestre": "1º trimestre",
-              "descripcion": "Comprender e interpretar mensajes orales en contextos del aula y de la vida cotidiana propios de 2º de Primaria, aplicando estrategias básicas de escucha activa.",
+              "descripcion": "Comprender e interpretar mensajes orales en contextos del aula y de la vida cotidiana propios de 2.º de Primaria, aplicando estrategias básicas de escucha activa.",
               "criterios": [
                 {
                   "codigo": "C1.1.1",
-                  "descripcion": "Reconoce la idea principal y detalles relevantes en instrucciones, relatos o explicaciones adaptadas a 2º de Primaria.",
+                  "descripcion": "Identifica la idea principal y los detalles relevantes en instrucciones, relatos o explicaciones sencillas adaptadas a 2.º de Primaria.",
                   "saberesBasicos": [
                     "Estrategias de escucha activa y toma de turnos",
                     "Vocabulario oral propio de rutinas escolares",
@@ -251,13 +575,27 @@
                   "codigo": "C1.1.2",
                   "descripcion": "Responde a preguntas sencillas demostrando comprensión global y específica de los mensajes orales.",
                   "saberesBasicos": [
-                    "Formulación de preguntas y respuestas",
-                    "Recursos paralingüísticos: gestos y entonación",
-                    "Apoyos visuales para la comprensión"
+                    "Preguntas básicas para verificar la comprensión",
+                    "Lenguaje corporal y paralingüístico",
+                    "Conectores causales y consecutivos básicos"
                   ],
                   "competenciasClave": [
                     "CCL",
-                    "CP",
+                    "CPSAA",
+                    "CC"
+                  ]
+                },
+                {
+                  "codigo": "C1.1.3",
+                  "descripcion": "Sigue instrucciones orales de dos o tres pasos en situaciones significativas del aula.",
+                  "saberesBasicos": [
+                    "Secuenciación de acciones",
+                    "Vocabulario específico de tareas escolares",
+                    "Atención y memoria auditiva"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM",
                     "CPSAA"
                   ]
                 }
@@ -265,125 +603,129 @@
             },
             {
               "codigo": "CE1.2",
-              "titulo": "Lectura expresiva de textos literarios y funcionales",
+              "titulo": "Producción de textos orales sencillos",
               "trimestre": "1º trimestre",
-              "descripcion": "Leer en voz alta y en silencio diferentes tipos de textos adecuados a 2º de Primaria, aplicando estrategias de comprensión lectora y una entonación adecuada.",
+              "descripcion": "Expresar ideas, vivencias y conocimientos mediante textos orales breves y coherentes propios de 2.º de Primaria.",
               "criterios": [
                 {
                   "codigo": "C1.2.1",
-                  "descripcion": "Lee en voz alta con ritmo, entonación y pronunciación comprensible textos literarios o informativos propios de 2º de Primaria.",
+                  "descripcion": "Organiza el discurso con un inicio, desarrollo y cierre claro en exposiciones orales breves.",
                   "saberesBasicos": [
-                    "Convenciones básicas de la lectura expresiva",
-                    "Recursos prosódicos: pausas, intensidad y ritmo",
-                    "Géneros literarios breves adecuados a la edad"
+                    "Planificación básica de intervenciones orales",
+                    "Uso de apoyos visuales sencillos",
+                    "Adecuación al propósito comunicativo"
                   ],
                   "competenciasClave": [
                     "CCL",
-                    "CCEC",
+                    "CD",
                     "CPSAA"
                   ]
                 },
                 {
                   "codigo": "C1.2.2",
-                  "descripcion": "Aplica estrategias de comprensión antes, durante y después de la lectura para interpretar el sentido global y detalles de textos breves.",
+                  "descripcion": "Pronuncia con claridad y utiliza un vocabulario adecuado a la situación comunicativa.",
                   "saberesBasicos": [
-                    "Predicciones a partir del título e imágenes",
-                    "Identificación de personajes, escenarios y hechos",
-                    "Organizadores gráficos sencillos"
+                    "Articulación y entonación",
+                    "Léxico frecuente en contextos escolares",
+                    "Recursos expresivos básicos"
                   ],
                   "competenciasClave": [
                     "CCL",
-                    "CD",
-                    "CP"
-                  ]
-                }
-              ]
-            },
-            {
-              "codigo": "CE2.1",
-              "titulo": "Producción de textos escritos planificados",
-              "trimestre": "2º trimestre",
-              "descripcion": "Planificar, redactar y revisar textos escritos de diferente tipología propios de 2º de Primaria, atendiendo a la coherencia, cohesión y corrección ortográfica.",
-              "criterios": [
-                {
-                  "codigo": "C2.1.1",
-                  "descripcion": "Planifica textos breves estableciendo propósito, destinatario y estructura básica con ayuda de modelos.",
-                  "saberesBasicos": [
-                    "Estrategias de planificación: lluvia de ideas y esquemas",
-                    "Organización en párrafos breves",
-                    "Uso de conectores básicos de orden"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CPSAA",
-                    "CD"
-                  ]
-                },
-                {
-                  "codigo": "C2.1.2",
-                  "descripcion": "Redacta textos propios del aula con léxico apropiado, ortografía básica y signos de puntuación elementales.",
-                  "saberesBasicos": [
-                    "Normas ortográficas ajustadas a 2º de Primaria",
-                    "Corrección y revisión con apoyo de listas de cotejo",
-                    "Herramientas digitales básicas de edición"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CD",
-                    "CP"
-                  ]
-                }
-              ]
-            },
-            {
-              "codigo": "CE2.2",
-              "titulo": "Interacción oral y escucha activa",
-              "trimestre": "2º trimestre",
-              "descripcion": "Participar en conversaciones, debates y exposiciones sencillas mostrando actitudes de escucha activa y respeto hacia las aportaciones de los demás.",
-              "criterios": [
-                {
-                  "codigo": "C2.2.1",
-                  "descripcion": "Expone ideas y experiencias propias con un vocabulario adecuado y una estructura básica de introducción, desarrollo y cierre.",
-                  "saberesBasicos": [
-                    "Planificación de intervenciones orales breves",
-                    "Uso de apoyos visuales sencillos",
-                    "Normas de cortesía lingüística"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CC",
                     "CPSAA"
                   ]
                 },
                 {
-                  "codigo": "C2.2.2",
-                  "descripcion": "Escucha de forma activa, respeta turnos de palabra y reformula aportaciones para comprobar la comprensión compartida.",
+                  "codigo": "C1.2.3",
+                  "descripcion": "Utiliza estrategias de planificación y autoevaluación para mejorar sus intervenciones orales.",
                   "saberesBasicos": [
-                    "Técnicas de escucha empática",
-                    "Estrategias de reformulación y síntesis",
-                    "Lenguaje corporal y gestual como apoyo"
+                    "Listas de control orales",
+                    "Feedback entre iguales",
+                    "Rúbricas sencillas de expresión oral"
                   ],
                   "competenciasClave": [
                     "CCL",
                     "CPSAA",
-                    "CC"
+                    "CE"
                   ]
                 }
               ]
             },
             {
-              "codigo": "CE3.1",
-              "titulo": "Reflexión sobre la lengua y ampliación léxica",
-              "trimestre": "3º trimestre",
-              "descripcion": "Analizar aspectos básicos del funcionamiento de la lengua y ampliar el vocabulario activo y pasivo vinculándolo a los saberes de 2º de Primaria.",
+              "codigo": "CE1.3",
+              "titulo": "Interacción y diálogo en situaciones cotidianas",
+              "trimestre": "1º trimestre",
+              "descripcion": "Participar en intercambios comunicativos respetando las normas básicas de interacción propias de 2.º de Primaria.",
               "criterios": [
                 {
-                  "codigo": "C3.1.1",
-                  "descripcion": "Identifica familias léxicas, campos semánticos y relaciones de significado en palabras presentes en los textos trabajados.",
+                  "codigo": "C1.3.1",
+                  "descripcion": "Respeta los turnos de palabra y escucha activamente a sus interlocutores.",
                   "saberesBasicos": [
-                    "Formación de palabras: prefijos y sufijos frecuentes",
-                    "Uso del diccionario en formato papel y digital",
-                    "Relaciones semánticas básicas"
+                    "Normas de cortesía",
+                    "Lenguaje no verbal",
+                    "Frases para iniciar y finalizar conversaciones"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.3.2",
+                  "descripcion": "Formula preguntas y respuestas pertinentes para avanzar en la conversación.",
+                  "saberesBasicos": [
+                    "Interrogativos básicos",
+                    "Expresiones para solicitar aclaraciones",
+                    "Estrategias de cooperación lingüística"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.3.3",
+                  "descripcion": "Resuelve pequeños conflictos comunicativos utilizando un lenguaje respetuoso.",
+                  "saberesBasicos": [
+                    "Vocabulario emocional",
+                    "Formulación de disculpas y acuerdos",
+                    "Mediación lingüística básica"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CSC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.4",
+              "titulo": "Comprensión lectora de textos escritos",
+              "trimestre": "1º trimestre",
+              "descripcion": "Leer e interpretar textos sencillos de distintos géneros adecuados a 2.º de Primaria, aplicando estrategias básicas de comprensión.",
+              "criterios": [
+                {
+                  "codigo": "C1.4.1",
+                  "descripcion": "Identifica la idea principal y las ideas secundarias en textos narrativos y expositivos breves.",
+                  "saberesBasicos": [
+                    "Estrategias de prelectura y anticipación",
+                    "Identificación de palabras clave",
+                    "Uso de ilustraciones y paratextos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CP",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.4.2",
+                  "descripcion": "Relaciona información explícita e implícita utilizando organizadores gráficos sencillos.",
+                  "saberesBasicos": [
+                    "Mapas conceptuales básicos",
+                    "Tablas de doble entrada",
+                    "Frases con conectores causales y temporales"
                   ],
                   "competenciasClave": [
                     "CCL",
@@ -392,12 +734,256 @@
                   ]
                 },
                 {
-                  "codigo": "C3.1.2",
-                  "descripcion": "Aplica conocimientos gramaticales elementales para mejorar sus textos orales y escritos.",
+                  "codigo": "C1.4.3",
+                  "descripcion": "Extrae conclusiones y emite opiniones personales fundamentadas en la lectura.",
                   "saberesBasicos": [
-                    "Clases de palabras y concordancia",
-                    "Puntuación básica para clarificar significados",
-                    "Reflexión metalingüística adaptada a 2º de Primaria"
+                    "Expresión de valoraciones",
+                    "Justificación con evidencias",
+                    "Debates guiados sobre lecturas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CSC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.5",
+              "titulo": "Fluidez y hábitos lectores",
+              "trimestre": "2º trimestre",
+              "descripcion": "Desarrollar hábitos lectores y fluidez adecuada al nivel de 2.º de Primaria, utilizando estrategias de lectura expresiva.",
+              "criterios": [
+                {
+                  "codigo": "C1.5.1",
+                  "descripcion": "Lee en voz alta con ritmo, entonación y pronunciación adecuados.",
+                  "saberesBasicos": [
+                    "Lectura expresiva",
+                    "Puntuación básica",
+                    "Prácticas de teatro leído"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.5.2",
+                  "descripcion": "Selecciona lecturas de forma autónoma y mantiene un registro de sus preferencias lectoras.",
+                  "saberesBasicos": [
+                    "Diarios de lectura",
+                    "Recomendaciones entre iguales",
+                    "Gestión del rincón de lectura"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.5.3",
+                  "descripcion": "Comparte impresiones sobre sus lecturas en conversaciones o murales colectivos.",
+                  "saberesBasicos": [
+                    "Clubes de lectura escolares",
+                    "Lenguaje para expresar opiniones",
+                    "Recursos visuales para reseñas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.6",
+              "titulo": "Educación literaria y tradición oral",
+              "trimestre": "2º trimestre",
+              "descripcion": "Disfrutar de manifestaciones literarias infantiles y participar en experiencias de creación vinculadas a 2.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.6.1",
+                  "descripcion": "Reconoce personajes, escenarios y estructura básica de relatos, poemas y textos teatrales infantiles.",
+                  "saberesBasicos": [
+                    "Elementos de la narración",
+                    "Recursos poéticos básicos",
+                    "Estructura del texto teatral"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.6.2",
+                  "descripcion": "Recrea de forma oral o escrita cuentos, rimas o pequeñas obras teatrales.",
+                  "saberesBasicos": [
+                    "Dramatización y juego simbólico",
+                    "Poemas y retahílas",
+                    "Transformación creativa de relatos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.6.3",
+                  "descripcion": "Relaciona las obras leídas con experiencias personales o con otras manifestaciones artísticas.",
+                  "saberesBasicos": [
+                    "Conexiones intertextuales",
+                    "Vínculos con música y artes plásticas",
+                    "Valoración de la diversidad cultural"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE",
+                    "CC"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.7",
+              "titulo": "Planificación de textos escritos",
+              "trimestre": "2º trimestre",
+              "descripcion": "Planificar textos escritos sencillos adecuados al propósito comunicativo y al destinatario en 2.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.7.1",
+                  "descripcion": "Genera ideas y organiza la información en esquemas o listas previas a la escritura.",
+                  "saberesBasicos": [
+                    "Tormenta de ideas",
+                    "Organizadores previos",
+                    "Estructura básica de distintos géneros"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "C1.7.2",
+                  "descripcion": "Adapta el texto al destinatario utilizando fórmulas y registros adecuados.",
+                  "saberesBasicos": [
+                    "Saludos y despedidas",
+                    "Pronombres personales",
+                    "Recursos para contextualizar"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.7.3",
+                  "descripcion": "Integra vocabulario aprendido y estructuras básicas en sus planificaciones.",
+                  "saberesBasicos": [
+                    "Campos semánticos",
+                    "Concordancia básica",
+                    "Conectores temporales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.8",
+              "titulo": "Redacción y revisión de textos",
+              "trimestre": "3º trimestre",
+              "descripcion": "Producir textos escritos cohesionados y revisarlos aplicando estrategias básicas de mejora en 2.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.8.1",
+                  "descripcion": "Escribe textos narrativos, expositivos y descriptivos con coherencia y cohesión básicas.",
+                  "saberesBasicos": [
+                    "Párrafo y oraciones",
+                    "Signos de puntuación",
+                    "Conectores básicos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.8.2",
+                  "descripcion": "Utiliza herramientas de revisión (listas, parejas, rúbricas) para mejorar su texto.",
+                  "saberesBasicos": [
+                    "Listas de control de escritura",
+                    "Corrección entre iguales",
+                    "Procesadores de texto sencillos"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.8.3",
+                  "descripcion": "Integra sugerencias del profesorado y del grupo para elaborar versiones mejoradas.",
+                  "saberesBasicos": [
+                    "Feedback formativo",
+                    "Plan de mejora",
+                    "Estrategias de metacognición"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CPSAA",
+                    "CE"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.9",
+              "titulo": "Comunicación multimodal y dramatización",
+              "trimestre": "3º trimestre",
+              "descripcion": "Integrar lenguaje verbal, corporal y visual en producciones multimodales ajustadas a 2.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.9.1",
+                  "descripcion": "Elabora presentaciones sencillas combinando texto, imagen y sonido.",
+                  "saberesBasicos": [
+                    "Cartelería y murales",
+                    "Aplicaciones digitales básicas",
+                    "Elementos paraverbales"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.9.2",
+                  "descripcion": "Participa en dramatizaciones colectivas expresando emociones y mensajes claros.",
+                  "saberesBasicos": [
+                    "Expresión corporal",
+                    "Gestión del espacio escénico",
+                    "Trabajo cooperativo"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE",
+                    "CSC"
+                  ]
+                },
+                {
+                  "codigo": "C1.9.3",
+                  "descripcion": "Evalúa la eficacia comunicativa de producciones propias y ajenas con ayuda de rúbricas sencillas.",
+                  "saberesBasicos": [
+                    "Criterios de calidad multimodal",
+                    "Autoevaluación guiada",
+                    "Uso responsable de imágenes y sonidos"
                   ],
                   "competenciasClave": [
                     "CCL",
@@ -408,37 +994,99 @@
               ]
             },
             {
-              "codigo": "CE3.2",
-              "titulo": "Educación literaria y creatividad",
+              "codigo": "CE1.10",
+              "titulo": "Alfabetización mediática y pensamiento crítico",
               "trimestre": "3º trimestre",
-              "descripcion": "Disfrutar de la literatura y producir creaciones propias empleando recursos expresivos ajustados a 2º de Primaria.",
+              "descripcion": "Analizar mensajes de medios y soportes digitales sencillos, valorando su intención y fiabilidad en 2.º de Primaria.",
               "criterios": [
                 {
-                  "codigo": "C3.2.1",
-                  "descripcion": "Lee, comenta y recomienda obras literarias diversas mostrando actitud crítica y gusto por la lectura.",
+                  "codigo": "C1.10.1",
+                  "descripcion": "Reconoce informaciones relevantes en mensajes audiovisuales cotidianos.",
                   "saberesBasicos": [
-                    "Autores y obras representativas de la literatura infantil",
-                    "Clubs de lectura y recomendaciones literarias",
-                    "Recursos expresivos y figuras sencillas"
-                  ],
-                  "competenciasClave": [
-                    "CCL",
-                    "CCEC",
-                    "CPSAA"
-                  ]
-                },
-                {
-                  "codigo": "C3.2.2",
-                  "descripcion": "Crea textos literarios propios (poemas, cuentos, diálogos) empleando recursos expresivos y estrategias de revisión.",
-                  "saberesBasicos": [
-                    "Taller de escritura creativa",
-                    "Uso de recursos literarios básicos",
-                    "Publicación y difusión en formatos diversos"
+                    "Elementos básicos de los medios",
+                    "Diferencia entre opinión e información",
+                    "Mensajes publicitarios sencillos"
                   ],
                   "competenciasClave": [
                     "CCL",
                     "CD",
-                    "CCEC"
+                    "CPSAA"
+                  ]
+                },
+                {
+                  "codigo": "C1.10.2",
+                  "descripcion": "Contrasta fuentes sencillas con ayuda del docente para validar la información.",
+                  "saberesBasicos": [
+                    "Búsqueda guiada de información",
+                    "Comparación de mensajes",
+                    "Seguridad y privacidad básicas"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "C1.10.3",
+                  "descripcion": "Expresa opiniones fundamentadas sobre mensajes mediáticos y su impacto.",
+                  "saberesBasicos": [
+                    "Lenguaje valorativo",
+                    "Respeto a la diversidad",
+                    "Uso ético de la información"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CSC",
+                    "CPSAA"
+                  ]
+                }
+              ]
+            },
+            {
+              "codigo": "CE1.11",
+              "titulo": "Reflexión sobre la lengua y enriquecimiento léxico",
+              "trimestre": "3º trimestre",
+              "descripcion": "Reflexionar sobre el funcionamiento de la lengua y ampliar el repertorio léxico propio de 2.º de Primaria.",
+              "criterios": [
+                {
+                  "codigo": "C1.11.1",
+                  "descripcion": "Reconoce y utiliza estructuras morfosintácticas básicas (sujeto, predicado, género, número).",
+                  "saberesBasicos": [
+                    "Partes de la oración",
+                    "Concordancia",
+                    "Uso de tiempos verbales frecuentes"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "STEM"
+                  ]
+                },
+                {
+                  "codigo": "C1.11.2",
+                  "descripcion": "Amplía su vocabulario mediante el uso de campos semánticos y familias de palabras.",
+                  "saberesBasicos": [
+                    "Familias léxicas",
+                    "Sinónimos y antónimos",
+                    "Prefijos y sufijos frecuentes"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CE"
+                  ]
+                },
+                {
+                  "codigo": "C1.11.3",
+                  "descripcion": "Utiliza diccionarios impresos o digitales para resolver dudas léxicas y ortográficas.",
+                  "saberesBasicos": [
+                    "Manejo de diccionarios",
+                    "Herramientas digitales básicas",
+                    "Ortografía visual"
+                  ],
+                  "competenciasClave": [
+                    "CCL",
+                    "CD",
+                    "CPSAA"
                   ]
                 }
               ]
