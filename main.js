@@ -3,11 +3,11 @@ const state = {
   selectedCourse: "",
   selectedArea: "",
   selectedTrimester: "",
-  selectedCompetencia: null,
   planning: { criterios: {} },
   customCounter: 0,
   listenersAttached: false,
-  planSummaryElement: null
+  planSummaryElement: null,
+  competenceBlocks: new Map()
 };
 
 const selectors = {
@@ -95,7 +95,7 @@ function initializeSelectors() {
     exportBtn.addEventListener("click", handleExportToPdf);
     state.listenersAttached = true;
   }
-  renderCompetencia();
+  renderCompetencias();
   updateSelectionSummary();
   updateCompetenciasOverview();
 }
@@ -104,19 +104,19 @@ function resetSelectors() {
   state.selectedCourse = "";
   state.selectedArea = "";
   state.selectedTrimester = "";
-  state.selectedCompetencia = null;
   resetPlanning();
+  state.competenceBlocks = new Map();
   selectors.course.innerHTML = `<option value="">Selecciona un curso...</option>`;
   selectors.course.disabled = true;
   selectors.area.innerHTML = `<option value="">Selecciona un área...</option>`;
   selectors.area.disabled = true;
   selectors.trimester.innerHTML = `<option value="">Selecciona un trimestre...</option>`;
   selectors.trimester.disabled = true;
-  selectors.competencia.innerHTML = `<option value="">Selecciona una competencia específica...</option>`;
+  selectors.competencia.innerHTML = `<option value="">Ir a una competencia específica...</option>`;
   selectors.competencia.disabled = true;
   toggleExport(false);
   if (overviewPanel) {
-    overviewPanel.innerHTML = `<p class="info-text">Selecciona un curso y un área para revisar las competencias disponibles por trimestre.</p>`;
+    overviewPanel.innerHTML = `<p class="info-text">Selecciona un curso y un área para revisar las competencias disponibles.</p>`;
   }
 }
 
@@ -234,12 +234,11 @@ function handleCourseChange() {
   state.selectedCourse = selectors.course.value;
   state.selectedArea = "";
   state.selectedTrimester = "";
-  state.selectedCompetencia = null;
   resetPlanning();
   updateAreaOptions();
   updateTrimesterOptions();
   updateCompetenciaOptions();
-  renderCompetencia();
+  renderCompetencias();
   updateSelectionSummary();
   toggleExport(false);
   updateCompetenciasOverview();
@@ -269,11 +268,10 @@ function updateAreaOptions() {
 function handleAreaChange() {
   state.selectedArea = selectors.area.value;
   state.selectedTrimester = "";
-  state.selectedCompetencia = null;
   resetPlanning();
   updateTrimesterOptions();
   updateCompetenciaOptions();
-  renderCompetencia();
+  renderCompetencias();
   updateSelectionSummary();
   toggleExport(false);
   updateCompetenciasOverview();
@@ -313,20 +311,16 @@ function trimesterOrder(value) {
 
 function handleTrimesterChange() {
   state.selectedTrimester = selectors.trimester.value;
-  state.selectedCompetencia = null;
   resetPlanning();
   updateCompetenciaOptions();
-  renderCompetencia();
+  renderCompetencias();
   updateSelectionSummary();
   toggleExport(false);
   updateCompetenciasOverview();
 }
 
 function updateCompetenciaOptions() {
-  const placeholder = state.selectedTrimester
-    ? "Selecciona una competencia específica (se muestran todas)"
-    : "Selecciona una competencia específica...";
-  selectors.competencia.innerHTML = `<option value="">${placeholder}</option>`;
+  selectors.competencia.innerHTML = `<option value="">Ir a una competencia específica...</option>`;
   selectors.competencia.disabled = true;
 
   if (!state.selectedCourse || !state.selectedArea) {
@@ -358,9 +352,8 @@ function updateCompetenciaOptions() {
   competencias.forEach((competencia) => {
     const option = document.createElement("option");
     option.value = competencia.codigo;
-    const trimesterLabel = competencia.trimestre ? `${competencia.trimestre} · ` : "";
-    option.textContent = `${trimesterLabel}${competencia.codigo} · ${competencia.titulo}`;
-    option.dataset.trimestre = competencia.trimestre || "";
+    option.textContent = `${competencia.codigo} · ${competencia.titulo}`;
+    option.dataset.target = buildCompetenciaAnchor(competencia.codigo);
     selectors.competencia.append(option);
   });
 
@@ -368,24 +361,17 @@ function updateCompetenciaOptions() {
 }
 
 function handleCompetenciaChange() {
-  const rawValue = selectors.competencia.value;
-  const courseData = getSelectedCourseData();
-  if (!rawValue || !courseData) {
-    state.selectedCompetencia = null;
-    resetPlanning();
-    renderCompetencia();
-    updateSelectionSummary();
-    toggleExport(false);
-    updateCompetenciasOverview();
+  const code = selectors.competencia.value;
+  if (!code) {
     return;
   }
-  const competencia = courseData.competencias.find((item) => item.codigo === rawValue);
-  state.selectedCompetencia = competencia || null;
-  resetPlanning();
-  renderCompetencia();
-  updateSelectionSummary();
-  toggleExport(Boolean(state.selectedCompetencia));
-  updateCompetenciasOverview();
+
+  const target = state.competenceBlocks.get(code) || document.getElementById(buildCompetenciaAnchor(code));
+  if (target) {
+    target.classList.add("focus-highlight");
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.setTimeout(() => target.classList.remove("focus-highlight"), 1200);
+  }
 }
 
 function getSelectedCourseData() {
@@ -399,13 +385,22 @@ function updateSelectionSummary() {
     summaryBox.innerHTML = `<p class="info-text">Selecciona un curso para iniciar tu planificación.</p>`;
     return;
   }
+  if (!state.selectedArea) {
+    summaryBox.innerHTML = `<p class="info-text">Elige un área para descubrir todas las competencias específicas disponibles en el decreto.</p>`;
+    return;
+  }
   const rows = [];
-  rows.push(`<span><strong>Curso:</strong> ${state.selectedCourse || "-"}</span>`);
-  rows.push(`<span><strong>Área:</strong> ${state.selectedArea || "-"}</span>`);
-  const trimesterLabel = state.selectedCompetencia?.trimestre || state.selectedTrimester || "-";
-  rows.push(`<span><strong>Trimestre:</strong> ${trimesterLabel}</span>`);
+  rows.push(`<span><strong>Curso:</strong> ${state.selectedCourse}</span>`);
+  rows.push(`<span><strong>Área:</strong> ${state.selectedArea}</span>`);
+
+  if (state.selectedTrimester) {
+    rows.push(`<span><strong>Trimestre seleccionado:</strong> ${state.selectedTrimester} (se muestran todos igualmente)</span>`);
+  }
+
+  const courseData = getSelectedCourseData();
+  const totalCompetencias = courseData?.competencias?.length || 0;
   rows.push(
-    `<span><strong>Competencia específica:</strong> ${state.selectedCompetencia ? `${state.selectedCompetencia.codigo} · ${state.selectedCompetencia.titulo}` : "-"}</span>`
+    `<span><strong>Competencias en pantalla:</strong> ${totalCompetencias ? totalCompetencias : "No hay competencias registradas"}</span>`
   );
   summaryBox.innerHTML = rows.map((row) => `<div>${row}</div>`).join("");
 }
@@ -423,7 +418,7 @@ function updateCompetenciasOverview() {
   }
 
   if (!state.selectedArea) {
-    overviewPanel.innerHTML = `<p class="info-text">Elige un área para listar las competencias específicas de cada trimestre.</p>`;
+    overviewPanel.innerHTML = `<p class="info-text">Elige un área para listar todas las competencias específicas del curso.</p>`;
     return;
   }
 
@@ -435,7 +430,7 @@ function updateCompetenciasOverview() {
 
   const heading = document.createElement("h3");
   heading.className = "overview-title";
-  heading.textContent = "Competencias específicas por trimestre";
+  heading.textContent = "Competencias específicas del curso";
   overviewPanel.appendChild(heading);
 
   const groups = new Map();
@@ -447,14 +442,14 @@ function updateCompetenciasOverview() {
     groups.get(trimester).push(competencia);
   });
 
-  const selectedTrimester = state.selectedCompetencia?.trimestre || state.selectedTrimester;
+  const selectedTrimester = state.selectedTrimester;
 
   Array.from(groups.entries())
     .sort((a, b) => trimesterOrder(a[0]) - trimesterOrder(b[0]))
     .forEach(([trimester, competencias]) => {
       const section = document.createElement("section");
       section.className = "competencias-trimestre";
-      if (trimester === selectedTrimester) {
+      if (selectedTrimester && trimester === selectedTrimester) {
         section.classList.add("active");
       }
 
@@ -493,70 +488,150 @@ function updateCompetenciasOverview() {
     });
 }
 
-function renderCompetencia() {
+function renderCompetencias() {
   detailsPanel.innerHTML = "";
-  if (!state.selectedCompetencia) {
-    detailsPanel.innerHTML = `<div class="info-text">Selecciona una competencia específica para visualizar sus criterios de evaluación y planificar tus indicadores.</div>`;
+  state.planSummaryElement = null;
+  state.competenceBlocks = new Map();
+
+  if (!state.selectedCourse || !state.selectedArea) {
+    detailsPanel.innerHTML = `<div class="info-text">Selecciona un curso y un área para visualizar todas las competencias específicas y sus criterios asociados.</div>`;
+    toggleExport(false);
+    return;
+  }
+
+  const courseData = getSelectedCourseData();
+  if (!courseData) {
+    detailsPanel.innerHTML = `<div class="info-text">No encontramos datos curriculares para esta combinación. Revisa el archivo <strong>data.json</strong>.</div>`;
+    toggleExport(false);
+    return;
+  }
+
+  const competencias = Array.isArray(courseData.competencias) ? courseData.competencias.slice() : [];
+  if (!competencias.length) {
+    detailsPanel.innerHTML = `<div class="info-text">El archivo curricular no incluye competencias específicas para ${state.selectedArea} en ${state.selectedCourse}.</div>`;
+    toggleExport(false);
     return;
   }
 
   const wrapper = document.createElement("div");
-  wrapper.className = "pdf-export";
+  wrapper.className = "pdf-export full-course";
 
   const header = document.createElement("div");
-  header.className = "competencia-header";
+  header.className = "competencia-header course-header";
 
   const title = document.createElement("h2");
-  title.textContent = `${state.selectedCompetencia.codigo} · ${state.selectedCompetencia.titulo}`;
+  title.textContent = `Competencias específicas de ${state.selectedArea} (${state.selectedCourse})`;
   header.appendChild(title);
 
   const description = document.createElement("p");
   description.className = "info-text";
-  description.textContent = state.selectedCompetencia.descripcion;
+  description.textContent = "Se muestran todas las competencias específicas del decreto con sus criterios de evaluación para que planifiques indicadores, tareas e instrumentos.";
   header.appendChild(description);
+
+  wrapper.appendChild(header);
+
+  competencias
+    .sort((a, b) => {
+      const trimesterDiff = trimesterOrder(a.trimestre) - trimesterOrder(b.trimestre);
+      if (trimesterDiff !== 0) return trimesterDiff;
+      return a.codigo.localeCompare(b.codigo, "es", { numeric: true, sensitivity: "base" });
+    })
+    .forEach((competencia) => {
+      const block = createCompetenciaBlock(competencia);
+      wrapper.appendChild(block);
+    });
+
+  const summarySection = document.createElement("section");
+  summarySection.className = "plan-summary";
+  state.planSummaryElement = summarySection;
+  wrapper.appendChild(summarySection);
+
+  detailsPanel.appendChild(wrapper);
+  updatePlanSummary();
+  toggleExport(true);
+}
+
+function createCompetenciaBlock(competencia) {
+  const context = {
+    area: state.selectedArea,
+    course: state.selectedCourse,
+    trimestre: competencia.trimestre || "",
+    competenciaCodigo: competencia.codigo,
+    competenciaTitulo: competencia.titulo,
+    competenciaDescripcion: competencia.descripcion
+  };
+
+  const section = document.createElement("section");
+  section.className = "competencia-block";
+  const anchor = buildCompetenciaAnchor(competencia.codigo);
+  section.id = anchor;
+  state.competenceBlocks.set(competencia.codigo, section);
+
+  const header = document.createElement("header");
+  header.className = "competencia-block-header";
+
+  const codeBadge = document.createElement("span");
+  codeBadge.className = "competencia-badge";
+  codeBadge.textContent = competencia.codigo;
+  header.appendChild(codeBadge);
+
+  const title = document.createElement("h3");
+  title.textContent = competencia.titulo;
+  header.appendChild(title);
 
   const meta = document.createElement("div");
   meta.className = "competencia-meta";
-  meta.innerHTML = `
-    <span class="meta-tag">Curso ${state.selectedCourse}</span>
-    <span class="meta-tag">${state.selectedArea}</span>
-    <span class="meta-tag">${state.selectedCompetencia?.trimestre || state.selectedTrimester}</span>
-  `;
+  const courseTag = document.createElement("span");
+  courseTag.className = "meta-tag";
+  courseTag.textContent = state.selectedCourse;
+  meta.appendChild(courseTag);
+
+  const areaTag = document.createElement("span");
+  areaTag.className = "meta-tag";
+  areaTag.textContent = state.selectedArea;
+  meta.appendChild(areaTag);
+
+  if (competencia.trimestre) {
+    const trimesterTag = document.createElement("span");
+    trimesterTag.className = "meta-tag";
+    trimesterTag.textContent = competencia.trimestre;
+    meta.appendChild(trimesterTag);
+  }
+
   header.appendChild(meta);
-  wrapper.appendChild(header);
+  section.appendChild(header);
+
+  if (competencia.descripcion) {
+    const description = document.createElement("p");
+    description.className = "info-text";
+    description.textContent = competencia.descripcion;
+    section.appendChild(description);
+  }
 
   const criteriaContainer = document.createElement("div");
   criteriaContainer.className = "criteria-container";
 
-  (state.selectedCompetencia.criterios || []).forEach((criterio) => {
-    const id = buildCriterionId(state.selectedCompetencia.codigo, criterio.codigo);
-    const card = createCriterionCard(criterio, { id, editable: false });
+  (competencia.criterios || []).forEach((criterio) => {
+    const id = buildCriterionId(context, criterio.codigo);
+    const card = createCriterionCard(criterio, { id, editable: false, context });
     criteriaContainer.appendChild(card);
   });
 
+  section.appendChild(criteriaContainer);
+
   const customInfo = document.createElement("p");
   customInfo.className = "info-text";
-  customInfo.textContent = "¿Necesitas añadir un criterio propio o ampliar los existentes? Puedes crear tantos criterios personalizados como requieras.";
+  customInfo.textContent = "¿Necesitas añadir un criterio propio? Puedes incorporarlo para esta competencia.";
+  section.appendChild(customInfo);
 
   const addCustomBtn = document.createElement("button");
   addCustomBtn.type = "button";
   addCustomBtn.className = "btn btn-outline";
   addCustomBtn.textContent = "Añadir criterio personalizado";
-  addCustomBtn.addEventListener("click", () => addCustomCriterion(criteriaContainer));
+  addCustomBtn.addEventListener("click", () => addCustomCriterion(criteriaContainer, context));
+  section.appendChild(addCustomBtn);
 
-  wrapper.appendChild(criteriaContainer);
-  wrapper.appendChild(customInfo);
-  wrapper.appendChild(addCustomBtn);
-
-  const summarySection = document.createElement("section");
-  summarySection.className = "plan-summary";
-  state.planSummaryElement = summarySection;
-
-  wrapper.appendChild(summarySection);
-
-  updatePlanSummary();
-
-  detailsPanel.appendChild(wrapper);
+  return section;
 }
 
 function resetPlanning() {
@@ -568,12 +643,17 @@ function resetPlanning() {
   state.planSummaryElement = null;
 }
 
-function buildCriterionId(competenciaCode, criterioCode) {
-  const trimester = state.selectedCompetencia?.trimestre || state.selectedTrimester;
-  return `${state.selectedArea}__${state.selectedCourse}__${trimester}__${competenciaCode}__${criterioCode}`;
+function buildCompetenciaAnchor(code) {
+  return `competencia-${code.replace(/[^a-zA-Z0-9_-]/g, "-")}`;
 }
 
-function getOrCreatePlanEntry(id, criterio, editable) {
+function buildCriterionId(context, criterioCode) {
+  const trimester = context.trimestre || state.selectedTrimester || "";
+  const safeCode = criterioCode || `sin-codigo-${Date.now()}`;
+  return `${context.area}__${context.course}__${trimester || "todos"}__${context.competenciaCodigo}__${safeCode}`;
+}
+
+function getOrCreatePlanEntry(id, criterio, context, editable) {
   if (!state.planning.criterios[id]) {
     state.planning.criterios[id] = {
       id,
@@ -582,33 +662,33 @@ function getOrCreatePlanEntry(id, criterio, editable) {
       saberesBasicos: editable ? [] : [...(criterio.saberesBasicos || [])],
       competenciasClave: editable ? [] : [...(criterio.competenciasClave || [])],
       origen: editable ? "personalizado" : "decreto",
-      area: state.selectedArea,
-      curso: state.selectedCourse,
-      trimestre: state.selectedCompetencia?.trimestre || state.selectedTrimester,
-      competencia: state.selectedCompetencia?.codigo || "",
-      competenciaTitulo: state.selectedCompetencia?.titulo || "",
+      area: context.area,
+      curso: context.course,
+      trimestre: context.trimestre,
+      competencia: context.competenciaCodigo,
+      competenciaTitulo: context.competenciaTitulo,
       indicadores: []
     };
   } else {
     const entry = state.planning.criterios[id];
-    entry.area = state.selectedArea;
-    entry.curso = state.selectedCourse;
-    entry.trimestre = state.selectedCompetencia?.trimestre || state.selectedTrimester;
-    entry.competencia = state.selectedCompetencia?.codigo || entry.competencia;
-    entry.competenciaTitulo = state.selectedCompetencia?.titulo || entry.competenciaTitulo;
+    entry.area = context.area;
+    entry.curso = context.course;
+    entry.trimestre = context.trimestre;
+    entry.competencia = context.competenciaCodigo;
+    entry.competenciaTitulo = context.competenciaTitulo;
   }
   return state.planning.criterios[id];
 }
 
 function createCriterionCard(criterio, options) {
-  const { id, editable } = options;
+  const { id, editable, context } = options;
   const card = document.createElement("article");
   card.className = "criterion-card";
   if (editable) {
     card.classList.add("custom");
   }
 
-  const entry = getOrCreatePlanEntry(id, criterio, editable);
+  const entry = getOrCreatePlanEntry(id, criterio, context, editable);
 
   const header = document.createElement("div");
   header.className = "criterion-header";
@@ -637,6 +717,7 @@ function createCriterionCard(criterio, options) {
     removeBtn.addEventListener("click", () => {
       delete state.planning.criterios[id];
       card.remove();
+      updatePlanSummary();
     });
     header.appendChild(removeBtn);
   }
@@ -855,8 +936,17 @@ function generatePlanSummary(entries) {
 }
 
 function buildPrintablePlan() {
-  const competencia = state.selectedCompetencia;
-  if (!competencia) {
+  if (!state.selectedCourse || !state.selectedArea) {
+    return null;
+  }
+
+  const courseData = getSelectedCourseData();
+  if (!courseData) {
+    return null;
+  }
+
+  const competencias = Array.isArray(courseData.competencias) ? courseData.competencias.slice() : [];
+  if (!competencias.length) {
     return null;
   }
 
@@ -878,12 +968,15 @@ function buildPrintablePlan() {
 
   const meta = document.createElement("ul");
   meta.className = "printable-meta";
-  [
-    ["Curso", state.selectedCourse || "-"],
-    ["Área", state.selectedArea || "-"],
-    ["Trimestre", competencia.trimestre || state.selectedTrimester || "-"],
-    ["Competencia", `${competencia.codigo} · ${competencia.titulo}`]
-  ].forEach(([label, value]) => {
+  const metaItems = [
+    ["Curso", state.selectedCourse],
+    ["Área", state.selectedArea],
+    ["Competencias incluidas", competencias.length.toString()]
+  ];
+  if (state.selectedTrimester) {
+    metaItems.push(["Filtro de trimestre", `${state.selectedTrimester} (visualización completa)`]);
+  }
+  metaItems.forEach(([label, value]) => {
     const item = document.createElement("li");
     item.innerHTML = `<strong>${label}:</strong> ${value}`;
     meta.appendChild(item);
@@ -897,63 +990,85 @@ function buildPrintablePlan() {
 
   printable.appendChild(header);
 
-  if (competencia.descripcion) {
-    const description = document.createElement("p");
-    description.className = "printable-description";
-    description.textContent = competencia.descripcion;
-    printable.appendChild(description);
-  }
+  const sortedCompetencias = competencias.sort((a, b) => {
+    const trimesterDiff = trimesterOrder(a.trimestre) - trimesterOrder(b.trimestre);
+    if (trimesterDiff !== 0) return trimesterDiff;
+    return a.codigo.localeCompare(b.codigo, "es", { numeric: true, sensitivity: "base" });
+  });
 
-  const criteriaSection = document.createElement("section");
-  criteriaSection.className = "printable-criteria";
+  sortedCompetencias.forEach((competencia) => {
+    const contextData = {
+      area: state.selectedArea,
+      course: state.selectedCourse,
+      trimestre: competencia.trimestre || "",
+      competenciaCodigo: competencia.codigo,
+      competenciaTitulo: competencia.titulo
+    };
 
-  if (!entries.length) {
-    const empty = document.createElement("p");
-    empty.className = "printable-indicators-empty";
-    empty.textContent = "No se registraron criterios para esta competencia en la planificación actual.";
-    printable.appendChild(empty);
-  } else {
-    entries.forEach((entry) => {
-      const card = document.createElement("article");
-      card.className = "printable-criterion";
+    const block = document.createElement("section");
+    block.className = "printable-competencia";
 
-      const cardHeader = document.createElement("header");
-      cardHeader.className = "printable-criterion-header";
+    const blockHeader = document.createElement("header");
+    blockHeader.className = "printable-competencia-header";
 
-      const title = document.createElement("h3");
-      title.textContent = entry.codigo ? `Criterio ${entry.codigo}` : "Criterio personalizado";
-      cardHeader.appendChild(title);
+    const code = document.createElement("span");
+    code.className = "printable-competencia-codigo";
+    code.textContent = competencia.codigo;
+    blockHeader.appendChild(code);
 
-      const origin = document.createElement("span");
-      origin.className = "printable-origin";
-      origin.textContent = entry.origen === "personalizado" ? "Personalizado" : "Decreto 107/2022";
-      cardHeader.appendChild(origin);
+    const title = document.createElement("h3");
+    title.textContent = competencia.titulo;
+    blockHeader.appendChild(title);
 
-      card.appendChild(cardHeader);
+    if (competencia.trimestre) {
+      const trimester = document.createElement("span");
+      trimester.className = "printable-competencia-trimestre";
+      trimester.textContent = competencia.trimestre;
+      blockHeader.appendChild(trimester);
+    }
 
-      if (entry.descripcion) {
-        const description = document.createElement("p");
-        description.className = "printable-criterion-description";
-        description.textContent = entry.descripcion;
-        card.appendChild(description);
-      }
+    block.appendChild(blockHeader);
 
-      const saberesBlock = createPrintableTagList(entry.saberesBasicos, "Saberes básicos asociados");
-      if (saberesBlock) {
-        card.appendChild(saberesBlock);
-      }
+    if (competencia.descripcion) {
+      const description = document.createElement("p");
+      description.className = "printable-description";
+      description.textContent = competencia.descripcion;
+      block.appendChild(description);
+    }
 
-      const competenciasBlock = createPrintableTagList(entry.competenciasClave, "Competencias clave vinculadas");
-      if (competenciasBlock) {
-        card.appendChild(competenciasBlock);
-      }
+    const criteriaSection = document.createElement("div");
+    criteriaSection.className = "printable-criteria";
 
-      card.appendChild(createPrintableIndicators(entry));
-      criteriaSection.appendChild(card);
+    (competencia.criterios || []).forEach((criterio) => {
+      const id = buildCriterionId(contextData, criterio.codigo);
+      const entry = state.planning.criterios[id];
+      const printableEntry = entry || {
+        codigo: criterio.codigo,
+        descripcion: criterio.descripcion,
+        saberesBasicos: criterio.saberesBasicos || [],
+        competenciasClave: criterio.competenciasClave || [],
+        origen: "decreto",
+        indicadores: []
+      };
+      criteriaSection.appendChild(createPrintableCriterion(printableEntry));
     });
 
-    printable.appendChild(criteriaSection);
-  }
+    const customEntries = entries.filter(
+      (entry) =>
+        entry.origen === "personalizado" &&
+        entry.competencia === competencia.codigo &&
+        entry.area === contextData.area &&
+        entry.curso === contextData.course &&
+        (entry.trimestre || "") === (contextData.trimestre || "")
+    );
+
+    customEntries.forEach((entry) => {
+      criteriaSection.appendChild(createPrintableCriterion(entry));
+    });
+
+    block.appendChild(criteriaSection);
+    printable.appendChild(block);
+  });
 
   const summarySection = document.createElement("section");
   summarySection.className = "plan-summary printable-summary";
@@ -961,6 +1076,45 @@ function buildPrintablePlan() {
   printable.appendChild(summarySection);
 
   return printable;
+}
+
+function createPrintableCriterion(entry) {
+  const card = document.createElement("article");
+  card.className = "printable-criterion";
+
+  const cardHeader = document.createElement("header");
+  cardHeader.className = "printable-criterion-header";
+
+  const title = document.createElement("h3");
+  title.textContent = entry.codigo ? `Criterio ${entry.codigo}` : "Criterio personalizado";
+  cardHeader.appendChild(title);
+
+  const origin = document.createElement("span");
+  origin.className = "printable-origin";
+  origin.textContent = entry.origen === "personalizado" ? "Personalizado" : "Decreto 107/2022";
+  cardHeader.appendChild(origin);
+
+  card.appendChild(cardHeader);
+
+  if (entry.descripcion) {
+    const description = document.createElement("p");
+    description.className = "printable-criterion-description";
+    description.textContent = entry.descripcion;
+    card.appendChild(description);
+  }
+
+  const saberesBlock = createPrintableTagList(entry.saberesBasicos, "Saberes básicos asociados");
+  if (saberesBlock) {
+    card.appendChild(saberesBlock);
+  }
+
+  const competenciasBlock = createPrintableTagList(entry.competenciasClave, "Competencias clave vinculadas");
+  if (competenciasBlock) {
+    card.appendChild(competenciasBlock);
+  }
+
+  card.appendChild(createPrintableIndicators(entry));
+  return card;
 }
 
 function createPrintableTagList(items, label) {
@@ -1220,17 +1374,16 @@ function renderIndicatorTable(entry, wrapper, totalElement) {
   updatePlanSummary();
 }
 
-function addCustomCriterion(container) {
-  if (!state.selectedCompetencia) return;
+function addCustomCriterion(container, context) {
   state.customCounter += 1;
-  const id = `custom-${Date.now()}-${state.customCounter}`;
+  const id = buildCriterionId(context, `personalizado-${Date.now()}-${state.customCounter}`);
   const customData = {
     codigo: "",
     descripcion: "",
     saberesBasicos: [],
     competenciasClave: []
   };
-  const card = createCriterionCard(customData, { id, editable: true });
+  const card = createCriterionCard(customData, { id, editable: true, context });
   container.appendChild(card);
   card.scrollIntoView({ behavior: "smooth", block: "center" });
 }
@@ -1249,19 +1402,16 @@ function handleExportToPdf() {
 
   const filenameSafeArea = state.selectedArea ? state.selectedArea.replace(/\s+/g, "-") : "plan";
   const filenameSafeCourse = state.selectedCourse ? state.selectedCourse.replace(/\s+/g, "-") : "curso";
-  const filenameSafeCompetencia = state.selectedCompetencia
-    ? `${state.selectedCompetencia.codigo}`.replace(/\s+/g, "-")
-    : "competencia";
 
   const options = {
     margin: 0.5,
-    filename: `planificacion-${filenameSafeArea}-${filenameSafeCourse}-${filenameSafeCompetencia}.pdf`,
+    filename: `planificacion-${filenameSafeArea}-${filenameSafeCourse}.pdf`,
     image: { type: "jpeg", quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
     jsPDF: { unit: "cm", format: "a4", orientation: "portrait" }
   };
 
-  const shouldReenable = Boolean(state.selectedCompetencia);
+  const shouldReenable = !exportBtn.disabled;
   exportBtn.disabled = true;
 
   html2pdf()

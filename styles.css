@@ -269,12 +269,83 @@ h1 {
   gap: 1.75rem;
 }
 
+.pdf-export.full-course {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.course-header {
+  background: linear-gradient(135deg, rgba(60, 110, 240, 0.08), rgba(60, 110, 240, 0.02));
+  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.course-header h2 {
+  margin: 0;
+}
+
+.course-header .info-text {
+  margin: 0;
+  max-width: 60ch;
+}
+
 .competencia-header {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
+}
+
+.competencia-block {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: #fff;
+  padding: 1.75rem;
+  box-shadow: 0 18px 42px -30px rgba(24, 39, 75, 0.25);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.competencia-block-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+
+.competencia-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 18px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.competencia-block-header h3 {
+  margin: 0;
+  font-size: 1.45rem;
+  flex: 1 1 auto;
+}
+
+.competencia-block .info-text {
+  margin: 0;
+}
+
+.competencia-block .btn {
+  justify-self: flex-start;
+}
+
+.focus-highlight {
+  box-shadow: 0 0 0 3px rgba(60, 110, 240, 0.3);
+  transition: box-shadow 0.3s ease;
 }
 
 .competencia-meta {
@@ -609,6 +680,40 @@ h1 {
   gap: 0.75rem 1.5rem;
   font-size: 0.95rem;
   color: var(--text-muted);
+}
+
+.printable-competencia {
+  page-break-inside: avoid;
+  border-top: 1px solid rgba(23, 36, 65, 0.12);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.printable-competencia-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: center;
+}
+
+.printable-competencia-codigo {
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.printable-competencia-trimestre {
+  margin-left: auto;
+  color: rgba(23, 36, 65, 0.75);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .printable-meta strong {
