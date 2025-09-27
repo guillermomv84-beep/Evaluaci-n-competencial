@@ -9,7 +9,16 @@
 </head>
 <body>
   <header class="app-header">
-    <h1>Evaluación competencial · Primaria</h1>
+    <div class="brand">
+      <img src="logo.jpg" alt="Logo" class="logo"/>
+      <div>
+        <h1>Evaluación competencial · Primaria</h1>
+        <p class="subtitle">Selección por trimestres · Indicadores de logro · Instrumentos de evaluación · Ponderación (0–100)</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="btnHelp" class="ghost">Instrucciones</button>
+    </div>
   </header>
 
   <section class="controls no-print">
@@ -30,7 +39,7 @@
       <label class="grow">Buscar
         <input id="searchInput" placeholder="Filtra por texto en criterios..." />
       </label>
-      <button id="btnExport">Exportar PDF (seleccionados 1º+2º+3º)</button>
+      <button id="btnExport" class="primary">Exportar PDF (seleccionados 1º+2º+3º)</button>
       <button id="btnClearTri" class="danger">Limpiar trimestre</button>
     </div>
     <div class="row-controls slim">
@@ -38,12 +47,14 @@
       <label>Docente <input id="cfgDocente" placeholder="Nombre y apellidos" /></label>
       <label>Grupo <input id="cfgGrupo" placeholder="p.ej., 5ºB" /></label>
       <label>Fecha <input id="cfgFecha" type="date" /></label>
-      <label>Logo <input id="cfgLogo" type="file" accept="image/*" /></label>
+      <span class="small muted">Logo fijado por el sistema</span>
     </div>
     <div class="row-controls slim">
-      <label>Añadir instrumento <input id="newInstrument" placeholder="Nombre del instrumento" /></label>
+      <label>Añadir instrumento de evaluación
+        <input id="newInstrument" placeholder="Escribe y pulsa Añadir" />
+      </label>
       <button id="btnAddInstrument">Añadir a la lista</button>
-      <span class="small muted">Se guardará y aparecerá en los desplegables.</span>
+      <span class="small muted">Se guarda y aparecerá en los desplegables.</span>
     </div>
     <div id="totalesBar" class="totales">
       <strong>Total ponderación del trimestre actual:</strong>
@@ -61,9 +72,36 @@
 
   <div id="printSelected" class="print-only"></div>
 
-  <footer class="no-print small">
-    <small>Los datos (selección/indicadores y configuración) se guardan en este navegador.</small>
+  <footer class="no-print small footer">
+    <small>Los datos se guardan en este navegador.</small>
+    <small class="copyright">© 2025 Guillermo Montero Vaquero </small>
   </footer>
+
+  <!-- Modal Instrucciones -->
+  <div id="modal" class="modal no-print" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <header class="modal-header">
+        <h3 id="modalTitle">Cómo usar la herramienta</h3>
+        <button id="modalClose" class="ghost">✕</button>
+      </header>
+      <div class="modal-body">
+        <ol>
+          <li>Selecciona <strong>Área</strong>, <strong>Ciclo</strong> y <strong>Trimestre</strong>.</li>
+          <li>Marca “Incluir en [trimestre]” en cada criterio que vayas a trabajar.</li>
+          <li>Añade filas con <strong>Indicador de logro</strong>, <strong>Tarea</strong>, <strong>Instrumento de evaluación</strong> y <strong>Peso</strong> (0–100).</li>
+          <li>La barra superior muestra la suma de ponderaciones del trimestre. Objetivo: <strong>100</strong>.</li>
+          <li>Usa el <strong>buscador</strong> y los <strong>acordeones</strong> para navegar más rápido.</li>
+          <li>“<strong>Exportar PDF</strong>” genera un informe con solo los criterios seleccionados de 1º, 2º y 3º.</li>
+          <li>“<strong>Limpiar trimestre</strong>” borra selección y filas del trimestre actual.</li>
+          <li>Puedes añadir nuevos <strong>Instrumentos de evaluación</strong> que quedarán guardados.</li>
+        </ol>
+      </div>
+      <footer class="modal-footer">
+        <button id="modalOk" class="primary">Entendido</button>
+      </footer>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

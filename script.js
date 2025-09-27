@@ -1,7 +1,7 @@
-const STORAGE_KEY = 'evalcomp:v3:selected+cfg+custominstruments';
+const STORAGE_KEY = 'evalcomp:v4:fixedlogo+renames+help';
 const state = {
   data: null, area: null, ciclo: null, trimestre: '1º Trimestre',
-  work: {}, instruments: [], cfg: { centro:'', docente:'', grupo:'', fecha:'', logoDataUrl:'' }
+  work: {}, instruments: [], cfg: { centro:'', docente:'', grupo:'', fecha:'' } // logo fijo
 };
 const $ = id => document.getElementById(id);
 const esc = s => (s||'').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
@@ -14,33 +14,56 @@ function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)retur
 async function boot(){
   const res = await fetch('evaluacion_competencial.json'); state.data = await res.json();
   const areaSel=$('areaSelect'), cicloSel=$('cicloSelect'), triSel=$('trimestreSelect'), search=$('searchInput');
-  const cfgCentro=$('cfgCentro'), cfgDocente=$('cfgDocente'), cfgGrupo=$('cfgGrupo'), cfgFecha=$('cfgFecha'), cfgLogo=$('cfgLogo');
-  const newInstrument=$('newInstrument');
+  const cfgCentro=$('cfgCentro'), cfgDocente=$('cfgDocente'), cfgGrupo=$('cfgGrupo'), cfgFecha=$('cfgFecha');
   load();
-  Object.keys(state.data).forEach(a=>{ const o=document.createElement('option'); o.value=a;o.textContent=a; areaSel.appendChild(o); });
+
+  // Áreas
+  Object.keys(state.data).forEach(a=>{ const o=document.createElement('option'); o.value=a; o.textContent=a; areaSel.appendChild(o); });
+
+  // CFG
   cfgCentro.value=state.cfg.centro||''; cfgDocente.value=state.cfg.docente||''; cfgGrupo.value=state.cfg.grupo||''; cfgFecha.value=state.cfg.fecha||'';
   cfgCentro.addEventListener('input', ()=>{state.cfg.centro=cfgCentro.value; save();});
   cfgDocente.addEventListener('input', ()=>{state.cfg.docente=cfgDocente.value; save();});
   cfgGrupo.addEventListener('input', ()=>{state.cfg.grupo=cfgGrupo.value; save();});
   cfgFecha.addEventListener('change', ()=>{state.cfg.fecha=cfgFecha.value; save();});
-  cfgLogo.addEventListener('change', ()=>{ const f=cfgLogo.files?.[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ state.cfg.logoDataUrl=r.result; save(); }; r.readAsDataURL(f); });
+
+  // Defaults
   if(!state.area){ areaSel.selectedIndex=0; state.area=areaSel.value; } else { areaSel.value=state.area; }
   loadCiclos(); if(!state.ciclo){ cicloSel.selectedIndex=0; state.ciclo=cicloSel.value; } else { cicloSel.value=state.ciclo; }
   if(state.trimestre) triSel.value=state.trimestre;
+
   areaSel.addEventListener('change', ()=>{state.area=areaSel.value; loadCiclos(); renderAll(); save(); });
   cicloSel.addEventListener('change', ()=>{state.ciclo=cicloSel.value; renderAll(); save(); });
   triSel.addEventListener('change', ()=>{state.trimestre=triSel.value; renderAll(); save(); });
-  $('btnAddInstrument').addEventListener('click', ()=>{ const name=(newInstrument.value||'').trim(); if(!name) return; if(!state.instruments.includes(name)) state.instruments.push(name); newInstrument.value=''; save(); renderAll(); });
+  $('btnAddInstrument').addEventListener('click', ()=>{
+    const name=(document.getElementById('newInstrument').value||'').trim(); if(!name) return;
+    if(!state.instruments.includes(name)) state.instruments.push(name);
+    document.getElementById('newInstrument').value=''; save(); renderAll();
+  });
   $('btnExport').addEventListener('click', exportSelectedAllTrimestres);
-  $('btnClearTri').addEventListener('click', ()=>{ const tri=state.trimestre; if(!confirm(`¿Seguro que quieres limpiar todo lo del ${tri}?`)) return;
-    Object.keys(state.work).forEach(k=>{ if(state.work[k]?.selected) state.work[k].selected[tri]=false; if(state.work[k]?.indicadores) state.work[k].indicadores[tri]=[]; }); save(); renderAll(); });
-  search.addEventListener('input', ()=> filterCriterios(search.value.trim().toLowerCase()));
+  $('btnClearTri').addEventListener('click', ()=>{
+    const tri=state.trimestre; if(!confirm(`¿Seguro que quieres limpiar todo lo del ${tri}?`)) return;
+    Object.keys(state.work).forEach(k=>{ if(state.work[k]?.selected) state.work[k].selected[tri]=false; if(state.work[k]?.indicadores) state.work[k].indicadores[tri]=[]; });
+    save(); renderAll();
+  });
+  document.getElementById('btnHelp').addEventListener('click', openHelp);
+  document.getElementById('modalClose').addEventListener('click', closeHelp);
+  document.getElementById('modalOk').addEventListener('click', closeHelp);
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeHelp(); });
+
+  document.getElementById('searchInput').addEventListener('input', (e)=> filterCriterios(e.target.value.trim().toLowerCase()));
   renderAll();
 }
+
+function openHelp(){ const m=$('modal'); m.setAttribute('aria-hidden','false'); }
+function closeHelp(){ const m=$('modal'); m.setAttribute('aria-hidden','true'); }
+
 function loadCiclos(){ const cicloSel=$('cicloSelect'); cicloSel.innerHTML=''; Object.keys(state.data[state.area]||{}).forEach(c=>{ const o=document.createElement('option'); o.value=c;o.textContent=c; cicloSel.appendChild(o); }); }
 function ensureCritState(critId){ if(!state.work[critId]) state.work[critId]={selected:{}, indicadores:{}};
   ['1º Trimestre','2º Trimestre','3º Trimestre'].forEach(t=>{ if(typeof state.work[critId].selected[t]!=='boolean') state.work[critId].selected[t]=false; if(!Array.isArray(state.work[critId].indicadores[t])) state.work[critId].indicadores[t]=[]; }); }
+
 function renderAll(){ $('tituloBloque').textContent=`${state.area} · ${state.ciclo} · ${state.trimestre}`; renderAccordion(); updateTotalsBar(); }
+
 function renderAccordion(){
   const acc=$('accordion'); acc.innerHTML=''; const ciclos=state.data[state.area]; if(!ciclos||!ciclos[state.ciclo]) return; const ces=ciclos[state.ciclo];
   Object.entries(ces).forEach(([ceKey,ceObj])=>{
@@ -66,45 +89,94 @@ function renderAccordion(){
     acc.appendChild(item);
   });
 }
-function addRow(grid,preset){ const row=document.createElement('div'); row.className='row';
-  row.innerHTML=`<input placeholder='Indicador de logro' value='${esc(preset?.indicador||'')}'/><input placeholder='Tarea' value='${esc(preset?.tarea||'')}'/>
-  <select>${renderInstrumentOptions(preset?.instrumento)}</select><input type='number' min='0' max='100' step='1' placeholder='Ponderación (0-100)' value='${preset?.peso??''}'/>
-  <button class='del' title='Eliminar fila'>×</button>`; grid.appendChild(row); }
-function renderInstrumentOptions(selected){ const base=['Rúbrica','Lista de cotejo','Escala estimativa','Prueba práctica']; const all=Array.from(new Set([...base,...state.instruments]));
-  return all.map(v=>`<option value="${esc(v)}" ${selected===v?'selected':''}>${esc(v)}</option>`).join(''); }
+
+function addRow(grid,preset){
+  const row=document.createElement('div'); row.className='row';
+  row.innerHTML=`
+    <input placeholder='Indicador de logro' value='${esc(preset?.indicador||'')}'/>
+    <input placeholder='Tarea' value='${esc(preset?.tarea||'')}'/>
+    <select>${renderInstrumentOptions(preset?.instrumento)}</select>
+    <input type='number' min='0' max='100' step='1' placeholder='Ponderación (0-100)' value='${preset?.peso??''}'/>
+    <button class='del' title='Eliminar fila'>×</button>`;
+  grid.appendChild(row);
+}
+
+function renderInstrumentOptions(selected){
+  const base=['Rúbrica','Lista de cotejo','Escala estimativa','Prueba práctica'];
+  const all=Array.from(new Set([...base, ...state.instruments]));
+  return all.map(v=>`<option value="${esc(v)}" ${selected===v?'selected':''}>${esc(v)}</option>`).join('');
+}
+
 function paintSaved(grid,list){ grid.innerHTML=''; if(!list||!list.length){ addRow(grid,null); return; } list.forEach(item=> addRow(grid,item)); }
-function collectGrid(grid,critId){ const rows=grid.querySelectorAll('.row'); const t=state.trimestre;
+
+function collectGrid(grid,critId){
+  const rows=grid.querySelectorAll('.row'); const t=state.trimestre;
   const list=Array.from(rows).map(r=>{ const [ind,tarea,peso]=r.querySelectorAll('input'); const inst=r.querySelector('select');
     return { indicador:(ind?.value||'').trim(), tarea:(tarea?.value||'').trim(), instrumento:inst?.value||'', peso:Number(peso?.value||0) }; }).filter(x=>x.indicador||x.tarea);
-  ensureCritState(critId); state.work[critId].indicadores[t]=list; save(); }
-function filterCriterios(q){ const acc=$('accordion'); acc.querySelectorAll('.criterio').forEach(div=>{ const text=(div.dataset.search||'').toLowerCase(); div.style.display = text.includes(q) ? '' : 'none'; }); }
-function computeTotals(tri){ const ciclos=state.data[state.area]; if(!ciclos||!ciclos[state.ciclo]) return {total:0}; const ces=ciclos[state.ciclo]; let total=0;
-  Object.entries(ces).forEach(([ceKey,ceObj])=>{ Object.keys(ceObj.criterios||{}).forEach(critCode=>{ const critId=`${ceKey}-${critCode}`; const st=state.work[critId];
-    if(st?.selected?.[tri]){ const list=st.indicadores?.[tri]||[]; total += list.reduce((s,x)=> s + (Number(x.peso)||0), 0); } }); }); return {total}; }
-function updateTotalsBar(){ const tri=state.trimestre; const {total}=computeTotals(tri); $('totalesValor').textContent=`${total} / 100`; const e=$('totalesEstado'); e.className='estado';
-  if(total===100){ e.textContent='OK (100/100)'; e.classList.add('ok'); } else if(total<100){ e.textContent=`Falta ${100-total}`; e.classList.add('warn'); } else { e.textContent=`Te pasas por ${total-100}`; e.classList.add('bad'); } }
+  ensureCritState(critId); state.work[critId].indicadores[t]=list; save();
+}
+
+function filterCriterios(q){
+  document.querySelectorAll('.criterio').forEach(div=>{
+    const text=(div.dataset.search||'').toLowerCase(); div.style.display = text.includes(q) ? '' : 'none';
+  });
+}
+
+function computeTotals(tri){
+  const ciclos=state.data[state.area]; if(!ciclos||!ciclos[state.ciclo]) return {total:0}; const ces=ciclos[state.ciclo];
+  let total=0;
+  Object.entries(ces).forEach(([ceKey,ceObj])=>{
+    Object.keys(ceObj.criterios||{}).forEach(critCode=>{
+      const critId=`${ceKey}-${critCode}`; const st=state.work[critId];
+      if(st?.selected?.[tri]){
+        const list=st.indicadores?.[tri]||[];
+        total += list.reduce((s,x)=> s + (Number(x.peso)||0), 0);
+      }
+    });
+  });
+  return {total};
+}
+
+function updateTotalsBar(){
+  const tri=state.trimestre; const {total}=computeTotals(tri);
+  $('totalesValor').textContent=`${total} / 100`;
+  const e=$('totalesEstado'); e.className='estado';
+  if(total===100){ e.textContent='OK (100/100)'; e.classList.add('ok'); }
+  else if(total<100){ e.textContent=`Falta ${100-total}`; e.classList.add('warn'); }
+  else { e.textContent=`Te pasas por ${total-100}`; e.classList.add('bad'); }
+}
+
 function exportSelectedAllTrimestres(){
   const cont=$('printSelected'); cont.innerHTML='';
+
+  // Cabecera PDF con logo fijo + datos
   const header=document.createElement('div'); header.className='header-pdf';
-  const img=document.createElement('img'); if(state.cfg.logoDataUrl){ img.src=state.cfg.logoDataUrl; } else { img.style.display='none'; }
-  const info=document.createElement('div'); info.className='info'; const fecha=state.cfg.fecha || new Date().toISOString().slice(0,10);
-  info.innerHTML = `<div><strong>Centro:</strong> ${esc(state.cfg.centro||'')}</div><div><strong>Docente:</strong> ${esc(state.cfg.docente||'')}</div><div><strong>Grupo:</strong> ${esc(state.cfg.grupo||'')}</div><div><strong>Fecha:</strong> ${esc(fecha)}</div>`;
+  const img=document.createElement('img'); img.src='logo.jpg';
+  const info=document.createElement('div'); info.className='info';
+  const fecha = state.cfg.fecha || new Date().toISOString().slice(0,10);
+  info.innerHTML = `<div><strong>Centro:</strong> ${esc(state.cfg.centro||'')}</div>
+                    <div><strong>Docente:</strong> ${esc(state.cfg.docente||'')}</div>
+                    <div><strong>Grupo:</strong> ${esc(state.cfg.grupo||'')}</div>
+                    <div><strong>Fecha:</strong> ${esc(fecha)}</div>`;
   header.appendChild(img); header.appendChild(info); cont.appendChild(header);
+
   const h=document.createElement('div'); h.className='h-doc'; h.innerHTML=`<h2 style="margin:0">${state.area} · ${state.ciclo}</h2>`; cont.appendChild(h);
+
   const ciclos=state.data[state.area]; if(!ciclos||!ciclos[state.ciclo]) return; const ces=ciclos[state.ciclo]; const trimestres=['1º Trimestre','2º Trimestre','3º Trimestre'];
+
   trimestres.forEach(tri=>{
     const seleccionados=[]; Object.entries(ces).forEach(([ceKey,ceObj])=>{
-      Object.entries(ceObj.criterios||{}).forEach(([critCode,critDesc])=>{ const critId=`${ceKey}-${critCode}`; const st=state.work[critId]; if(st?.selected?.[tri]){
-        seleccionados.push({ceKey,critCode,critDesc, indicadores: (st.indicadores?.[tri]||[]) }); } }); });
+      Object.entries(ceObj.criterios||{}).forEach(([critCode,critDesc])=>{ const critId=`${ceKey}-${critCode}`; const st=state.work[critId];
+        if(st?.selected?.[tri]){ seleccionados.push({ceKey,critCode,critDesc, indicadores: (st.indicadores?.[tri]||[]) }); } });
+    });
     if(!seleccionados.length) return;
-    const sec=document.createElement('section'); sec.innerHTML=`<h3 class='h-tri'>${tri}</h3>`;
-    let totalTri=0;
+    const sec=document.createElement('section'); sec.innerHTML=`<h3 class='h-tri'>${tri}</h3>`; let totalTri=0;
     seleccionados.forEach(item=>{
       const card=document.createElement('div'); card.className='card';
       const rows=(item.indicadores||[]).map(i=>{ totalTri += (Number(i.peso)||0);
         return `<tr><td>${esc(i.indicador||'')}</td><td>${esc(i.tarea||'')}</td><td>${esc(i.instrumento||'')}</td><td>${(i.peso??'')}</td></tr>`; }).join('');
       card.innerHTML=`<div class='meta'><span class='badge'>${item.ceKey}</span> <strong>${item.critCode}</strong></div><div class='desc'>${esc(item.critDesc)}</div>
-      <table class='tbl'><thead><tr><th>Indicador</th><th>Tarea</th><th>Instrumento</th><th>Peso</th></tr></thead><tbody>${rows || '<tr><td colspan="4" class="small">(Sin indicadores añadidos)</td></tr>'}</tbody></table>`;
+      <table class='tbl'><thead><tr><th>Indicador de logro</th><th>Tarea</th><th>Instrumento de evaluación</th><th>Peso</th></tr></thead><tbody>${rows or '<tr><td colspan="4" class="small">(Sin indicadores añadidos)</td></tr>'}</tbody></table>`;
       sec.appendChild(card);
     });
     const sum=document.createElement('div'); sum.className='summary'; const estado = totalTri===100 ? 'OK (100/100)' : (totalTri<100? `Falta ${100-totalTri}` : `Se excede en ${totalTri-100}`);
@@ -113,4 +185,5 @@ function exportSelectedAllTrimestres(){
   });
   window.print();
 }
+
 document.addEventListener('DOMContentLoaded', boot);
