@@ -11,7 +11,26 @@ function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)retur
   state.work=p.work||{}; state.instruments=p.instruments||[]; state.cfg=p.cfg||state.cfg; state.area=p.area||state.area; state.ciclo=p.ciclo||state.ciclo; state.trimestre=p.trimestre||state.trimestre;
 } catch(e){} }
 
+
 async function boot(){
+  try{
+    const res = await fetch('evaluacion_competencial.json');
+    if(res.ok){
+      state.data = await res.json();
+    }else{
+      throw new Error('Fetch no OK');
+    }
+  }catch(e){
+    // fallback al dataset embebido
+    try{
+      const node = document.getElementById('dataset');
+      if(node){ state.data = JSON.parse(node.textContent || node.innerText || '{}'); }
+    }catch(e2){
+      console.error('No pude leer el dataset embebido', e2);
+      state.data = {};
+    }
+  }
+
   try{
     const res = await fetch('evaluacion_competencial.json');
     state.data = await res.json();
