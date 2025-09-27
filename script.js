@@ -46,17 +46,17 @@ async function boot(){
     Object.keys(state.work).forEach(k=>{ if(state.work[k]?.selected) state.work[k].selected[tri]=false; if(state.work[k]?.indicadores) state.work[k].indicadores[tri]=[]; });
     save(); renderAll();
   });
-  document.getElementById('btnHelp').addEventListener('click', openHelp);
-  document.getElementById('modalClose').addEventListener('click', closeHelp);
-  document.getElementById('modalOk').addEventListener('click', closeHelp);
-  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeHelp(); });
+  document.getElementById('btnHelp_removed').addEventListener('click', openHelp_removed);
+  document.getElementById('modal_removedClose').addEventListener('click', closeHelp_removed);
+  document.getElementById('modal_removedOk').addEventListener('click', closeHelp_removed);
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeHelp_removed(); });
 
   document.getElementById('searchInput').addEventListener('input', (e)=> filterCriterios(e.target.value.trim().toLowerCase()));
   renderAll();
 }
 
-function openHelp(){ const m=$('modal'); m.setAttribute('aria-hidden','false'); }
-function closeHelp(){ const m=$('modal'); m.setAttribute('aria-hidden','true'); }
+function openHelp_removed(){ const m=$('modal_removed'); m.setAttribute('aria-hidden','false'); }
+function closeHelp_removed(){ const m=$('modal_removed'); m.setAttribute('aria-hidden','true'); }
 
 function loadCiclos(){ const cicloSel=$('cicloSelect'); cicloSel.innerHTML=''; Object.keys(state.data[state.area]||{}).forEach(c=>{ const o=document.createElement('option'); o.value=c;o.textContent=c; cicloSel.appendChild(o); }); }
 function ensureCritState(critId){ if(!state.work[critId]) state.work[critId]={selected:{}, indicadores:{}};

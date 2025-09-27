@@ -6,7 +6,7 @@
 body { background:#fff; color:#111; font: 12px/1.5 Inter, Arial, sans-serif; }
 
 .header-pdf { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
-.header-pdf img { max-height: 48px; max-width: 48px; object-fit: contain; }
+.header-pdf img { max-height: 64px; max-width: 64px; object-fit: contain; }
 .header-pdf .info { line-height: 1.35; }
 .h-doc { margin:0 0 10px; }
 .h-tri { margin:12px 0 6px; font-size:14px; }
