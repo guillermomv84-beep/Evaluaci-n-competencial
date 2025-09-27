@@ -1,16 +1,20 @@
-/* Solo mostrar el bloque de impresión */
-.no-print, .screen-only { display:none !important; }
+.no-print { display:none !important; }
 .print-only { display:block !important; }
 
 @page { size: A4; margin: 16mm; }
 body { background:#fff; color:#111; font: 12px/1.4 Arial, sans-serif; }
 
-.h-doc { margin:0 0 12px; }
-.h-tri { margin:14px 0 6px; font-size:14px; }
-.card { border:1px solid #ddd; border-radius:8px; padding:8px; margin:8px 0; }
+.header-pdf { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+.header-pdf img { max-height: 48px; max-width: 48px; object-fit: contain; }
+.header-pdf .info { line-height: 1.35; }
+.h-doc { margin:0 0 10px; }
+.h-tri { margin:12px 0 6px; font-size:14px; }
+.card { border:1px solid #ddd; border-radius:8px; padding:8px; margin:8px 0; page-break-inside: avoid; }
 .meta { font-weight:600; font-size:12px; }
 .desc { margin:6px 0; }
 .tbl { width:100%; border-collapse: collapse; font-size:12px; }
 .tbl th, .tbl td { border:1px solid #ddd; padding:6px; text-align:left; }
 .tbl th { background:#f6f6f6; }
-.card { page-break-inside: avoid; }
+
+.summary { margin-top: 10px; border:1px solid #ddd; border-radius:8px; padding:8px; }
+.summary h4 { margin:0 0 6px; }

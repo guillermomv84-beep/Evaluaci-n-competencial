@@ -13,34 +13,56 @@
   </header>
 
   <section class="controls no-print">
-    <label>Área
-      <select id="areaSelect"></select>
-    </label>
-    <label>Ciclo
-      <select id="cicloSelect"></select>
-    </label>
-    <label>Trimestre
-      <select id="trimestreSelect">
-        <option>1º Trimestre</option>
-        <option>2º Trimestre</option>
-        <option>3º Trimestre</option>
-      </select>
-    </label>
-    <button id="btnExport">Exportar PDF (solo seleccionados, 1º+2º+3º)</button>
+    <div class="row-controls">
+      <label>Área
+        <select id="areaSelect"></select>
+      </label>
+      <label>Ciclo
+        <select id="cicloSelect"></select>
+      </label>
+      <label>Trimestre
+        <select id="trimestreSelect">
+          <option>1º Trimestre</option>
+          <option>2º Trimestre</option>
+          <option>3º Trimestre</option>
+        </select>
+      </label>
+      <label class="grow">Buscar
+        <input id="searchInput" placeholder="Filtra por texto en criterios..." />
+      </label>
+      <button id="btnExport">Exportar PDF (seleccionados 1º+2º+3º)</button>
+      <button id="btnClearTri" class="danger">Limpiar trimestre</button>
+    </div>
+    <div class="row-controls slim">
+      <label>Centro <input id="cfgCentro" placeholder="Nombre del centro" /></label>
+      <label>Docente <input id="cfgDocente" placeholder="Nombre y apellidos" /></label>
+      <label>Grupo <input id="cfgGrupo" placeholder="p.ej., 5ºB" /></label>
+      <label>Fecha <input id="cfgFecha" type="date" /></label>
+      <label>Logo <input id="cfgLogo" type="file" accept="image/*" /></label>
+    </div>
+    <div class="row-controls slim">
+      <label>Añadir instrumento <input id="newInstrument" placeholder="Nombre del instrumento" /></label>
+      <button id="btnAddInstrument">Añadir a la lista</button>
+      <span class="small muted">Se guardará y aparecerá en los desplegables.</span>
+    </div>
+    <div id="totalesBar" class="totales">
+      <strong>Total ponderación del trimestre actual:</strong>
+      <span id="totalesValor">0 / 100</span>
+      <span id="totalesEstado" class="estado neutral">—</span>
+    </div>
   </section>
 
   <main id="app">
     <section class="content">
       <h2 id="tituloBloque"></h2>
-      <div id="criteriosContainer" class="screen-only"></div>
-
-      <!-- Contenedor especial para impresión: se rellena al exportar y solo se muestra en PDF -->
-      <div id="printSelected" class="print-only"></div>
+      <div id="accordion"></div>
     </section>
   </main>
 
+  <div id="printSelected" class="print-only"></div>
+
   <footer class="no-print small">
-    <small>Los datos se guardan automáticamente por trimestre en este navegador.</small>
+    <small>Los datos (selección/indicadores y configuración) se guardan en este navegador.</small>
   </footer>
 
   <script src="script.js"></script>
