@@ -19,3 +19,10 @@ body { background:#fff; color:#111; font: 12px/1.5 Inter, Arial, sans-serif; }
 
 .summary { margin-top: 10px; border:1px solid #ddd; border-radius:8px; padding:8px; }
 .summary h4 { margin:0 0 6px; }
+
+/* --- Forzar impresión SÓLO del bloque generado (#printSelected) --- */
+@media print {
+  body * { visibility: hidden !important; }
+  #printSelected, #printSelected * { visibility: visible !important; }
+  #printSelected { position: absolute; left: 0; top: 0; width: 100%; }
+}
