@@ -30,6 +30,11 @@ button:hover { background:#efefef; }
 .row { display:contents; }
 .selector-tri { display:flex; gap:8px; align-items:center; margin-top:8px; }
 hr.sep { border:0; border-top:1px dashed var(--line); margin:8px 0; }
+
+/* utilidades de visibilidad */
+.print-only { display: none; }
+.screen-only { display: block; }
+
 @media (max-width: 840px){
   .grid { grid-template-columns: 1fr 1fr; }
 }

@@ -26,17 +26,20 @@
         <option>3º Trimestre</option>
       </select>
     </label>
-    <button id="btnExport">Exportar PDF</button>
+    <button id="btnExport">Exportar PDF (solo seleccionados, 1º+2º+3º)</button>
   </section>
 
   <main id="app">
     <section class="content">
       <h2 id="tituloBloque"></h2>
-      <div id="criteriosContainer"></div>
+      <div id="criteriosContainer" class="screen-only"></div>
+
+      <!-- Contenedor especial para impresión: se rellena al exportar y solo se muestra en PDF -->
+      <div id="printSelected" class="print-only"></div>
     </section>
   </main>
 
-  <footer class="no-print">
+  <footer class="no-print small">
     <small>Los datos se guardan automáticamente por trimestre en este navegador.</small>
   </footer>
 

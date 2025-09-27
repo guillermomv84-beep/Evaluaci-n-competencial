@@ -1,6 +1,16 @@
-.no-print { display:none !important; }
+/* Solo mostrar el bloque de impresión */
+.no-print, .screen-only { display:none !important; }
+.print-only { display:block !important; }
+
 @page { size: A4; margin: 16mm; }
 body { background:#fff; color:#111; font: 12px/1.4 Arial, sans-serif; }
-#tituloBloque { margin: 0 0 8px; font-size:16px; }
-.criterio { page-break-inside: avoid; border:1px solid #ddd; border-radius:8px; padding:8px; margin:8px 0; }
-.grid .del, .add-row, .selector-tri input[type=checkbox] { display:none !important; }
+
+.h-doc { margin:0 0 12px; }
+.h-tri { margin:14px 0 6px; font-size:14px; }
+.card { border:1px solid #ddd; border-radius:8px; padding:8px; margin:8px 0; }
+.meta { font-weight:600; font-size:12px; }
+.desc { margin:6px 0; }
+.tbl { width:100%; border-collapse: collapse; font-size:12px; }
+.tbl th, .tbl td { border:1px solid #ddd; padding:6px; text-align:left; }
+.tbl th { background:#f6f6f6; }
+.card { page-break-inside: avoid; }
