@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Herramienta de Evaluación Competencial</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Evaluación competencial · Primaria</title>
+  <link rel="stylesheet" href="styles.css" media="all" />
+  <link rel="stylesheet" href="print.css" media="print" />
 </head>
 <body>
-  <header>
+  <header class="app-header">
     <h1>Evaluación competencial · Primaria</h1>
-    <p class="subtitle">Selecciona área, ciclo y trabaja criterios por trimestre con indicadores, tareas, instrumentos y ponderación.</p>
+    <p class="subtitle">Selecciona Área, Ciclo y Trimestre. Añade indicadores, tareas, instrumentos y ponderaciones.</p>
   </header>
 
-  <section class="controls">
+  <section class="controls no-print">
     <label>Área
       <select id="areaSelect"></select>
     </label>
@@ -21,31 +22,32 @@
     </label>
     <label>Trimestre
       <select id="trimestreSelect">
-        <option value="1º Trimestre">1º Trimestre</option>
-        <option value="2º Trimestre">2º Trimestre</option>
-        <option value="3º Trimestre">3º Trimestre</option>
+        <option>1º Trimestre</option>
+        <option>2º Trimestre</option>
+        <option>3º Trimestre</option>
       </select>
     </label>
-    <button id="btnExport">Exportar a PDF / imprimir</button>
+    <button id="btnExport">Exportar a PDF</button>
   </section>
 
   <main id="app">
-    <aside class="panel">
-      <h2>Competencias específicas (CE)</h2>
+    <aside class="panel no-print">
+      <h2>Competencias específicas</h2>
       <div id="ceList" class="list"></div>
     </aside>
 
     <section class="content">
-      <h2>Criterios de evaluación</h2>
-      <div id="criteriosContainer"></div>
+      <div id="printable">
+        <h2 id="tituloBloque">Resumen por criterios</h2>
+        <div id="criteriosContainer"></div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <small>Trabajo docente · Genera planificación por trimestres · Archivo: evaluacion_competencial.json</small>
+  <footer class="no-print">
+    <small>Fuente: evaluacion_competencial.json · Exportación con estilos de impresión.</small>
   </footer>
 
-  <script src="html2pdf.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
