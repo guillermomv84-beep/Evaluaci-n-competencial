@@ -10,7 +10,6 @@
 <body>
   <header class="app-header">
     <h1>Evaluación competencial · Primaria</h1>
-    <p class="subtitle">Selecciona Área, Ciclo y Trimestre. Añade indicadores, tareas, instrumentos y ponderaciones.</p>
   </header>
 
   <section class="controls no-print">
@@ -27,25 +26,18 @@
         <option>3º Trimestre</option>
       </select>
     </label>
-    <button id="btnExport">Exportar a PDF</button>
+    <button id="btnExport">Exportar PDF</button>
   </section>
 
   <main id="app">
-    <aside class="panel no-print">
-      <h2>Competencias específicas</h2>
-      <div id="ceList" class="list"></div>
-    </aside>
-
     <section class="content">
-      <div id="printable">
-        <h2 id="tituloBloque">Resumen por criterios</h2>
-        <div id="criteriosContainer"></div>
-      </div>
+      <h2 id="tituloBloque"></h2>
+      <div id="criteriosContainer"></div>
     </section>
   </main>
 
   <footer class="no-print">
-    <small>Fuente: evaluacion_competencial.json · Exportación con estilos de impresión.</small>
+    <small>Los datos se guardan automáticamente por trimestre en este navegador.</small>
   </footer>
 
   <script src="script.js"></script>

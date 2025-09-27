@@ -1,7 +1,6 @@
 .no-print { display:none !important; }
 @page { size: A4; margin: 16mm; }
-body { background:#fff; color:#111; font-family: Inter, Arial, sans-serif; }
-#tituloBloque { margin-top: 0; }
-.criterio { page-break-inside: avoid; border:1px solid #ddd; border-radius:8px; padding:10px; margin:10px 0; }
-.grid-indicadores { grid-template-columns: 1.2fr 1.2fr 0.8fr 0.4fr 0fr; }
-.grid-indicadores .del, .add-row { display:none !important; }
+body { background:#fff; color:#111; font: 12px/1.4 Arial, sans-serif; }
+#tituloBloque { margin: 0 0 8px; font-size:16px; }
+.criterio { page-break-inside: avoid; border:1px solid #ddd; border-radius:8px; padding:8px; margin:8px 0; }
+.grid .del, .add-row, .selector-tri input[type=checkbox] { display:none !important; }
