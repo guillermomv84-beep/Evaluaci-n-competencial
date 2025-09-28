@@ -12,24 +12,7 @@ function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)retur
 } catch(e){} }
 
 
-
 async function boot(){
-  try{
-    const node = document.getElementById('dataset');
-    if(node){
-      state.data = JSON.parse(node.textContent || node.innerText || '{}');
-    }else if(window.__DATASET__){
-      state.data = window.__DATASET__;
-    }else{
-      // Último recurso: fetch (por si se sirve desde un servidor)
-      const res = await fetch('evaluacion_competencial.json');
-      state.data = res.ok ? await res.json() : {};
-    }
-  }catch(e){
-    console.error('Error cargando dataset', e);
-    state.data = {};
-  }
-
   try{
     const res = await fetch('evaluacion_competencial.json');
     if(res.ok){
