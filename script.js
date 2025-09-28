@@ -15,16 +15,18 @@ function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)retur
 
 async function boot(){
   try{
-    // Tomamos siempre el dataset embebido para evitar bloqueos al abrir desde file://
-    if(window.__DATASET__){
+    const node = document.getElementById('dataset');
+    if(node){
+      state.data = JSON.parse(node.textContent || node.innerText || '{}');
+    }else if(window.__DATASET__){
       state.data = window.__DATASET__;
     }else{
-      // Fallback al viejo script#dataset por si acaso
-      const node = document.getElementById('dataset');
-      state.data = node ? JSON.parse(node.textContent || '{}') : {};
+      // Último recurso: fetch (por si se sirve desde un servidor)
+      const res = await fetch('evaluacion_competencial.json');
+      state.data = res.ok ? await res.json() : {};
     }
   }catch(e){
-    console.error('Error cargando dataset embebido', e);
+    console.error('Error cargando dataset', e);
     state.data = {};
   }
 
@@ -109,7 +111,26 @@ async function boot(){
 
   renderAll();
 
-ciclos.forEach(c=>{ const o=document.createElement('option'); o.value=c; o.textContent=c; cicloSel.appendChild(o); });
+const btnResetAll = document.getElementById('btnResetAll');
+if(btnResetAll){ btnResetAll.addEventListener('click', ()=> resetAll()); }
+
+// Si la URL trae ?new=1, forzar reset automático (1 vez)
+try {
+  const q = new URLSearchParams(location.search);
+  if(q.get('new')==='1'){
+    resetAll('Se va a iniciar una evaluación en blanco. ¿Continuar?');
+    // Quitar el parámetro de la URL (para no limpiar otra vez al refrescar)
+    history.replaceState(null, '', location.pathname);
+  }
+} catch(e){}
+
+}
+
+function loadCiclos(){
+  const cicloSel=$('cicloSelect'); if(!cicloSel) return;
+  cicloSel.innerHTML='';
+  const ciclos = Object.keys((state.data?.[state.area])||{});
+  ciclos.forEach(c=>{ const o=document.createElement('option'); o.value=c; o.textContent=c; cicloSel.appendChild(o); });
 }
 
 function ensureCritState(critId){
