@@ -12,7 +12,24 @@ function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)retur
 } catch(e){} }
 
 
+
 async function boot(){
+  try{
+    const node = document.getElementById('dataset');
+    if(node){
+      state.data = JSON.parse(node.textContent || node.innerText || '{}');
+    }else if(window.__DATASET__){
+      state.data = window.__DATASET__;
+    }else{
+      // Último recurso: fetch (por si se sirve desde un servidor)
+      const res = await fetch('evaluacion_competencial.json');
+      state.data = res.ok ? await res.json() : {};
+    }
+  }catch(e){
+    console.error('Error cargando dataset', e);
+    state.data = {};
+  }
+
   try{
     const res = await fetch('evaluacion_competencial.json');
     if(res.ok){
@@ -93,6 +110,20 @@ async function boot(){
   if(search) search.addEventListener('input', ()=> filterCriterios(search.value.trim().toLowerCase()));
 
   renderAll();
+
+const btnResetAll = document.getElementById('btnResetAll');
+if(btnResetAll){ btnResetAll.addEventListener('click', ()=> resetAll()); }
+
+// Si la URL trae ?new=1, forzar reset automático (1 vez)
+try {
+  const q = new URLSearchParams(location.search);
+  if(q.get('new')==='1'){
+    resetAll('Se va a iniciar una evaluación en blanco. ¿Continuar?');
+    // Quitar el parámetro de la URL (para no limpiar otra vez al refrescar)
+    history.replaceState(null, '', location.pathname);
+  }
+} catch(e){}
+
 }
 
 function loadCiclos(){
@@ -256,18 +287,21 @@ function exportSelectedAllTrimestres(){
   const cont=document.getElementById('printSelected'); if(!cont) return;
   cont.innerHTML='';
 
-  // Cabecera PDF con logo fijo
+  // Cabecera PDF: logo izquierda + info derecha
   const header=document.createElement('div'); header.className='header-pdf';
   const img=document.createElement('img'); img.src='logo.jpg';
   const info=document.createElement('div'); info.className='info';
   const fecha = state.cfg.fecha || new Date().toISOString().slice(0,10);
-  info.innerHTML = `<div><strong>Centro:</strong> ${esc(state.cfg.centro||'')}</div>
-                    <div><strong>Docente:</strong> ${esc(state.cfg.docente||'')}</div>
-                    <div><strong>Grupo:</strong> ${esc(state.cfg.grupo||'')}</div>
-                    <div><strong>Fecha:</strong> ${esc(fecha)}</div>`;
+  info.innerHTML =
+    `<div><strong>Centro:</strong> ${esc(state.cfg.centro||'')}</div>
+     <div><strong>Docente:</strong> ${esc(state.cfg.docente||'')}</div>
+     <div><strong>Grupo:</strong> ${esc(state.cfg.grupo||'')}</div>
+     <div><strong>Fecha:</strong> ${esc(fecha)}</div>`;
   header.appendChild(img); header.appendChild(info); cont.appendChild(header);
 
-  const h=document.createElement('div'); h.className='h-doc'; h.innerHTML=`<h2 style="margin:0">${state.area} · ${state.ciclo}</h2>`; cont.appendChild(h);
+  const h=document.createElement('div'); h.className='h-doc';
+  h.textContent = `${state.area} · ${state.ciclo}`;
+  cont.appendChild(h);
 
   const ces = state.data?.[state.area]?.[state.ciclo]; if(!ces) return;
   ['1º Trimestre','2º Trimestre','3º Trimestre'].forEach((tri, idx)=>{
@@ -276,36 +310,60 @@ function exportSelectedAllTrimestres(){
       Object.entries(ceObj.criterios||{}).forEach(([critCode,critDesc])=>{
         const st = state.work[`${ceKey}-${critCode}`];
         if(st?.selected?.[tri]){
-          seleccionados.push({ ceKey, critCode, critDesc, indicadores: (st.indicadores?.[tri]||[]) });
+          seleccionados.push({ ceKey, ceDesc: ceObj.descripcion||'', critCode, critDesc, indicadores: (st.indicadores?.[tri]||[]) });
         }
       });
     });
     if(!seleccionados.length) return;
 
-    const sec=document.createElement('section'); sec.innerHTML = `<h3 class="h-tri">${tri}</h3>`;
+    const sec=document.createElement('section');
+    sec.innerHTML = `<h3 class="h-tri">${tri}</h3>`;
     if(idx>0) sec.classList.add('page-start');
-    let totalTri=0;
+
     seleccionados.forEach(item=>{
       const card=document.createElement('div'); card.className='card';
-      const rows=(item.indicadores||[]).map(i=>{ totalTri += (Number(i.peso)||0);
-        return `<tr><td>${esc(i.indicador||'')}</td><td>${esc(i.tarea||'')}</td><td>${esc(i.instrumento||'')}</td><td>${i.peso??''}</td></tr>`; }).join('');
-      card.innerHTML=`
-        <div class="meta"><span class="badge">${item.ceKey}</span> <strong>${item.critCode}</strong></div>
-        <div class="desc">${esc(item.critDesc)}</div>
-        <table class="tbl">
-          <thead><tr><th>Indicador de logro</th><th>Tarea</th><th>Instrumento de evaluación</th><th>Peso</th></tr></thead>
-          <tbody>${rows || '<tr><td colspan="4" class="small">(Sin indicadores añadidos)</td></tr>'}</tbody>
-        </table>`;
+      // Encabezados completos
+      const ceLine = document.createElement('div');
+      ceLine.className='meta-line';
+      ceLine.innerHTML = `<span class="label">Competencia Específica</span>: ${esc(item.ceKey)} — ${esc(item.ceDesc)}`;
+      const critLine = document.createElement('div');
+      critLine.className='meta-line';
+      critLine.innerHTML = `<span class="label">Criterio de evaluación</span>: ${esc(item.critCode)}`;
+
+      const desc = document.createElement('div');
+      desc.className='desc';
+      desc.textContent = item.critDesc || '';
+
+      // Tabla
+      const tbodyRows = (item.indicadores||[]).map(i =>
+        `<tr><td>${esc(i.indicador||'')}</td><td>${esc(i.tarea||'')}</td><td>${esc(i.instrumento||'')}</td><td>${(i.peso??'')}</td></tr>`
+      ).join('');
+
+      const table = document.createElement('div');
+      table.innerHTML = `<table class="tbl">
+        <thead><tr>
+          <th>Indicador de logro</th>
+          <th>Tarea</th>
+          <th>Instrumento de evaluación</th>
+          <th>Peso</th>
+        </tr></thead>
+        <tbody>${tbodyRows || '<tr><td colspan="4" class="small">(Sin indicadores añadidos)</td></tr>'}</tbody>
+      </table>`;
+
+      card.appendChild(ceLine);
+      card.appendChild(critLine);
+      card.appendChild(desc);
+      card.appendChild(table.firstChild);
       sec.appendChild(card);
     });
-    const sum=document.createElement('div'); sum.className='summary';
-    const estado = totalTri===10 ? 'OK (100/100)' : (totalTri<10? `Falta ${(10-totalTri).toFixed(1)}` : `Se excede en ${(totalTri-10).toFixed(1)}`);
-    sum.innerHTML = `<h4>Resumen ${tri}</h4><div>Total de ponderación: <strong>${totalTri} / 10</strong> · ${estado}</div>`;
-    sec.appendChild(sum);
+
     cont.appendChild(sec);
   });
 
   window.print();
+} catch(e){}
+
 }
+
 
 document.addEventListener('DOMContentLoaded', boot);
