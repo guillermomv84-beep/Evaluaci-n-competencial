@@ -2,41 +2,44 @@
 .no-print { display:none !important; }
 .print-only { display:block !important; }
 
-@page { size: A4; margin: 14mm; }
-body { background:#fff; color:#111; font: 12.5px/1.45 Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+@page { size: A4; margin: 16mm; }
+body { background:#fff; color:#111; font: 12px/1.5 Inter, Arial, sans-serif; }
 
-/* Only print the report */
+.header-pdf { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+.header-pdf img { max-height: 64px; max-width: 64px; object-fit: contain; }
+.header-pdf .info { line-height: 1.35; }
+.h-doc { margin:0 0 10px; }
+.h-tri { margin:12px 0 6px; font-size:14px; }
+.card { border:1px solid #ddd; border-radius:8px; padding:8px; margin:8px 0; page-break-inside: avoid; }
+.meta { font-weight:600; font-size:12px; }
+.desc { margin:6px 0; }
+.tbl { width:100%; border-collapse: collapse; font-size:12px; }
+.tbl th, .tbl td { border:1px solid #ddd; padding:6px; text-align:left; }
+.tbl th { background:#f6f6f6; }
+
+.summary { margin-top: 10px; border:1px solid #ddd; border-radius:8px; padding:8px; }
+.summary h4 { margin:0 0 6px; }
+
+/* --- Forzar impresión SÓLO del bloque generado (#printSelected) --- */
 @media print {
+  body * { visibility: hidden !important; }
+  #printSelected, #printSelected * { visibility: visible !important; }
+  #printSelected { position: absolute; left: 0; top: 0; width: 100%; }
+}
+
+
+/* === Print only report and avoid blanks === */
+@media print {
+  /* Oculta TODO menos el informe */
   body * { display: none !important; }
   #printSelected, #printSelected * { display: block !important; }
+
+  /* Asegura ancho completo y resetea posiciones */
   #printSelected { position: static !important; width: 100% !important; }
-  .card, .tbl, .header-pdf, .h-doc, .h-tri { break-inside: avoid !important; page-break-inside: avoid !important; }
+
+  /* Evitar cortes feos dentro de tarjetas/tablas */
+  .card, .summary, .tbl, .header-pdf, .h-doc { break-inside: avoid !important; page-break-inside: avoid !important; }
+
+  /* Cada trimestre empieza en página nueva (aplicado por clase page-start) */
   .page-start { break-before: page !important; page-break-before: always !important; }
 }
-
-.header-pdf {
-  display:flex; gap:14px; align-items:center; margin-bottom:10px;
-  border-bottom: 2px solid #0b6a2d; padding-bottom: 8px;
-}
-.header-pdf img { height: 56px; width: 56px; object-fit: cover; border-radius: 6px; border: 1px solid #e5e7eb; }
-.header-pdf .info { display:grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size:12px; }
-.header-pdf .info div strong { color:#0b6a2d; }
-
-.h-doc { margin:8px 0 6px; font-size: 16px; font-weight: 700; color:#0b2b16; }
-
-.h-tri { margin:12px 0 6px; font-size:14px; color:#0b2b16; }
-
-.meta-line { font-weight:600; font-size: 12.5px; margin-bottom: 4px; color:#0b2b16; }
-.meta-line .label { color:#0b6a2d; font-weight:700; }
-
-.card {
-  border:1px solid #e5e7eb; border-radius:10px; padding:8px 10px; margin:8px 0;
-  background: #fff;
-}
-
-.desc { margin:6px 0; color:#111; }
-
-.tbl { width:100%; border-collapse: collapse; font-size:12px; }
-.tbl th, .tbl td { border:1px solid #e5e7eb; padding:6px 8px; text-align:left; vertical-align: top; }
-.tbl th { background:#f6faf7; color:#0b2b16; }
-.small { color:#666; font-style: italic; }
