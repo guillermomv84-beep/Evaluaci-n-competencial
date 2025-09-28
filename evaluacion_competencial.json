@@ -2,14 +2,19 @@
   "Matemáticas": {
     "Primer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Interpretar problemas de la vida cotidiana, utilizando conceptos, herramientas 
+y estrategias de razonamiento matemático, en particular representaciones que 
+apoyen el análisis de la información más relevante.",
         "criterios": {
-          "1.1": "Comprender las preguntas planteadas a través de diferentes estrategias o herramientas, reconociendo la información contenida en problemas de la vida cotidiana",
+          "1.1": "Comprender las preguntas planteadas a través de diferentes estrategias o herramientas, reconociendo la información contenida en problemas de la vida cotidiana.",
           "1.2": "Proporcionar ejemplos de representaciones de situaciones problematizadas sencillas, utilizando recursos manipulativos y gráficos que ayuden en la resolución de un problema de la vida cotidiana."
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Resolver situaciones sencillas problematizadas, aplicando diferentes 
+estrategias y utilizando el razonamiento matemático, para obtener soluciones y 
+comprobar su validez desde un punto de vista formal y en relación con el contexto 
+planteado.",
         "criterios": {
           "2.1": "Emplear algunas estrategias adecuadas en la resolución de problemas",
           "2.2": "Obtener posibles soluciones a problemas, de forma guiada, aplicando estrategias básicas de resolución",
@@ -17,42 +22,60 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Explorar, formular y comprobar conjeturas sencillas, a través del planteamiento 
+de problemas matemáticos sobre situaciones basadas en la vida cotidiana, 
+utilizando el razonamiento y la argumentación, contrastando su validez, de forma 
+guiada.",
         "criterios": {
           "3.1": "Realizar conjeturas matemáticas sencillas, investigando patrones, propiedades y relaciones de forma guiada",
           "3.2": "Dar ejemplos de problemas a partir de situaciones cotidianas que se resuelvan matemáticamente."
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Utilizar el pensamiento computacional organizando datos, descomponiendo en 
+partes, reconociendo patrones, generalizando e interpretando, modificando y 
+creando algoritmos de forma guiada a través de la modelización y automatización 
+en situaciones de la vida cotidiana.",
         "criterios": {
           "4.1": "Describir rutinas y actividades sencillas de la vida cotidiana que se realicen paso a paso, utilizando principios básicos del pensamiento computacional de forma guiada",
           "4.2": "Emplear herramientas tecnológicas adecuadas, de forma guiada, en el proceso de resolución de problemas."
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Utilizar y reconocer conexiones entre las diferentes ideas matemáticas, así 
+como identificar las matemáticas implicadas en otras áreas o en la vida cotidiana, interrelacionando conceptos y procedimientos, interpretando situaciones y 
+contextos diversos.",
         "criterios": {
           "5.1": "Reconocer conexiones entre los diferentes elementos matemáticos aplicando conocimientos y experiencias propios",
           "5.2": "Reconocer las matemáticas presentes en la vida cotidiana y en otras áreas, estableciendo conexiones sencillas entre ellas."
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Comunicar y representar, de forma individual y colectiva, conceptos, 
+procedimientos y resultados matemáticos, usando la terminología matemática 
+apropiada y utilizando distintos lenguajes (oral, escrito, gráfico, multimodal), que 
+dan significado y permanencia a las ideas matemáticas.",
         "criterios": {
           "6.1": "Reconocer lenguaje matemático sencillo presente en la vida cotidiana, adquiriendo vocabulario específico básico",
           "6.2": "Explicar ideas y procesos matemáticos sencillos, los pasos seguidos en la resolución de un problema o los resultados matemáticos, de forma verbal o gráfica."
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Desarrollar destrezas personales que ayuden a identificar y gestionar 
+emociones al enfrentarse a retos matemáticos, fomentando la confianza en las 
+propias posibilidades, aceptando el error como parte del proceso de aprendizaje, adaptándose a las situaciones de incertidumbre, mejorando la perseverancia y 
+disfrutando del aprendizaje de las matemáticas.",
         "criterios": {
           "7.1": "Reconocer las emociones básicas propias al abordar nuevos retos matemáticos, solicitando ayuda solo cuando sea necesario",
           "7.2": "Expresar actitudes positivas ante retos matemáticos, aceptando el error como una oportunidad de aprendizaje."
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Reconocer y respetar las experiencias de los demás y la diversidad, 
+desarrollando destrezas sociales y de participación activa en equipos de trabajo 
+heterogéneos con funciones asignadas, construyendo una identidad positiva 
+como estudiante de matemáticas, fomentando el bienestar personal y creando 
+relaciones saludables.",
         "criterios": {
           "8.1": "Participar respetuosamente en el trabajo en equipo, estableciendo relaciones saludables basadas en el respeto, la igualdad y la resolución pacífica de conflictos",
           "8.2": "Aceptar la tarea y rol asignado en el trabajo en equipo, cumpliendo con las responsabilidades individuales y contribuyendo a la consecución de los objetivos del grupo."
@@ -61,11 +84,19 @@
     },
     "Segundo ciclo": {
       "CE1": {
-        "descripcion": "",
-        "criterios": {}
+        "descripcion": "Interpretar problemas de la vida cotidiana, utilizando conceptos, herramientas 
+y estrategias de razonamiento matemático, en particular representaciones que 
+apoyen el análisis de la información más relevante.",
+        "criterios": {
+	  "1.1": "Interpretar, de forma verbal o gráfica, problemas de la vida cotidiana, comprendiendo las preguntas planteadas e identificando los datos relevantes, a través de diferentes estrategias o herramientas, incluidas las tecnológicas",
+          "1.2": "Producir representaciones matemáticas a través de esquemas o diagramas que sirvan de apoyo en la resolución de una situación problematizada de la vida cotidiana."
+	}
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Resolver situaciones sencillas problematizadas, aplicando diferentes 
+estrategias y utilizando el razonamiento matemático, para obtener soluciones y 
+comprobar su validez desde un punto de vista formal y en relación con el contexto 
+planteado.",
         "criterios": {
           "2.1": "Comparar entre diferentes estrategias para resolver un problema de forma pautada",
           "2.2": "Obtener posibles soluciones de un problema siguiendo alguna estrategia conocida",
@@ -73,42 +104,60 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Explorar, formular y comprobar conjeturas sencillas, a través del planteamiento 
+de problemas matemáticos sobre situaciones basadas en la vida cotidiana, 
+utilizando el razonamiento y la argumentación, contrastando su validez, de forma 
+guiada.",
         "criterios": {
           "3.1": "Analizar conjeturas matemáticas sencillas investigando patrones, propiedades y relaciones de forma pautada",
           "3.2": "Dar ejemplos de problemas sobre situaciones cotidianas que se resuelven matemáticamente."
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Utilizar el pensamiento computacional organizando datos, descomponiendo en 
+partes, reconociendo patrones, generalizando e interpretando, modificando y 
+creando algoritmos de forma guiada a través de la modelización y automatización 
+en situaciones de la vida cotidiana.",
         "criterios": {
           "4.1": "Automatizar situaciones sencillas de la vida cotidiana que se realicen paso a paso o sigan una rutina, utilizando de forma pautada principios básicos del pensamiento computacional",
           "4.2": "Emplear herramientas tecnológicas adecuadas en el proceso de resolución de problemas."
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Utilizar y reconocer conexiones entre las diferentes ideas matemáticas, así 
+como identificar las matemáticas implicadas en otras áreas o en la vida cotidiana, interrelacionando conceptos y procedimientos, interpretando situaciones y 
+contextos diversos.",
         "criterios": {
           "5.1": "Realizar conexiones entre los diferentes elementos matemáticos, aplicando conocimientos y experiencias propios",
           "5.2": "Interpretar situaciones en contextos diversos, reconociendo las conexiones entre las matemáticas y la vida cotidiana."
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Comunicar y representar, de forma individual y colectiva, conceptos, 
+procedimientos y resultados matemáticos, usando la terminología matemática 
+apropiada y utilizando distintos lenguajes (oral, escrito, gráfico, multimodal), que 
+dan significado y permanencia a las ideas matemáticas.",
         "criterios": {
           "6.1": "Reconocer lenguaje matemático sencillo presente en la vida cotidiana en diferentes formatos, adquiriendo vocabulario específico básico y mostrando la comprensión del mensaje",
           "6.2": "Explicar los procesos e ideas matemáticas, los pasos seguidos en la resolución de un problema y los resultados obtenidos, utilizando lenguaje matemático sencillo y diferentes formatos."
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Desarrollar destrezas personales que ayuden a identificar y gestionar 
+emociones al enfrentarse a retos matemáticos, fomentando la confianza en las 
+propias posibilidades, aceptando el error como parte del proceso de aprendizaje, adaptándose a las situaciones de incertidumbre, mejorando la perseverancia y 
+disfrutando del aprendizaje de las matemáticas.",
         "criterios": {
           "7.1": "Identificar las emociones propias al abordar retos matemáticos, pidiendo ayuda solo cuando sea necesario y desarrollando la autoconfianza",
           "7.2": "Mostrar actitudes positivas ante retos matemáticos tales como el esfuerzo y la flexibilidad, valorando el error como una oportunidad de aprendizaje."
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Reconocer y respetar las experiencias de los demás y la diversidad, 
+desarrollando destrezas sociales y de participación activa en equipos de trabajo 
+heterogéneos con funciones asignadas, construyendo una identidad positiva 
+como estudiante de matemáticas, fomentando el bienestar personal y creando 
+relaciones saludables.",
         "criterios": {
           "8.1": "Trabajar en equipo activa y respetuosamente, comunicándose adecuadamente, respetando la diversidad del grupo y estableciendo relaciones saludables basadas en la igualdad y la resolución pacífica de conflictos",
           "8.2": "Participar en el reparto de tareas asumiendo y respetando las responsabilidades individuales asignadas y empleando estrategias sencillas de trabajo en equipo dirigidas a la consecución de objetivos compartidos."
@@ -117,14 +166,19 @@
     },
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Interpretar problemas de la vida cotidiana, utilizando conceptos, herramientas 
+y estrategias de razonamiento matemático, en particular representaciones que 
+apoyen el análisis de la información más relevante.",
         "criterios": {
           "1.1": "Comprender problemas de la vida cotidiana a través de la reformulación de la pregunta, de forma verbal y gráfica",
           "1.2": "Elaborar representaciones matemáticas que ayuden en la búsqueda y elección de estrategias y herramientas, incluidas las tecnológicas, para la resolución de una situación problematizada."
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Resolver situaciones sencillas problematizadas, aplicando diferentes 
+estrategias y utilizando el razonamiento matemático, para obtener soluciones y 
+comprobar su validez desde un punto de vista formal y en relación con el contexto 
+planteado.",
         "criterios": {
           "2.1": "Seleccionar entre diferentes estrategias para resolver un problema, justificando la elección",
           "2.2": "Obtener posibles soluciones de un problema, seleccionando entre varias estrategias conocidas de forma autónoma",
@@ -132,41 +186,60 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Explorar, formular y comprobar conjeturas sencillas, a través del planteamiento 
+de problemas matemáticos sobre situaciones basadas en la vida cotidiana, 
+utilizando el razonamiento y la argumentación, contrastando su validez, de forma 
+guiada.",
         "criterios": {
+	  "3.1": "Formular conjeturas matemáticas sencillas investigando patrones, propiedades y relaciones de forma guiada.",
           "3.2": "Plantear nuevos problemas sobre situaciones cotidianas que se resuelvan matemáticamente."
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Utilizar el pensamiento computacional organizando datos, descomponiendo en 
+partes, reconociendo patrones, generalizando e interpretando, modificando y 
+creando algoritmos de forma guiada a través de la modelización y automatización 
+en situaciones de la vida cotidiana.",
         "criterios": {
           "4.1": "Modelizar situaciones de la vida cotidiana utilizando, de forma pautada, principios básicos del pensamiento computacional",
           "4.2": "Emplear herramientas tecnológicas adecuadas en la investigación y resolución de problemas."
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Utilizar y reconocer conexiones entre las diferentes ideas matemáticas, así 
+como identificar las matemáticas implicadas en otras áreas o en la vida cotidiana, interrelacionando conceptos y procedimientos, interpretando situaciones y 
+contextos diversos.",
         "criterios": {
           "5.1": "Utilizar conexiones entre diferentes elementos matemáticos movilizando conocimientos y experiencias propios",
           "5.2": "Utilizar las conexiones entre las matemáticas, otras áreas y la vida cotidiana para resolver problemas en contextos no matemáticos."
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Comunicar y representar, de forma individual y colectiva, conceptos, 
+procedimientos y resultados matemáticos, usando la terminología matemática 
+apropiada y utilizando distintos lenguajes (oral, escrito, gráfico, multimodal), que 
+dan significado y permanencia a las ideas matemáticas.",
         "criterios": {
           "6.1": "Interpretar lenguaje matemático sencillo presente en la vida cotidiana en diferentes formatos, adquiriendo vocabulario apropiado y mostrando la comprensión del mensaje",
           "6.2": "Comunicar en diferentes formatos las conjeturas y procesos matemáticos, utilizando lenguaje matemático adecuado."
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Desarrollar destrezas personales que ayuden a identificar y gestionar 
+emociones al enfrentarse a retos matemáticos, fomentando la confianza en las 
+propias posibilidades, aceptando el error como parte del proceso de aprendizaje, adaptándose a las situaciones de incertidumbre, mejorando la perseverancia y 
+disfrutando del aprendizaje de las matemáticas.",
         "criterios": {
           "7.1": "Autorregular las emociones propias y reconocer algunas fortalezas y debilidades, desarrollando así la autoconfianza al abordar retos matemáticos",
           "7.2": "Elegir actitudes positivas ante retos matemáticos, tales como la perseverancia y la responsabilidad, valorando el error como una oportunidad de aprendizaje."
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Reconocer y respetar las experiencias de los demás y la diversidad, 
+desarrollando destrezas sociales y de participación activa en equipos de trabajo 
+heterogéneos con funciones asignadas, construyendo una identidad positiva 
+como estudiante de matemáticas, fomentando el bienestar personal y creando 
+relaciones saludables.",
         "criterios": {
           "8.1": "Trabajar en equipo activa y respetuosamente, mostrando iniciativa, comunicándose de forma efectiva, valorando la diversidad, mostrando empatía y estableciendo relaciones saludables basadas en el respeto, la igualdad y la resolución pacífica de conflictos",
           "8.2": "Colaborar en el reparto de tareas, asumiendo y respetando las responsabilidades individuales asignadas y empleando estrategias de trabajo en equipo sencillas dirigidas a la consecución de objetivos compartidos."
@@ -177,7 +250,10 @@
   "Conocimiento del medio": {
     "Primer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Utilizar dispositivos y recursos digitales de forma segura, responsable y 
+eficiente, para buscar información, comunicarse, trabajar de manera individual, 
+en equipo y en red, y crear contenido digital de acuerdo con las necesidades 
+digitales del contexto educativo y de sus intereses personales.",
         "criterios": {
           "1.1": "Utilizar dispositivos y recursos digitales de acuerdo con las necesidades del contexto educativo de forma segura",
           "1.2": "Adquirir un manejo básico de los dispositivos de trabajo digital más usuales (encender y apagar equipos, conectar periféricos, conectarlos a la red eléctrica, etc.) permitiéndoles su uso de forma autónoma",
@@ -186,7 +262,10 @@
         }
       },
       "CE2": {
-        "descripcion": "encuestas, tests...).",
+        "descripcion": "Plantear y dar respuesta a preguntas científicas sencillas, utilizando diferentes 
+técnicas, instrumentos y modelos propios del pensamiento científico, mediante la 
+interpretación y explicación de hechos y fenómenos que ocurren en el medio 
+natural, social y cultural.",
         "criterios": {
           "2.1": "Mostrar curiosidad por objetos, hechos y fenómenos cercanos, formulando preguntas y realizando predicciones",
           "2.2": "Buscar información sencilla de diferentes fuentes seguras y fiables de forma guiada, que luego se utilice en investigaciones relacionadas con el medio natural, social y cultural",
@@ -198,7 +277,10 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Resolver problemas a través de proyectos interdisciplinares, aplicando el 
+pensamiento de diseño y el pensamiento computacional, generando 
+cooperativamente un producto creativo e innovador que responda a necesidades, 
+retos o problemas concretos",
         "criterios": {
           "3.1": "Probar distintos diseños de prototipos trabajando en equipo",
           "3.2": "Utilizar de forma segura materiales y herramientas adecuadas para la elaboración del producto final",
@@ -210,7 +292,10 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Desarrollar hábitos saludables, fundamentados en el conocimiento científico, 
+consiguiendo el bienestar físico, emocional y social, mediante el conocimiento y 
+conciencia del propio cuerpo, de las emociones y los sentimientos propios y 
+ajenos",
         "criterios": {
           "4.1": "Reconocer e identificar la imagen y el esquema corporal",
           "4.2": "Distinguir acciones que favorezcan el bienestar emocional y social",
@@ -223,7 +308,11 @@
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Interactuar con los diferentes elementos de los sistemas del medio natural, 
+social y cultural, identificando sus características, analizando su organización y 
+propiedades, y estableciendo relaciones entre los mismos, de manera que valoren 
+el patrimonio cultural, social y natural, emprendiendo acciones para conseguir un 
+uso responsable del mismo, su conservación, protección y mejora",
         "criterios": {
           "5.1": "Reconocer las características, organización y propiedades de los elementos del medio natural, social y cultural a través de metodologías de indagación y utilizando las herramientas y procesos adecuados de forma pautada",
           "5.2": "Establecer conexiones sencillas y directas entre diferentes elementos del medio natural, social y cultural por medio de la observación, la manipulación y la experimentación",
@@ -233,7 +322,12 @@
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": " Identificar críticamente las causas y consecuencias de la intervención humana 
+en el entorno, desde los puntos de vista social, económico, cultural, tecnológico 
+y ambiental, para mejorar la capacidad de afrontar problemas, buscar soluciones 
+y actuar de manera individual y colaborativa en su resolución, poniendo en 
+práctica hábitos de vida sostenibles y consecuentes con el respeto, cuidado y 
+protección de las personas y del planeta.",
         "criterios": {
           "6.1": "Mostrar estilos de vida sostenible y valorar la importancia del respeto, los cuidados, la corresponsabilidad y la protección de los elementos y seres del planeta, identificando la relación de la vida de las personas con sus acciones sobre los elementos y recursos del medio como el suelo y el agua",
           "6.2": "Adoptar hábitos diarios en relación al uso racional del agua (ducha, lavado de dientes, ahorro de agua...), la movilidad (transporte público, uso de la bicicleta…) y la gestión de recursos (reciclaje de basura)",
@@ -244,7 +338,10 @@
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Observar e interpretar continuidades y cambios del medio social y cultural, 
+analizando individual y colectivamente relaciones de causalidad, simultaneidad y 
+sucesión mediante la explicación y valoración de las relaciones entre diferentes 
+elementos y acontecimientos en diferentes contextos.",
         "criterios": {
           "7.1": "Reconocer los principales acontecimientos históricos personales, familiares y del entorno cercano, situándolos en el tiempo mediante el uso de líneas temporales",
           "7.2": "Emplear nociones de medida y sucesión básicas para ordenar temporalmente acontecimientos personales con el fin de comprender mejor su historia individual y familiar",
@@ -254,7 +351,10 @@
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Reconocer, valorar y respetar la diversidad y la igualdad de género, mostrando 
+empatía y respeto por otras culturas, y reflexionando sobre cuestiones éticas, 
+para contribuir así al bienestar individual y colectivo de una sociedad en continua 
+transformación y al logro de los valores de la integración europea",
         "criterios": {
           "8.1": "Observar y recoger información acerca de las manifestaciones culturales del propio entorno, mostrando respeto hacia sí mismo y hacia otras personas",
           "8.2": "Valorar la diversidad y riqueza existente en nuestro entorno apreciándola como fuente de aprendizaje",
@@ -263,7 +363,13 @@
         }
       },
       "CE9": {
-        "descripcion": "",
+        "descripcion": "Participar en el entorno y la vida social de forma eficaz y constructiva 
+respetando tanto los valores democráticos como los derechos humanos y de la 
+infancia y también los principios y valores de la Constitución española y la Unión 
+Europea, así como valorando la función del Estado y sus instituciones en el 
+mantenimiento de la paz y seguridad integral ciudadana para generar 
+interacciones respetuosas y equitativas, mediante la promoción de la resolución 
+pacífica y dialogada de los conflictos.",
         "criterios": {
           "9.1": "Identificar y asumir responsabilidades individuales en el entorno familiar y educativo",
           "9.2": "Llegar a acuerdos y resolver conflictos de forma dialógica y democrática",
@@ -275,11 +381,25 @@
     },
     "Segundo ciclo": {
       "CE1": {
-        "descripcion": "",
-        "criterios": {}
+        "descripcion": "Utilizar dispositivos y recursos digitales de forma segura, responsable y 
+eficiente, para buscar información, comunicarse, trabajar de manera individual, 
+en equipo y en red, y crear contenido digital de acuerdo con las necesidades 
+digitales del contexto educativo y de sus intereses personales.",
+        "criterios": {
+          "1.1": "Utilizar dispositivos y recursos digitales, de acuerdo a las necesidades del contexto educativo, de forma segura, buscando información, comunicándose y trabajando de forma individual y en equipo reelaborando y creando contenidos digitales sencillos",
+          "1.2": "Dominar los aspectos fundamentales del uso de aplicaciones de trabajo digital más usuales (abrir carpetas, acceder al navegador o a las aplicaciones e introducir usuarios y contraseñas de las aplicaciones y sitios web utilizados), que permitan obtener o almacenar información para el desarrollo de proyectos escolares o personales.",
+          "1.3": "Valorar el cuidado de los dispositivos utilizados, contribuyendo a su mantenimiento y buen funcionamiento, teniendo en consideración al resto de usuarios de los mismos.",
+          "1.4": "Iniciarse en el uso de alguna de las plataformas y aplicaciones educativas de uso más común en los centros de Extremadura (eScholarium, Google Classroom, MoodleEvex, etc.), utilizándolas en situaciones de aprendizaje y comunicación",
+          "1.5": "Realizar búsquedas sencillas de información en la red que le permitan resolver problemas, desarrollar nuevas ideas o adquirir conocimientos para llevar a cabo proyectos escolares o personales.",
+          "1.6": "Iniciarse en el manejo básico de herramientas digitales para la creación de contenido (audiovisual, artístico, en formato texto, etc.) generando productos finales en los proyectos o almacenando información relevante para los mismos",
+          "1.7": "Manejar aspectos básicos de las principales herramientas de comunicación (correo electrónico, chats, mensajería de eScholarium, etc.) que le permitan comunicarse con los demás para resolver situaciones de aprendizaje o para un uso personal habitual."
+        }
       },
       "CE2": {
-        "descripcion": "científico básico.",
+        "descripcion": "Plantear y dar respuesta a preguntas científicas sencillas, utilizando diferentes 
+técnicas, instrumentos y modelos propios del pensamiento científico, mediante la 
+interpretación y explicación de hechos y fenómenos que ocurren en el medio 
+natural, social y cultural.",
         "criterios": {
           "2.1": "Formular preguntas y realizar predicciones razonadas, demostrando curiosidad por el medio natural, social y cultural cercano",
           "2.2": "Buscar y seleccionar información, de diferentes fuentes seguras y fiables, adquiriendo léxico científico básico, que se utilizará en investigaciones relacionadas con el medio natural, social y cultural y adquiriendo léxico",
@@ -291,7 +411,10 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Resolver problemas a través de proyectos interdisciplinares, aplicando el 
+pensamiento de diseño y el pensamiento computacional, generando 
+cooperativamente un producto creativo e innovador que responda a necesidades, 
+retos o problemas concretos.",
         "criterios": {
           "3.1": "Probar prototipos diferentes y seleccionar el más adecuado para la solución del problema",
           "3.2": "Usar de forma segura herramientas, técnicas y materiales adecuados para la elaboración del producto final",
@@ -303,7 +426,10 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Desarrollar hábitos saludables, fundamentados en el conocimiento científico, 
+consiguiendo el bienestar físico, emocional y social, mediante el conocimiento y 
+conciencia del propio cuerpo, de las emociones y los sentimientos propios y 
+ajenos",
         "criterios": {
           "4.1": "Valorar y respetar su propio cuerpo y el de los demás",
           "4.2": "Mostrar actitudes que fomenten el bienestar emocional y social",
@@ -316,7 +442,11 @@
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Interactuar con los diferentes elementos de los sistemas del medio natural, 
+social y cultural, identificando sus características, analizando su organización y 
+propiedades, y estableciendo relaciones entre los mismos, de manera que valoren 
+el patrimonio cultural, social y natural, emprendiendo acciones para conseguir un 
+uso responsable del mismo, su conservación, protección y mejora",
         "criterios": {
           "5.1": "Identificar las características, la organización y las propiedades de los elementos del medio natural, social y cultural a través de la indagación y utilizando las herramientas y procesos adecuados",
           "5.2": "Identificar las características de los diferentes elementos del medio natural, social y cultural",
@@ -326,7 +456,12 @@
         }
       },
       "CE6": {
-        "descripcion": "para afrontar problemas ecosociales, buscar soluciones de manera cooperativa y actuar para su resolución, a partir del análisis crítico de las causas y consecuencias de la intervención humana en el entorno.",
+        "descripcion": " Identificar críticamente las causas y consecuencias de la intervención humana 
+en el entorno, desde los puntos de vista social, económico, cultural, tecnológico 
+y ambiental, para mejorar la capacidad de afrontar problemas, buscar soluciones 
+y actuar de manera individual y colaborativa en su resolución, poniendo en 
+práctica hábitos de vida sostenibles y consecuentes con el respeto, cuidado y 
+protección de las personas y del planeta.",
         "criterios": {
           "6.1": "Identificar problemas ecosociales y proponer posibles soluciones a los mismos",
           "6.2": "Adoptar estilos de vida sostenibles y respetuosos en relación a la conservación y protección de la naturaleza",
@@ -340,7 +475,10 @@
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Observar e interpretar continuidades y cambios del medio social y cultural, 
+analizando individual y colectivamente relaciones de causalidad, simultaneidad y 
+sucesión mediante la explicación y valoración de las relaciones entre diferentes 
+elementos y acontecimientos en diferentes contextos.",
         "criterios": {
           "7.1": "Conocer los principales vestigios históricos desde la Prehistoria hasta la Edad Antigua, en España y Extremadura, reconociendo y valorando su importancia histórica, cultural y patrimonial",
           "7.2": "Conocer y valorar algunas de las expresiones artísticas y culturales desde la Prehistoria hasta la Edad Antigua, reconociendo qué aspectos sociales y culturales se reflejan en ellas",
@@ -351,7 +489,10 @@
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Reconocer, valorar y respetar la diversidad y la igualdad de género, mostrando 
+empatía y respeto por otras culturas, y reflexionando sobre cuestiones éticas, 
+para contribuir así al bienestar individual y colectivo de una sociedad en continua 
+transformación y al logro de los valores de la integración europea",
         "criterios": {
           "8.1": "Reflexionar sobre cuestiones éticas contribuyendo al bienestar individual y colectivo",
           "8.2": "Analizar la importancia demográfica y económica de las migraciones en la actualidad, valorando con respeto y empatía el aporte por la diversidad cultural al bienestar individual y colectivo",
@@ -360,7 +501,13 @@
         }
       },
       "CE9": {
-        "descripcion": "",
+        "descripcion": "Participar en el entorno y la vida social de forma eficaz y constructiva 
+respetando tanto los valores democráticos como los derechos humanos y de la 
+infancia y también los principios y valores de la Constitución española y la Unión 
+Europea, así como valorando la función del Estado y sus instituciones en el 
+mantenimiento de la paz y seguridad integral ciudadana para generar 
+interacciones respetuosas y equitativas, mediante la promoción de la resolución 
+pacífica y dialogada de los conflictos.",
         "criterios": {
           "9.1": "Realizar actividades en el contexto de la comunidad escolar, asumiendo responsabilidades y estableciendo acuerdos de forma dialogada y democrática y empleando un lenguaje inclusivo, no violento y respetuoso con las normas gramaticales",
           "9.2": "Conocer los principales órganos de gobierno y funciones de diversas administraciones y servicios públicos, valorando la importancia de su gestión para la seguridad integral ciudadana, el funcionamiento social y la participación democrática",
@@ -370,7 +517,10 @@
     },
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "verificando dicha información, que permita resolver problemas, desarrollar nuevas ideas o adquirir conocimientos para llevar a cabo proyectos escolares o personales. con los demás (saludos y despedidas, normas básicas de respeto, empatía con los demás, uso de mayúsculas para elevar la voz, autocontrol emocional ante una descortesía, paciencia con los usuarios y dispositivos, etc.) evitando la generación de conflictos y frustraciones innecesarias.",
+        "descripcion": "Utilizar dispositivos y recursos digitales de forma segura, responsable y 
+eficiente, para buscar información, comunicarse, trabajar de manera individual, 
+en equipo y en red, y crear contenido digital de acuerdo con las necesidades 
+digitales del contexto educativo y de sus intereses personales.",
         "criterios": {
           "1.1": "Utilizar recursos digitales de acuerdo con las necesidades del contexto educativo de forma segura y eficiente, buscando información, comunicándose y trabajando de forma individual, en equipo y en red para crear contenidos digitales más elaborados",
           "1.2": "Valorar el cuidado de los dispositivos utilizados, contribuyendo a su mantenimiento y buen funcionamiento, teniendo en consideración al resto de usuarios de los mismos",
@@ -384,7 +534,10 @@
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Plantear y dar respuesta a preguntas científicas sencillas, utilizando diferentes 
+técnicas, instrumentos y modelos propios del pensamiento científico, mediante la 
+interpretación y explicación de hechos y fenómenos que ocurren en el medio 
+natural, social y cultural.",
         "criterios": {
           "2.1": "Formular preguntas y realizar predicciones razonadas sobre el medio natural, social o cultural mostrando y manteniendo la curiosidad",
           "2.2": "Buscar, seleccionar y contrastar información de diferentes fuentes seguras y fiables, usando los criterios de fiabilidad de fuentes, adquiriendo léxico científico básico y utilizándola en investigaciones relacionadas con el medio natural, social y cultural",
@@ -396,7 +549,10 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Resolver problemas a través de proyectos interdisciplinares, aplicando el 
+pensamiento de diseño y el pensamiento computacional, generando 
+cooperativamente un producto creativo e innovador que responda a necesidades, 
+retos o problemas concretos.",
         "criterios": {
           "3.1": "Evaluar las necesidades del entorno como base para el planteamiento de problemas de diseño",
           "3.2": "Establecer objetivos concretos y viables que lleven a la solución (analógica o digital) del problema de diseño planteado",
@@ -413,7 +569,10 @@
         }
       },
       "CE4": {
-        "descripcion": "emocional y social.",
+        "descripcion": "Desarrollar hábitos saludables, fundamentados en el conocimiento científico, 
+consiguiendo el bienestar físico, emocional y social, mediante el conocimiento y 
+conciencia del propio cuerpo, de las emociones y los sentimientos propios y 
+ajenos",
         "criterios": {
           "4.1": "Asumir y aceptar los cambios físicos que conlleva la pubertad y la adolescencia de manera positiva, tanto en uno mismo como en los demás",
           "4.2": "Promover actitudes que fomenten el bienestar emocional y social",
@@ -428,7 +587,11 @@
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Interactuar con los diferentes elementos de los sistemas del medio natural, 
+social y cultural, identificando sus características, analizando su organización y 
+propiedades, y estableciendo relaciones entre los mismos, de manera que valoren 
+el patrimonio cultural, social y natural, emprendiendo acciones para conseguir un 
+uso responsable del mismo, su conservación, protección y mejora",
         "criterios": {
           "5.1": "Identificar y analizar las características, organización y propiedades de los elementos del medio natural, social y cultural a través de metodologías de indagación utilizando las herramientas y procesos adecuados",
           "5.2": "Analizar la organización, las propiedades y las relaciones que se establecen entre los diferentes elementos del medio natural social y cultural",
@@ -437,7 +600,12 @@
         }
       },
       "CE6": {
-        "descripcion": "de cooperación y de respeto hacia las personas y el planeta.",
+        "descripcion": "Identificar críticamente las causas y consecuencias de la intervención humana 
+en el entorno, desde los puntos de vista social, económico, cultural, tecnológico 
+y ambiental, para mejorar la capacidad de afrontar problemas, buscar soluciones 
+y actuar de manera individual y colaborativa en su resolución, poniendo en 
+práctica hábitos de vida sostenibles y consecuentes con el respeto, cuidado y 
+protección de las personas y del planeta.",
         "criterios": {
           "6.1": "Adoptar y promover estilos de vida sostenibles y consecuentes con el respeto, los cuidados, la corresponsabilidad y la protección de las personas y del planeta",
           "6.2": "Practicar un consumo responsable en la vida diaria y fomentarlo entre las personas de su entorno familiar y social",
@@ -448,7 +616,10 @@
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Observar e interpretar continuidades y cambios del medio social y cultural, 
+analizando individual y colectivamente relaciones de causalidad, simultaneidad y 
+sucesión mediante la explicación y valoración de las relaciones entre diferentes 
+elementos y acontecimientos en diferentes contextos.",
         "criterios": {
           "7.1": "Conocer los acontecimientos históricos más relevantes ocurridos en España y Extremadura desde la Edad Media, analizando relaciones de causalidad, simultaneidad y sucesión, para comprender las circunstancias sociales y culturales de la actualidad",
           "7.2": "Conocer los principales vestigios históricos desde la Edad Media hasta nuestros días, en España y Extremadura, reconociendo y valorando su importancia histórica, cultural y patrimonial, situando cronológicamente los hechos",
@@ -459,7 +630,10 @@
         }
       },
       "CE8": {
-        "descripcion": "por las distintas identidades y expresiones de género.",
+        "descripcion": "Reconocer, valorar y respetar la diversidad y la igualdad de género, mostrando 
+empatía y respeto por otras culturas, y reflexionando sobre cuestiones éticas, 
+para contribuir así al bienestar individual y colectivo de una sociedad en continua 
+transformación y al logro de los valores de la integración europea",
         "criterios": {
           "8.1": "Contribuir, a través del respeto de la diversidad, al logro de los valores de la integración europea",
           "8.2": "Investigar sobre los procesos geográficos, históricos y culturales que han conformado la sociedad actual",
@@ -470,7 +644,13 @@
         }
       },
       "CE9": {
-        "descripcion": "",
+        "descripcion": "Participar en el entorno y la vida social de forma eficaz y constructiva 
+respetando tanto los valores democráticos como los derechos humanos y de la 
+infancia y también los principios y valores de la Constitución española y la Unión 
+Europea, así como valorando la función del Estado y sus instituciones en el 
+mantenimiento de la paz y seguridad integral ciudadana para generar 
+interacciones respetuosas y equitativas, mediante la promoción de la resolución 
+pacífica y dialogada de los conflictos.",
         "criterios": {
           "9.1": "Promover interacciones sociales respetuosas y equitativas en el entorno escolar, familiar y social",
           "9.2": "Resolver conflictos de forma pacífica y dialogada, usando un lenguaje inclusivo, no violento, equitativo y respetuoso con las normas gramaticales",
@@ -485,7 +665,10 @@
   "Lengua extranjera": {
     "Primer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Identificar el sentido general e información específica y predecible de textos 
+breves y sencillos, expresados de forma clara y en la lengua estándar, haciendo 
+uso de diversas estrategias y apoyos, desarrollando el repertorio lingüístico y 
+respondiendo a necesidades  comunicativas cotidianas",
         "criterios": {
           "1.1": "Reconocer palabras y expresiones habituales en textos orales, escritos y multimodales breves y sencillos sobre temas frecuentes y cotidianos de relevancia personal y próximos a su experiencia, expresados de forma comprensible, clara, sencilla y directa, y en lengua estándar",
           "1.2": "Interpretar palabras y expresiones habituales en textos orales, escritos y multimodales breves y sencillos sobre temas frecuentes y cotidianos de relevancia personal y próximos a su experiencia, expresados de forma comprensible, clara, sencilla y directa, y en lengua estándar",
@@ -494,7 +677,10 @@
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Producir textos sencillos de manera comprensible y estructurada, mediante el 
+empleo de estrategias como la planificación o la compensación, expresando 
+mensajes breves relacionados con necesidades inmediatas y respondiendo a 
+propósitos comunicativos cotidianos",
         "criterios": {
           "2.1": "Expresar oralmente frases cortas, siguiendo un modelo, con información básica sobre asuntos cotidianos y de relevancia para el alumnado",
           "2.2": "Utilizar de forma guiada recursos verbales y no verbales, recurriendo a modelos y estructuras previamente presentados y prestando atención al ritmo, la acentuación y la entonación",
@@ -504,7 +690,9 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Interactuar cooperativamente con otras personas usando expresiones 
+cotidianas, con el apoyo de recursos analógicos y digitales, en función de sus 
+propias necesidades y respetando las normas de cortesía",
         "criterios": {
           "3.1": "Participar, de forma guiada, en situaciones interactivas elementales de intercambio de información sobre temas cotidianos, preparadas previamente, a través de diversos soportes, apoyándose en recursos tales como la repetición, el ritmo pausado o el lenguaje no verbal, y mostrando empatía",
           "3.2": "Seleccionar y utilizar, de forma guiada y en entornos próximos, estrategias elementales para saludar, despedirse y presentarse; expresar mensajes sencillos y breves, y formular y contestar preguntas básicas para la comunicación",
@@ -513,13 +701,18 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Mediar en situaciones predecibles, usando estrategias y conocimientos sobre 
+procesamiento y transmisión de información básica y sencilla, con el fin de 
+facilitar la comunicación.",
         "criterios": {
           "4.1": "Interpretar y explicar información básica de conceptos, comunicaciones y textos breves y sencillos, de forma guiada, en situaciones en las que atender a la diversidad, mostrando empatía e interés por los interlocutores o interlocutoras y por los problemas de entendimiento en su entorno inmediato, apoyándose en diversos recursos y soportes."
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Reconocer y usar, de manera guiada, los repertorios lingüísticos personales 
+entre distintas lenguas, a partir de una reflexión sobre su funcionamiento, 
+identificando las estrategias y conocimientos propios, dando respuesta a 
+necesidades comunicativas concretas en situaciones conocidas.",
         "criterios": {
           "5.1": "Distinguir y comparar similitudes y diferencias evidentes entre distintas lenguas reflexionando, de forma guiada, sobre aspectos elementales de su funcionamiento",
           "5.2": "Identificar y aplicar, de forma guiada, conocimientos y estrategias de mejora de su capacidad de comunicar y de aprender la lengua extranjera, con apoyo de otros participantes y de soportes multimedia y de las tecnologías de la comunicación",
@@ -527,7 +720,9 @@
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Gestionar situaciones interculturales desde el aprecio a la diversidad 
+lingüística, cultural y artística a partir de la lengua extranjera, identificando las 
+diferencias y semejanzas entre lenguas y culturas",
         "criterios": {
           "6.1": "Mostrar interés por la comunicación intercultural, identificando, de forma guiada, las discriminaciones, los prejuicios y los estereotipos más comunes en situaciones cotidianas y habituales",
           "6.2": "Reconocer y apreciar la diversidad lingüística y cultural relacionada con la lengua extranjera, mostrando interés por conocer sus elementos culturales y lingüísticos elementales",
@@ -538,11 +733,22 @@
     },
     "Segundo ciclo": {
       "CE1": {
-        "descripcion": "",
-        "criterios": {}
+        "descripcion": "Identificar el sentido general e información específica y predecible de textos 
+breves y sencillos, expresados de forma clara y en la lengua estándar, haciendo 
+uso de diversas estrategias y apoyos, desarrollando el repertorio lingüístico y 
+respondiendo a necesidades  comunicativas cotidianas",
+        "criterios": {
+	  "1.1": "Reconocer el sentido global, al igual que palabras y frases previamente indicadas en textos orales, escritos y multimodales breves y sencillos sobre temas frecuentes y cotidianos de relevancia personal y próximos a su experiencia, así como de textos de ficción adecuados al nivel de desarrollo del alumnado.",
+          "1.2": "Interpretar el sentido global de palabras y frases previamente indicadas en textos orales, escritos y multimodales breves y sencillos sobre temas frecuentes y cotidianos de relevancia personal y próximos a su experiencia, así como de textos de ficción adecuados al nivel de desarrollo del alumnado",
+          "1.3": "Seleccionar y aplicar de forma guiada estrategias adecuadas en situaciones comunicativas cotidianas y de relevancia para el alumnado",
+          "1.4": "Identificar el sentido global y procesar informaciones explícitas en textos breves y sencillos sobre temas familiares"
+	}
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Producir textos sencillos de manera comprensible y estructurada, mediante el 
+empleo de estrategias como la planificación o la compensación, expresando 
+mensajes breves relacionados con necesidades inmediatas y respondiendo a 
+propósitos comunicativos cotidianos",
         "criterios": {
           "2.1": "Expresar oralmente frases cortas con información básica sobre asuntos cotidianos y de relevancia para el alumnado",
           "2.2": "Utilizar de forma guiada recursos verbales y no verbales, prestando atención al ritmo, la acentuación y la entonación",
@@ -552,7 +758,9 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Interactuar cooperativamente con otras personas usando expresiones 
+cotidianas, con el apoyo de recursos analógicos y digitales, en función de sus 
+propias necesidades y respetando las normas de cortesía",
         "criterios": {
           "3.1": "Participar en situaciones interactivas breves y sencillas de intercambio de información sobre temas cotidianos, de relevancia personal y próximos a su experiencia, preparadas previamente, a través de diversos soportes, apoyándose en recursos tales como la repetición, el ritmo pausado o el lenguaje no verbal, y mostrando empatía y respeto por la cortesía lingüística y la etiqueta digital",
           "3.2": "Seleccionar y utilizar, de forma guiada y en situaciones cotidianas, estrategias elementales para saludar, despedirse y presentarse; expresar mensajes breves, y formular y contestar preguntas sencillas",
@@ -561,14 +769,19 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Mediar en situaciones predecibles, usando estrategias y conocimientos sobre 
+procesamiento y transmisión de información básica y sencilla, con el fin de 
+facilitar la comunicación.",
         "criterios": {
           "4.1": "Interpretar y explicar textos, conceptos y comunicaciones breves y sencillas, de forma guiada, en situaciones en las que se atienda a la diversidad, mostrando empatía e interés por los interlocutores y las interlocutoras y por los problemas de entendimiento en su entorno más próximo, apoyándose en diversos recursos y soportes",
           "4.2": "Seleccionar y aplicar, de forma guiada, estrategias elementales que ayuden a crear puentes y faciliten la comprensión y producción de información y la comunicación, usando, con ayuda, recursos y apoyos físicos o digitales en función de las necesidades de cada momento."
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Reconocer y usar, de manera guiada, los repertorios lingüísticos personales 
+entre distintas lenguas, a partir de una reflexión sobre su funcionamiento, 
+identificando las estrategias y conocimientos propios, dando respuesta a 
+necesidades comunicativas concretas en situaciones conocidas.",
         "criterios": {
           "5.1": "Comparar y contrastar las similitudes y diferencias entre distintas lenguas reflexionando, de forma guiada, sobre aspectos básicos de su funcionamiento",
           "5.2": "Utilizar y diferenciar, de forma guiada, los conocimientos y estrategias de mejora de su capacidad de comunicar y de aprender la lengua extranjera, con apoyo de otros participantes y de soportes multimedia y de las tecnologías de la comunicación",
@@ -576,7 +789,9 @@
         }
       },
       "CE6": {
-        "descripcion": "culturales y lingüísticos elementales y habituales que fomenten la convivencia pacífica y el respeto por los demás.",
+        "descripcion": "Gestionar situaciones interculturales desde el aprecio a la diversidad 
+lingüística, cultural y artística a partir de la lengua extranjera, identificando las 
+diferencias y semejanzas entre lenguas y culturas",
         "criterios": {
           "6.1": "Actuar con respeto en situaciones interculturales, identificando y comparando semejanzas y diferencias elementales entre lenguas y culturas, y mostrando rechazo frente a discriminaciones, prejuicios y estereotipos de cualquier tipo en contextos comunicativos cotidianos y habituales",
           "6.2": "Reconocer y apreciar la diversidad lingüística, cultural y artística propia de países donde se habla la lengua extranjera como fuente de enriquecimiento personal, mostrando interés por comprender elementos",
@@ -588,7 +803,10 @@
     },
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Identificar el sentido general e información específica y predecible de textos 
+breves y sencillos, expresados de forma clara y en la lengua estándar, haciendo 
+uso de diversas estrategias y apoyos, desarrollando el repertorio lingüístico y 
+respondiendo a necesidades  comunicativas cotidianas",
         "criterios": {
           "1.1": "Reconocer el sentido global, así como palabras y frases específicas de textos orales, escritos y multimodales breves y sencillos sobre temas frecuentes y cotidianos de relevancia personal y ámbitos próximos a su experiencia, así como de textos literarios adecuados al nivel de desarrollo del alumnado",
           "1.2": "Interpretar y analizar el sentido global de palabras y frases específicas de textos orales, escritos y multimodales breves y sencillos sobre temas frecuentes y cotidianos de relevancia personal y ámbitos próximos a su experiencia, así como de textos literarios adecuados al nivel de desarrollo del alumnado",
@@ -597,7 +815,10 @@
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Producir textos sencillos de manera comprensible y estructurada, mediante el 
+empleo de estrategias como la planificación o la compensación, expresando 
+mensajes breves relacionados con necesidades inmediatas y respondiendo a 
+propósitos comunicativos cotidianos",
         "criterios": {
           "2.1": "Expresar oralmente textos breves y sencillos, previamente preparados, sobre asuntos cotidianos y de relevancia para el alumnado",
           "2.2": "Utilizar de forma guiada recursos verbales y no verbales, usando formas y estructuras básicas, de uso frecuente en la lengua extranjera",
@@ -607,7 +828,9 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Interactuar cooperativamente con otras personas usando expresiones 
+cotidianas, con el apoyo de recursos analógicos y digitales, en función de sus 
+propias necesidades y respetando las normas de cortesía",
         "criterios": {
           "3.1": "Planificar y participar con autonomía en situaciones interactivas breves y sencillas de intercambio de información sobre temas cotidianos, de relevancia personal y próximos a su experiencia, a través de diversos soportes, apoyándose en recursos tales como la repetición, el ritmo pausado o el lenguaje no verbal, y mostrando empatía y respeto por la cortesía lingüística y la etiqueta digital, así como por las diferentes necesidades, ideas y motivaciones de interlocutores o interlocutoras o interlocutoras",
           "3.2": "Seleccionar, organizar y utilizar, de forma guiada y en situaciones cotidianas, estrategias elementales para saludar, despedirse y presentarse; formular y contestar preguntas sencillas; expresar mensajes, e iniciar y terminar la comunicación",
@@ -616,14 +839,19 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Mediar en situaciones predecibles, usando estrategias y conocimientos sobre 
+procesamiento y transmisión de información básica y sencilla, con el fin de 
+facilitar la comunicación.",
         "criterios": {
           "4.1": "Explicar y argumentar textos, conceptos y comunicaciones breves y sencillas, de forma guiada, en situaciones en las que atender a la diversidad, mostrando respeto y empatía por los interlocutores y las interlocutoras así como por las lenguas empleadas, e interés por participar en la solución de problemas de intercomprensión y de entendimiento en su entorno próximo, apoyándose en diversos recursos y soportes",
           "4.2": "Seleccionar y aplicar, de forma guiada, estrategias básicas que ayuden a crear puentes y faciliten la comprensión y producción de información y la comunicación, adecuadas a las intenciones comunicativas, usando, con ayuda, recursos y apoyos físicos o digitales en función de las necesidades de cada momento."
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Reconocer y usar, de manera guiada, los repertorios lingüísticos personales 
+entre distintas lenguas, a partir de una reflexión sobre su funcionamiento, 
+identificando las estrategias y conocimientos propios, dando respuesta a 
+necesidades comunicativas concretas en situaciones conocidas.",
         "criterios": {
           "5.1": "Comparar y contrastar las similitudes y diferencias entre distintas lenguas reflexionando de manera progresivamente autónoma sobre aspectos básicos de su funcionamiento",
           "5.2": "Utilizar y diferenciar de forma progresivamente autónoma los conocimientos y estrategias de mejora de su capacidad de comunicar y de aprender la lengua extranjera, con apoyo de otros participantes y de soportes analógicos y digitales",
@@ -631,7 +859,9 @@
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Gestionar situaciones interculturales desde el aprecio a la diversidad 
+lingüística, cultural y artística a partir de la lengua extranjera, identificando las 
+diferencias y semejanzas entre lenguas y culturas",
         "criterios": {
           "6.1": "Actuar con aprecio y respeto en situaciones interculturales, construyendo vínculos entre las diferentes lenguas y culturas, y mostrando rechazo ante cualquier tipo de discriminación, prejuicio y estereotipo en contextos comunicativos cotidianos y habituales",
           "6.2": "Aceptar y respetar la diversidad lingüística, cultural y artística propia de países donde se habla la lengua extranjera como fuente de enriquecimiento personal, mostrando interés por comprender elementos culturales y lingüísticos básicos que fomenten la sostenibilidad y la democracia",
@@ -644,14 +874,17 @@
   "Educación artística": {
     "Primer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Explorar con curiosidad, sensibilidad y respeto manifestaciones artísticas de 
+diferentes culturas, épocas y estilos, a través de la búsqueda y la recepción activa, 
+relacionándolas entre sí",
         "criterios": {
           "1.1": "Reconocer, con ayuda de sus iguales o adultos diferentes corrientes, origen, estilos y géneros más característicos básicos de las manifestaciones culturales y artísticas, especialmente las de nuestra región, evidenciando interés y respeto hacia las mismas a través de la recepción activa y la escucha atenta e incorporando la perspectiva de género",
           "1.2": "Describir manifestaciones culturales y artísticas cercanas seleccionadas explorando sus características con apertura e interés."
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Analizar diferentes manifestaciones culturales y artísticas, mediante diversos 
+canales y medios, desarrollando el pensamiento propio y la identidad cultural",
         "criterios": {
           "2.1": "Seleccionar estrategias elementales para la búsqueda guiada de información sobre manifestaciones culturales y artísticas, a través de canales y medios de acceso sencillo, de forma colaborativa",
           "2.2": "Identificar el significado de distintas manifestaciones culturales y artísticas que forman parte del patrimonio de diversos entornos, compartiendo sensaciones y encontrando diferencias y similitudes entre ellas con respeto e interés",
@@ -659,14 +892,20 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Explorar  las posibilidades del sonido, la imagen, el cuerpo y los medios 
+digitales y multimodales, a través de la práctica instrumental, vocal y corporal, 
+aplicando los conocimientos y recursos digitales y expresando y comunicando 
+de manera creativa ideas, sentimientos y emociones",
         "criterios": {
           "3.1": "Explorar de manera sencilla las posibilidades expresivas y comunicativas del sonido, la imagen y el cuerpo y las distintas herramientas, instrumentos y medios de expresión artística, enriqueciendo la propia identidad",
           "3.2": "Producir y compartir de manera guiada propuestas artísticas muy elementales, mediante la expresión de ideas, sentimientos y emociones, mostrando confianza en las propias capacidades y valorando las de los demás."
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Colaborar e intervenir activamente en el diseño, elaboración y difusión de 
+producciones culturales y artísticas, interpretando diferentes roles en la 
+consecución de un resultado final y valorando el proceso, con creatividad y 
+sentimiento de pertenencia.",
         "criterios": {
           "4.1": "Participar de manera guiada en el diseño de producciones culturales y artísticas elementales, trabajando con interés de forma colaborativa a través de un enfoque coeducativo basado en la igualdad y en el respeto a la diversidad",
           "4.2": "Tomar parte en el proceso de creación, utilizando elementos básicos de diferentes lenguajes artísticos, mostrando respeto, interés y cuidado hacia los materiales, recursos y las producciones plásticas y visuales, tanto propias como de los demás"
@@ -675,11 +914,17 @@
     },
     "Segundo ciclo": {
       "CE1": {
-        "descripcion": "",
-        "criterios": {}
+        "descripcion": "Explorar con curiosidad, sensibilidad y respeto manifestaciones artísticas de 
+diferentes culturas, épocas y estilos, a través de la búsqueda y la recepción activa, 
+relacionándolas entre sí",
+        "criterios": {
+	  "1.1": "Reconocer diferentes corrientes, orígenes , estilos y géneros característicos de las manifestaciones culturales y artísticas, especialmente las de nuestra región, evidenciando interés y respeto hacia las mismas a través de la recepción activa y la escucha atenta, incorporando la perspectiva de género",
+          "1.2": "Describir manifestaciones culturales y artísticas seleccionadas, utilizando un lenguaje apropiado con apertur y estableciendo relaciones básicas entre ellas."
+	}
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Analizar diferentes manifestaciones culturales y artísticas, mediante diversos 
+canales y medios, desarrollando el pensamiento propio y la identidad cultural",
         "criterios": {
           "2.1": "Utilizar estrategias básicas para la búsqueda de información sobre manifestaciones culturales y artísticas, a través de canales y medios de acceso sencillos, con especial interés en medios digitales, de forma colaborativa",
           "2.2": "Conocer el significado de distintas manifestaciones culturales y artísticas que forman parte del patrimonio de diversos entornos, analizando de forma básica los elementos básicos que las caracterizan y reflexionando sobre las sensaciones producidas, con actitud de interés, diálogo y respeto",
@@ -687,14 +932,20 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Explorar  las posibilidades del sonido, la imagen, el cuerpo y los medios 
+digitales y multimodales, a través de la práctica instrumental, vocal y corporal, 
+aplicando los conocimientos y recursos digitales y expresando y comunicando 
+de manera creativa ideas, sentimientos y emociones",
         "criterios": {
           "3.1": "Explorar las posibilidades expresivas y comunicativas del sonido, la imagen y el cuerpo y las distintas herramientas, instrumentos y medios de expresión artística, enriqueciendo la propia identidad",
           "3.2": "Producir y compartir de manera guiada propuestas artísticas elementales mediante la expresión de ideas, sentimientos y emociones, mostrando confianza en las propias capacidades y valorando las de los demás."
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Colaborar e intervenir activamente en el diseño, elaboración y difusión de 
+producciones culturales y artísticas, interpretando diferentes roles en la 
+consecución de un resultado final y valorando el proceso, con creatividad y 
+sentimiento de pertenencia.",
         "criterios": {
           "4.1": "Colaborar de manera guiada en el diseño de producciones culturales y artísticas trabajando con interés en la consecución de un resultado final que cumpla con unos objetivos acordados a través de un enfoque coeducativo basado en la igualdad y el respeto a la diversidad",
           "4.2": "Participar activamente en el proceso de creación, utilizando elementos básicos de diferentes lenguajes artísticos, mostrando interés , respeto y cuidado hacia los materiales, recursos y producciones plásticas y visuales, tanto propias como ajenas",
@@ -704,7 +955,9 @@
     },
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Explorar con curiosidad, sensibilidad y respeto manifestaciones artísticas de 
+diferentes culturas, épocas y estilos, a través de la búsqueda y la recepción activa, 
+relacionándolas entre sí",
         "criterios": {
           "1.1": "Distinguir las características principales de manifestaciones culturales y artísticas de corrientes, orígenes, estilos y géneros diversos evidenciando interés hacia las mismas, a través de la recepción activa y la escucha atenta, incorporando la perspectiva de género",
           "1.2": "Describir las manifestaciones culturales y artísticas más destacadas, utilizando un lenguaje apropiado explorando sus características con apertura, y estableciendo relaciones entre ellas",
@@ -712,7 +965,8 @@
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Analizar diferentes manifestaciones culturales y artísticas, mediante diversos 
+canales y medios, desarrollando el pensamiento propio y la identidad cultural",
         "criterios": {
           "2.1": "Desarrollar estrategias para la búsqueda de información sobre manifestaciones culturales y artísticas, utilizando un vocabulario específico a través de diversos canales y medios de acceso, de forma colaborativa",
           "2.2": "Comparar el significado de distintas manifestaciones culturales y artísticas que forman parte del patrimonio de diversos entornos, analizando los principales elementos que las caracterizan y desarrollando criterios de valoración propios, con actitud abierta, de diálogo y de respeto",
@@ -721,14 +975,20 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Explorar  las posibilidades del sonido, la imagen, el cuerpo y los medios 
+digitales y multimodales, a través de la práctica instrumental, vocal y corporal, 
+aplicando los conocimientos y recursos digitales y expresando y comunicando 
+de manera creativa ideas, sentimientos y emociones",
         "criterios": {
           "3.1": "Explorar las posibilidades expresivas y comunicativas del sonido, la imagen y el cuerpo y las distintas herramientas, instrumentos y medios multimodales de expresión artística, enriqueciendo la propia identidad",
           "3.2": "Producir y compartir propuestas artísticas más complejas mediante la expresión de ideas, sentimientos y emociones, mostrando confianza en las propias capacidades y valorando las de los demás."
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Colaborar e intervenir activamente en el diseño, elaboración y difusión de 
+producciones culturales y artísticas, interpretando diferentes roles en la 
+consecución de un resultado final y valorando el proceso, con creatividad y 
+sentimiento de pertenencia.",
         "criterios": {
           "4.1": "Planificar producciones culturales y artísticas, trabajando con interés y esfuerzo de forma colaborativa en la consecución de un resultado final que cumpla con unos objetivos acordados, a través de un enfoque coeducativo basado en la igualdad y el respeto a la diversidad",
           "4.2": "Participar en el proceso de creación, utilizando elementos de diferentes lenguajes artísticos, mostrando compromiso, participación activa, respeto y cuidado hacia los materiales, recursos y producciones plásticas y visuales, tanto propias como de otras personas."
@@ -739,7 +999,11 @@
   "Educación física": {
     "Primer ciclo": {
       "CE1": {
-        "descripcion": "situaciones cotidianas medidas básicas de cuidado de la salud personal a través de la higiene corporal, el descanso, la educación postural y la alimentación e hidratación.",
+        "descripcion": "Desarrollar un estilo de vida activo y saludable, practicando sistemática y 
+regularmente actividades físicas y deportivas en la vida cotidiana, así como 
+adoptando tanto comportamientos que potencien la salud física, emocional y 
+social, como medidas de responsabilidad individual y colectiva en la práctica 
+motriz, aprovechando y respetando los recursos urbanos o naturales del entorno",
         "criterios": {
           "1.1": "Identificar el ejercicio físico como práctica saludable, conociendo algunos de sus beneficios físicos mediante la realización de actividad lúdico- motriz con su grupo de iguales, en contextos variados e inclusivos y en entornos cercanos conocidos, para el fomento de un estilo de vida activo",
           "1.2": "Explorar y vivenciar las posibilidades de la propia motricidad y de la de los demás desarrollando las capacidades y competencias motrices básicas a través de la actividad física y del juego (populares, tradicionales y escénicos) como medio de diversión, expresión y comunicación, y aplicando en distintas",
@@ -748,7 +1012,12 @@
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Aplicar procesos de percepción, decisión y ejecución adecuados a la lógica 
+interna y a los objetivos en diferentes situaciones, adaptando los elementos 
+propios del esquema corporal, las capacidades físicas, perceptivo-motrices y 
+coordinativas, así como las habilidades y destrezas motrices, y dando respuesta 
+a las demandas de proyectos motores y de prácticas motrices con distintas 
+finalidades en contextos de su vida diaria",
         "criterios": {
           "2.1": "Reconocer la importancia de establecer metas claras a la hora de desarrollar proyectos motores de carácter individual, cooperativo o colaborativo, valorando su consecución a partir de un análisis de los resultados obtenidos",
           "2.2": "Adoptar decisiones en contextos de práctica motriz de manera ajustada a las circunstancias",
@@ -756,7 +1025,12 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Desarrollar procesos de autorregulación e interacción, con habilidades sociales 
+y  actitudes de empatía, cooperación, respeto, inclusión, trabajo en equipo y 
+deportividad, con independencia de las diferencias étnico-culturales, sociales, de 
+género y de habilidad de los participantes, contribuyendo a la convivencia social 
+y al  compromiso ético en los diferentes espacios en los que se participa en el 
+marco de la práctica motriz",
         "criterios": {
           "3.1": "Identificar y reconocer las emociones negativas que se producen durante el juego, intentando gestionarlas y disfrutando de la actividad física",
           "3.2": "Respetar las normas consensuadas, así como las reglas de juego y actuar desde los parámetros de la deportividad y el juego limpio, aceptando las características y niveles de los participantes",
@@ -764,7 +1038,11 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Reconocer y practicar diferentes manifestaciones lúdicas, físico-deportivas y 
+artístico-expresivas propias de la cultura motriz, valorando su influencia y sus 
+aportaciones estéticas y creativas a la cultura tradicional y contemporánea, e 
+integrándolas dentro del repertorio de actuaciones motrices que se utilizan 
+regularmente en la vida cotidiana",
         "criterios": {
           "4.1": "Participar activamente en juegos y otras manifestaciones artístico- expresivas de carácter cultural propias del entorno, valorando su componente lúdico-festivo y disfrutando de su puesta en práctica",
           "4.2": "Conocer y valorar los logros de distintos referentes del deporte de cualquier género, reconociendo el esfuerzo, la dedicación y los sacrificios requeridos para alcanzar dichos éxitos",
@@ -773,7 +1051,11 @@
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Adoptar medidas de responsabilidad individual y colectiva hacia los diferentes 
+contextos naturales y urbanos en los que se produzca la práctica motriz, 
+comprendiendo la importancia de su cuidado, conservación y mejora desde un 
+enfoque sostenible, y realizando el juego o la actividad físico-deportiva de manera 
+eficiente y respetuosa con el entorno donde se desarrolle",
         "criterios": {
           "5.1": "Explorar y disfrutar del entorno natural y urbano conociendo otros usos desde la motricidad y adoptando actitudes de respeto, cuidado y conservación hacia ellos durante el desarrollo de distintas prácticas lúdico- recreativas en contextos terrestres o acuáticos",
           "5.2": "Realizar en el entorno natural y artificial actividades lúdico-motrices respetando el entorno y adoptando las medidas de seguridad indicadas en los contextos terrestres o acuáticos",
@@ -784,11 +1066,25 @@
     },
     "Segundo ciclo": {
       "CE1": {
-        "descripcion": "",
-        "criterios": {}
+        "descripcion": "Desarrollar un estilo de vida activo y saludable, practicando sistemática y 
+regularmente actividades físicas y deportivas en la vida cotidiana, así como 
+adoptando tanto comportamientos que potencien la salud física, emocional y 
+social, como medidas de responsabilidad individual y colectiva en la práctica 
+motriz, aprovechando y respetando los recursos urbanos o naturales del entorno",
+        "criterios": {
+	  "1.1": "Reconocer la actividad física como hábito y alternativa de ocio saludable, identificando ejercicio físico activo y sostenible y conociendo los efectos beneficiosos, y mentales, que posee adoptar un estilo de vida activo.",
+          "1.2": "Adoptar medidas de educación postural, alimentación saludable, higiene corporal y preparación de la práctica motriz, asumiendo responsabilidades y generando hábitos y rutinas en situaciones cotidianas",
+          "1.3": "Tomar medidas de precaución y prevención de lesiones realizando de manera rutinaria el calentamiento general y la vuelta a la calma, así como en relación a la conservación y al mantenimiento del material en el marco de distintas prácticas físico-deportivas, conociendo protocolos básicos de actuación ante accidentes que se puedan producir en este contexto",
+          "1.4": "Reconocer la propia imagen corporal y la de los demás, participando de forma proactiva y social, aceptando y respetando las diferencias individuales que puedan existir, superando y rechazando las conductas discriminatorias que se puedan producir en contextos de práctica motriz."
+	}
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Aplicar procesos de percepción, decisión y ejecución adecuados a la lógica 
+interna y a los objetivos en diferentes situaciones, adaptando los elementos 
+propios del esquema corporal, las capacidades físicas, perceptivo-motrices y 
+coordinativas, así como las habilidades y destrezas motrices, y dando respuesta 
+a las demandas de proyectos motores y de prácticas motrices con distintas 
+finalidades en contextos de su vida diaria",
         "criterios": {
           "2.1": "Llevar a cabo proyectos motores de carácter individual, cooperativo o colaborativo empleando estrategias de monitorización y seguimiento que permitan analizar los resultados obtenidos",
           "2.2": "Adoptar decisiones en situaciones lúdicas, juegos y actividades predeportivas ajustándose a las demandas derivadas de los objetos motores, de las características del grupo y de la lógica interna de situaciones individuales, de cooperación, de oposición y de colaboración en contextos simulados de actuación",
@@ -796,7 +1092,12 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Desarrollar procesos de autorregulación e interacción, con habilidades sociales 
+y  actitudes de empatía, cooperación, respeto, inclusión, trabajo en equipo y 
+deportividad, con independencia de las diferencias étnico-culturales, sociales, de 
+género y de habilidad de los participantes, contribuyendo a la convivencia social 
+y al  compromiso ético en los diferentes espacios en los que se participa en el 
+marco de la práctica motriz",
         "criterios": {
           "3.1": "Mostrar una disposición positiva hacia la práctica física y hacia el esfuerzo, controlando la impulsividad y las emociones negativas que surjan en contextos de actividad motriz",
           "3.2": "Respetar las normas consensuadas en clase, así como las reglas de juego y actuar desde los parámetros de la deportividad y el juego limpio, valorando la aportación de los participantes y la diversidad de pensamiento de los compañeros",
@@ -804,7 +1105,11 @@
         }
       },
       "CE4": {
-        "descripcion": "expresivas con arraigo en la cultura propia, tradicional o actual, así como otros procedentes de diversas culturas, contextualizando su origen, su aparición y su transmisión a lo largo del tiempo y valorando su importancia, repercusión e influencia en las sociedades pasadas y presentes.",
+        "descripcion": "Reconocer y practicar diferentes manifestaciones lúdicas, físico-deportivas y 
+artístico-expresivas propias de la cultura motriz, valorando su influencia y sus 
+aportaciones estéticas y creativas a la cultura tradicional y contemporánea, e 
+integrándolas dentro del repertorio de actuaciones motrices que se utilizan 
+regularmente en la vida cotidiana",
         "criterios": {
           "4.1": "Participar activamente en juegos y otras manifestaciones artístico-",
           "4.2": "Asumir una visión abierta del deporte a partir del conocimiento de distintas ligas femeninas, masculinas o mixtas, acercándose al deporte federativo e identificando, analizando y rechazando comportamientos contrarios a la convivencia independientemente del contexto en el que tengan lugar",
@@ -813,7 +1118,11 @@
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Adoptar medidas de responsabilidad individual y colectiva hacia los diferentes 
+contextos naturales y urbanos en los que se produzca la práctica motriz, 
+comprendiendo la importancia de su cuidado, conservación y mejora desde un 
+enfoque sostenible, y realizando el juego o la actividad físico-deportiva de manera 
+eficiente y respetuosa con el entorno donde se desarrolle",
         "criterios": {
           "5.1": "Conocer y disfrutar del entorno natural y urbano adoptando medidas sencillas de intervención que permitan el cuidado y la conservación de los mismos durante el desarrollo de las actividades físicas en contextos terrestres y acuáticos",
           "5.2": "Desarrollar una práctica motriz segura previa valoración y análisis de cada situación en contextos naturales y urbanos de carácter terrestre o acuático, aplicando medidas de conservación ambiental",
@@ -824,7 +1133,11 @@
     },
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Desarrollar un estilo de vida activo y saludable, practicando sistemática y 
+regularmente actividades físicas y deportivas en la vida cotidiana, así como 
+adoptando tanto comportamientos que potencien la salud física, emocional y 
+social, como medidas de responsabilidad individual y colectiva en la práctica 
+motriz, aprovechando y respetando los recursos urbanos o naturales del entorno",
         "criterios": {
           "1.1": "Reconocer los beneficios físicos, psicológicos y sociales de la actividad física como paso previo para su integración en la práctica de ocio saludable diaria, aportando medidas de sostenibilidad en los espacios y entornos donde se realiza, tanto naturales como artificiales",
           "1.2": "Integrar los procesos de activación corporal, dosificación del esfuerzo, relajación e higiene en la práctica de actividades motrices, interiorizando las rutinas propias de una práctica motriz saludable y responsable",
@@ -833,7 +1146,12 @@
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Aplicar procesos de percepción, decisión y ejecución adecuados a la lógica 
+interna y a los objetivos en diferentes situaciones, adaptando los elementos 
+propios del esquema corporal, las capacidades físicas, perceptivo-motrices y 
+coordinativas, así como las habilidades y destrezas motrices, y dando respuesta 
+a las demandas de proyectos motores y de prácticas motrices con distintas 
+finalidades en contextos de su vida diaria",
         "criterios": {
           "2.1": "Desarrollar proyectos motores de carácter individual, cooperativo o colaborativo, definiendo metas, secuenciando acciones, introduciendo si es preciso cambios durante el proceso y generando producciones motrices de calidad, valorando el grado de ajuste al proceso seguido y al resultado obtenido",
           "2.2": "Aplicar principios básicos de decisión en situaciones lúdicas, juegos modificados y actividades deportivas a partir de la anticipación, ajustándolos a las demandas derivadas de los objetivos motores y a la lógica interna de situaciones individuales, de cooperación, de oposición y de colaboración- oposición, en contextos reales o simulados de actuación, reflexionando sobre las soluciones obtenidas",
@@ -841,7 +1159,12 @@
         }
       },
       "CE3": {
-        "descripcion": "reconociendo las actuaciones de compañeros y rivales.",
+        "descripcion": "Desarrollar procesos de autorregulación e interacción, con habilidades sociales 
+y  actitudes de empatía, cooperación, respeto, inclusión, trabajo en equipo y 
+deportividad, con independencia de las diferencias étnico-culturales, sociales, de 
+género y de habilidad de los participantes, contribuyendo a la convivencia social 
+y al  compromiso ético en los diferentes espacios en los que se participa en el 
+marco de la práctica motriz",
         "criterios": {
           "3.1": "Participar en actividades de carácter motor, desde la autorregulación de su actuación, con predisposición, esfuerzo, perseverancia y mentalidad de crecimiento, controlando la impulsividad, gestionando las emociones y expresándolas de forma asertiva y respetuosa",
           "3.2": "Respetar las normas consensuadas, así como las reglas del juego, y actuar desde los parámetros de la deportividad y el juego limpio, aceptando la victoria y la derrota de manera saludable ante el resto de participantes y",
@@ -849,7 +1172,11 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Reconocer y practicar diferentes manifestaciones lúdicas, físico-deportivas y 
+artístico-expresivas propias de la cultura motriz, valorando su influencia y sus 
+aportaciones estéticas y creativas a la cultura tradicional y contemporánea, e 
+integrándolas dentro del repertorio de actuaciones motrices que se utilizan 
+regularmente en la vida cotidiana",
         "criterios": {
           "4.1": "Participar activamente en juegos motores y otras manifestaciones artístico-expresivas con arraigo en la cultura propia, tradicional o actual, así como otros precedentes de diversas culturas, reconociendo y transmitiendo su valor cultural y su potencial como espacios generados de interacciones constructivas entre personas con orígenes diferentes para favorecer su conservación",
           "4.2": "Valorar el deporte como fenómeno cultural analizando críticamente los estereotipos de género y los comportamientos sexistas que a veces suceden en diferentes contextos como medios de comunicación, las redes sociales o las tecnologías de la información y la comunicación, rechazando estos y adoptando actitudes que eviten su reproducción en el futuro",
@@ -858,7 +1185,11 @@
         }
       },
       "CE5": {
-        "descripcion": "deportiva con una actitud no consumista y de máximo aprovechamiento posible, pudiéndose derivar para otros usos.",
+        "descripcion": "Adoptar medidas de responsabilidad individual y colectiva hacia los diferentes 
+contextos naturales y urbanos en los que se produzca la práctica motriz, 
+comprendiendo la importancia de su cuidado, conservación y mejora desde un 
+enfoque sostenible, y realizando el juego o la actividad físico-deportiva de manera 
+eficiente y respetuosa con el entorno donde se desarrolle",
         "criterios": {
           "5.1": "Valorar los diferentes espacios naturales y artificiales en los que se realizan actividades físico-deportivas, reflexionando sobre sus posibilidades y potencialidades y actuando desde una perspectiva ecosostenible y comunitaria del entorno",
           "5.2": "Adaptar las acciones motrices a la incertidumbre propia del medio natural y urbano en contextos terrestres y acuáticos de forma eficiente y segura",
@@ -871,7 +1202,10 @@
   "Educación en valores": {
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Detectar, deliberar y argumentar sobre problemas de carácter ético referidos a 
+sí mismo y su entorno, buscando, analizando y contrastando información fiable y 
+generando una actitud reflexiva al respecto, para promover el autoconocimiento 
+y la autonomía moral.",
         "criterios": {
           "1.1": "Construir un adecuado concepto de sí mismo en relación con los demás y la naturaleza, organizando y generando, de forma segura y crítica, información analógica y digital acerca de los rasgos relativos a la identidad, diferencia y dignidad de las personas",
           "1.2": "Identificar y expresar emociones, afectos y deseos, mostrando confianza en las propias capacidades al servicio de la consecución motivada de fines personales y colectivos",
@@ -882,7 +1216,10 @@
         }
       },
       "CE2": {
-        "descripcion": "con la erradicación de la violencia de género, a partir del conocimiento y análisis crítico de la situación secular de desigualdad entre mujeres y hombres.",
+        "descripcion": "Actuar e interactuar de acuerdo con normas y valores cívicos y éticos, 
+reconociendo su importancia en la vida individual y colectiva, y aplicándolos de 
+manera efectiva y argumentada en distintos contextos, promoviendo una 
+convivencia pacífica, inclusiva, respetuosa, democrática y justa.",
         "criterios": {
           "2.1": "Promover y demostrar un modo de convivencia democrática, justa, inclusiva, respetuosa y pacífica a partir de la investigación y comprensión de la naturaleza social y política del ser humano y mediante el uso crítico de los conceptos de ley, ética, civismo, democracia, justicia y paz",
           "2.2": "Interactuar con otros adoptando, de forma motivada y autónoma, conductas cívicas y éticas, orientadas por valores comunes, a partir del conocimiento de los derechos humanos y los principios constitucionales fundamentales, en relación con contextos y problemas concretos, así como por una consideración crítica y dialogada acerca de cómo debemos relacionarnos con los demás",
@@ -893,7 +1230,10 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Interpretar las relaciones sistémicas entre el individuo, la sociedad y la 
+naturaleza, a través del conocimiento y la reflexión sobre los problemas 
+ecosociales, mostrando activamente valores y prácticas consecuentes con el 
+respeto, el  cuidado y la protección de las personas y el planeta",
         "criterios": {
           "3.1": "Identificar causas y problemas ecosociales justificando argumentalmente el deber ético de proteger y cuidar la naturaleza",
           "3.2": "Proponer y considerar diferentes alternativas con las que frenar el cambio climático y lograr los Objetivos de Desarrollo Sostenible",
@@ -902,7 +1242,9 @@
         }
       },
       "CE4": {
-        "descripcion": "interacción.",
+        "descripcion": "Identificar, gestionar y expresar emociones propias, reconociendo y valorando 
+las de los otros, adoptando una actitud basada en el cuidado y aprecio de sí 
+mismo y de los demás, desarrollando la autoestima y la empatía",
         "criterios": {
           "4.1": "Gestionar equilibradamente pensamientos, sentimientos y emociones, y desarrollar actitudes de estima y cuidado de sí mismo o sí misma, de los demás y del entorno",
           "4.2": "Identificar, analizar y expresar de manera asertiva las emociones, afectos y sentimientos propios, reconociendo y valorando los de otras personas, en distintos contextos y en relación con actividades creativas y de reflexión individual o dialogada sobre cuestiones éticas y cívicas",
@@ -914,7 +1256,9 @@
   "Lengua Castellana y Literatura": {
     "Primer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Reconocer la diversidad lingüística del mundo, partiendo de la identificación de 
+las lenguas y de la realidad plurilingüe y multicultural de España, y desarrollando 
+la reflexión interlingüística.",
         "criterios": {
           "1.1": "Reconocer las distintas lenguas y variedades dialectales del aula",
           "1.2": "Respetar las distintas lenguas y variedades dialectales del aula",
@@ -923,7 +1267,8 @@
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Identificar y rechazar estereotipos y prejuicios lingüísticos valorando la 
+diversidad lingüística de España como fuente de riqueza cultural.",
         "criterios": {
           "2.1": "Reconocer con ayuda y en contextos sencillos, algunos prejuicios y estereotipos lingüísticos y culturales frecuentes en su entorno",
           "2.2": "Rechazar prejuicios y estereotipos lingüísticos y culturales frecuentes en su entorno",
@@ -931,7 +1276,10 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Interpretar textos orales y multimodales, identificando el sentido general y la 
+información relevante, valorando aspectos formales y de contenidos sencillos y 
+cercanos a la propia realidad, en función de las diferentes necesidades 
+comunicativas.",
         "criterios": {
           "3.1": "Identificar el sentido de textos orales y multimodales sencillos, siendo capaz de captar las ideas principales y los mensajes explícitos",
           "3.2": "Valorar, con ayuda, los contenidos claramente discriminatorios en textos orales y los elementos no verbales elementales y cercanos a su realidad",
@@ -939,7 +1287,9 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Producir textos orales y multimodales con coherencia, claridad y registro 
+adecuados, que expresen ideas, sentimientos o acciones, participando con autonomía y una actitud cooperativa y empática en situaciones variadas de 
+interacción.",
         "criterios": {
           "4.1": "Producir textos orales coherentes, con planificación acompañada y utilizando recursos no verbales elementales",
           "4.2": "Participar en interacciones orales espontáneas, respetando las normas básicas de la cortesía lingüística",
@@ -947,7 +1297,9 @@
         }
       },
       "CE5": {
-        "descripcion": "para la expresión de gustos e intereses, aspectos formales y no verbales elementales de diferentes tipos de textos escritos y multimodales sencillos.",
+        "descripcion": "Interpretar textos escritos y multimodales, reconociendo el sentido global, las 
+ideas principales, así como sus aspectos formales y de contenido, construyendo 
+conocimiento, en función de necesidades e intereses comunicativos diversos",
         "criterios": {
           "5.1": "Leer de manera silenciosa (lectura comprensiva) y en voz alta (lectura mecánica) con entonación y ritmo adecuados a su nivel",
           "5.2": "Iniciar la construcción de la identidad lectora y establecer una base consolidada para el aprendizaje lectoescritor, necesario para el desarrollo posterior de toda la etapa. Criterio 5.3 Interpretar diferentes tipos de textos multimodales adecuados a su desarrollo dando así la posibilidad de otro tipo de acceso que no sea solamente el código escrito, especialmente para el alumnado con dificultades de acceso a este tipo de código",
@@ -956,7 +1308,9 @@
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Producir textos escritos y multimodales, con corrección gramatical y 
+ortográfica básica, secuenciando correctamente los contenidos y aplicando 
+estrategias elementales de planificación, redacción, revisión y edición, en función de demandas comunicativas concretas.",
         "criterios": {
           "6.1": "Producir textos escritos y multimodales sencillos siguiendo modelos, en diferentes soportes y teniendo en cuenta el proceso evolutivo de la escritura en este ciclo",
           "6.2": "Conocer algunas reglas ortográficas y gramaticales sencillas",
@@ -964,7 +1318,11 @@
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Buscar, seleccionar y contrastar información procedente de dos o más fuentes, 
+de forma planificada y con el debido acompañamiento, evaluando su fiabilidad y 
+reconociendo algunos riesgos de manipulación y desinformación, 
+transformándola en conocimiento y comunicándola de manera creativa, 
+adoptando un punto de vista personal y respetuoso con la propiedad intelectual",
         "criterios": {
           "7.1": "Compartir los resultados de un proceso de investigación sencillo, individual o grupal, sobre algún tema de interés personal, realizado de manera acompañada, que implique la localización, selección y contraste de información de distintas fuentes, incluidas las digitales, y su recreación adaptándose a modelos dados y citando las fuentes",
           "7.2": "Producir, de manera acompañada, investigaciones colectivas, ajustándose a modelos dados, en distintos soportes y complementándolos con otros, reconociendo la autoría",
@@ -972,7 +1330,9 @@
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Leer de manera autónoma obras diversas, adecuadas a la propia madurez, 
+gustos e intereses, disfrutando, compartiendo socialmente las experiencias de 
+lectura e iniciando la construcción de la identidad lectora.",
         "criterios": {
           "8.1": "Leer de manera autónoma, con entonación y ritmo progresivamente adecuados a su nivel cognitivo, textos de distintos autores y autoras, también extremeños y extremeñas, acordes con sus gustos e intereses, seleccionados de manera acompañada, teniendo en cuenta las diferentes etapas del proceso evolutivo de la lectura",
           "8.2": "Iniciar la construcción de la identidad lectora",
@@ -980,7 +1340,12 @@
         }
       },
       "CE9": {
-        "descripcion": "",
+        "descripcion": "Leer, interpretar y analizar (con acompañamiento y ayuda) obras o fragmentos 
+literarios adecuados a su desarrollo, estableciendo relaciones entre ellos e 
+identificando el género literario y sus convenciones fundamentales, iniciándose 
+en el reconocimiento de la literatura como manifestación artística y fuente de 
+placer, conocimiento e inspiración para la creación de textos sencillos de 
+intención literaria.",
         "criterios": {
           "9.1": "Escuchar y leer textos orales de la literatura infantil que recojan diversidad de autoras y autores",
           "9.2": "Establecer relaciones elementales entre los textos literarios y otras manifestaciones artísticas y culturales",
@@ -989,7 +1354,10 @@
         }
       },
       "CE10": {
-        "descripcion": "",
+        "descripcion": "Reflexionar de forma guiada sobre el lenguaje a partir de procesos de 
+producción e interpretación de textos en contextos significativos, utilizando la 
+terminología elemental adecuada, iniciándose en el desarrollo de la conciencia 
+lingüística y mejorando las destrezas de producción y comprensión oral y escrita.",
         "criterios": {
           "10.1": "Describir diferencias elementales entre lenguaje oral y escrito. Reconocer la ortografía natural (identificar letras, sílabas y palabras, así como las uniones y separaciones entre ellas) y reflexionar sobre las posibilidades de formar palabras y frases a partir de las mismas",
           "10.2": "Comparar y manipular palabras, enunciados y textos, en un proceso acompañado de producción o comprensión de textos en contextos significativos como inicio del desarrollo de la conciencia lingüística",
@@ -1000,19 +1368,31 @@
         }
       },
       "CE11": {
-        "descripcion": "",
+        "descripcion": "Poner las propias prácticas comunicativas al servicio de la convivencia 
+democrática, utilizando un lenguaje no discriminatorio, detectando y rechazando 
+los abusos de poder a través de la palabra para favorecer un uso, no solo eficaz, 
+sino también ético del lenguaje.",
         "criterios": {
+	  "11.1": "Rechazar los usos lingüísticos discriminatorios identificados a partir de la reflexión grupal acompañada sobre los aspectos elementales, verbales y no verbales, que rigen la comunicación, teniendo en cuenta una perspectiva de género",
           "11.2": "Movilizar, con el acompañamiento y planificación necesarios, estrategias elementales para la escucha activa y el consenso, iniciándose en la gestión dialogada de conflictos."
         }
       }
     },
     "Segundo ciclo": {
       "CE1": {
-        "descripcion": "",
-        "criterios": {}
+        "descripcion": "Reconocer la diversidad lingüística del mundo, partiendo de la identificación de 
+las lenguas y de la realidad plurilingüe y multicultural de España, y desarrollando 
+la reflexión interlingüística.",
+        "criterios": {
+	  "1.1": "Reconocer las distintas lenguas y variedades dialectales del aula y del centro",
+          "1.2": "Respetar las distintas lenguas y variedades dialectales de su entorno reconociéndolas como parte de la riqueza cultural de un territorio",
+          "1.3": "Interpretar las características lingüísticas fundamentales de su entorno geográfico, así como algunos rasgos de los dialectos y lengua materna.",
+          "1.4": "Explicar en qué consisten y cómo se utilizan los distintos sistemas lingüísticos y los sistemas alternativos de comunicación."
+	}
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Identificar y rechazar estereotipos y prejuicios lingüísticos valorando la 
+diversidad lingüística de España como fuente de riqueza cultural.",
         "criterios": {
           "2.1": "Reconocer con cierta autonomía y en contextos sencillos, prejuicios y estereotipos lingüísticos frecuentes en su entorno",
           "2.2": "Rechazar prejuicios y estereotipos lingüísticos y culturales frecuentes en su entorno desarrollando interés creciente por el uso adecuado del lenguaje",
@@ -1020,7 +1400,10 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Interpretar textos orales y multimodales, identificando el sentido general y la 
+información relevante, valorando aspectos formales y de contenidos sencillos y 
+cercanos a la propia realidad, en función de las diferentes necesidades 
+comunicativas.",
         "criterios": {
           "3.1": "Interpretar el sentido de textos orales y multimodales sencillos, siendo capaz de captar las ideas principales y los mensajes explícitos y los implícitos más sencillos",
           "3.2": "Valorar de manera crítica, con ayuda, los contenidos claramente discriminatorios de textos orales y los elementos no verbales elementales y cercanos a su realidad",
@@ -1028,7 +1411,9 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Producir textos orales y multimodales con coherencia, claridad y registro 
+adecuados, que expresen ideas, sentimientos o acciones, participando con autonomía y una actitud cooperativa y empática en situaciones variadas de 
+interacción.",
         "criterios": {
           "4.1": "Producir textos orales coherentes, con planificación acompañada, ajustando el discurso a la situación comunicativa y utilizando recursos no verbales básicos",
           "4.2": "Participar en interacciones orales espontáneas o regladas, respetando las normas básicas de la cortesía lingüística e iniciándose en estrategias de escucha activa",
@@ -1036,7 +1421,9 @@
         }
       },
       "CE5": {
-        "descripcion": "",
+        "descripcion": "Interpretar textos escritos y multimodales, reconociendo el sentido global, las 
+ideas principales, así como sus aspectos formales y de contenido, construyendo 
+conocimiento, en función de necesidades e intereses comunicativos diversos",
         "criterios": {
           "5.1": "Leer de manera silenciosa y en voz alta, con entonación y ritmo adecuados a su nivel de desarrollo cognitivo, textos escritos y multimodales sencillos, identificando el sentido global y la información relevante e integrando, de manera acompañada, la información explícita",
           "5.2": "Continuar con el proceso de la construcción de la identidad lectora",
@@ -1045,7 +1432,9 @@
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Producir textos escritos y multimodales, con corrección gramatical y 
+ortográfica básica, secuenciando correctamente los contenidos y aplicando 
+estrategias elementales de planificación, redacción, revisión y edición, en función de demandas comunicativas concretas.",
         "criterios": {
           "6.1": "Producir textos escritos y multimodales sencillos en diferentes soportes, seleccionando el modelo discursivo que corresponda a cada situación",
           "6.2": "Aplicar reglas ortográficas y gramaticales sencillas de manera guiada",
@@ -1053,7 +1442,11 @@
         }
       },
       "CE7": {
-        "descripcion": "información de distintas fuentes, incluidas las digitales, y su recreación mediante la adaptación creativa de modelos dados y citando las fuentes.",
+        "descripcion": "Buscar, seleccionar y contrastar información procedente de dos o más fuentes, 
+de forma planificada y con el debido acompañamiento, evaluando su fiabilidad y 
+reconociendo algunos riesgos de manipulación y desinformación, 
+transformándola en conocimiento y comunicándola de manera creativa, 
+adoptando un punto de vista personal y respetuoso con la propiedad intelectual",
         "criterios": {
           "7.1": "Compartir los resultados de un proceso de investigación sencillo, individual o grupal, sobre algún tema de interés personal o ecosocial, realizado de manera acompañada, que implique la localización, selección y contraste de",
           "7.2": "Producir, de manera acompañada, investigaciones sencillas individuales o colectivas, recreando de manera personal los modelos dados, en distintos soportes y complementándolos con otros, respetando la propiedad intelectual",
@@ -1061,14 +1454,22 @@
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Leer de manera autónoma obras diversas, adecuadas a la propia madurez, 
+gustos e intereses, disfrutando, compartiendo socialmente las experiencias de 
+lectura e iniciando la construcción de la identidad lectora.",
         "criterios": {
           "8.1": "Leer de manera autónoma o acompañada, con entonación y ritmo adecuados a su nivel, textos de diversos autores y autoras entre los que se incluyan extremeños y extremeñas, ajustados a sus gustos e intereses y seleccionados con creciente autonomía",
-          "8.2": "Avanzar en la construcción de su identidad lectora. Criterio 8.3 Compartir la experiencia de lectura, en soportes y formatos diversos, participando en comunidades lectoras en el ámbito escolar."
+	  "8.2": "Avanzar en la construcción de su identidad lectora.",
+          "8.3": "Compartir la experiencia de lectura, en soportes y formatos diversos, participando en comunidades lectoras en el ámbito escolar."
         }
       },
       "CE9": {
-        "descripcion": "",
+        "descripcion": "Leer, interpretar y analizar (con acompañamiento y ayuda) obras o fragmentos 
+literarios adecuados a su desarrollo, estableciendo relaciones entre ellos e 
+identificando el género literario y sus convenciones fundamentales, iniciándose 
+en el reconocimiento de la literatura como manifestación artística y fuente de 
+placer, conocimiento e inspiración para la creación de textos sencillos de 
+intención literaria.",
         "criterios": {
           "9.1": "Escuchar y leer textos variados de la literatura infantil universal que recojan diversidad de autoras y autores",
           "9.2": "Relacionar diferentes textos en función de temas y aspectos elementales del género literario",
@@ -1077,7 +1478,10 @@
         }
       },
       "CE10": {
-        "descripcion": "significativos como parte del proceso de consolidación del desarrollo de la conciencia lingüística.",
+        "descripcion": "Reflexionar de forma guiada sobre el lenguaje a partir de procesos de 
+producción e interpretación de textos en contextos significativos, utilizando la 
+terminología elemental adecuada, iniciándose en el desarrollo de la conciencia 
+lingüística y mejorando las destrezas de producción y comprensión oral y escrita.",
         "criterios": {
           "10.1": "Formular conclusiones elementales sobre el funcionamiento de la lengua prestando especial atención a la relación entre el sujeto y el verbo, a partir de la observación",
           "10.2": "Comparar y manipular palabras, enunciados y textos, en un proceso acompañado de producción o comprensión de textos en contextos",
@@ -1086,7 +1490,10 @@
         }
       },
       "CE11": {
-        "descripcion": "",
+        "descripcion": "Poner las propias prácticas comunicativas al servicio de la convivencia 
+democrática, utilizando un lenguaje no discriminatorio, detectando y rechazando 
+los abusos de poder a través de la palabra para favorecer un uso, no solo eficaz, 
+sino también ético del lenguaje.",
         "criterios": {
           "11.1": "Rechazar los usos lingüísticos discriminatorios e identificar los abusos de poder a través de la palabra mediante la reflexión grupal acompañada sobre los aspectos básicos, verbales y no verbales, que rigen la comunicación, teniendo en cuenta una perspectiva de género",
           "11.2": "Movilizar, con el acompañamiento y planificación necesarios, estrategias básicas para la comunicación asertiva y el consenso, progresando en la gestión dialogada de conflictos."
@@ -1095,15 +1502,19 @@
     },
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "",
+        "descripcion": "Reconocer la diversidad lingüística del mundo, partiendo de la identificación de 
+las lenguas y de la realidad plurilingüe y multicultural de España, y desarrollando 
+la reflexión interlingüística.",
         "criterios": {
           "1.1": "Reconocer las distintas lenguas y variedades dialectales de su localidad",
           "1.2": "Valorar las distintas lenguas y variedades dialectales de su entorno reconociéndolas como parte de la riqueza cultural de un territorio. Criterio 1.3 Diferenciar las características lingüísticas fundamentales de su entorno geográfico respecto a otros cercanos, así como algunos rasgos de los dialectos y lengua materna",
+	  "1.3": "Diferenciar las características lingüísticas fundamentales de su entorno geográfico respecto a otros cercanos, así como algunos rasgos de los dialectos y lengua materna",
           "1.4": "Escribir o signar palabras y algunas expresiones de uso cotidiano para interaccionar en el contexto escolar usando los diferentes sistemas lingüísticos y sistemas alternativos de comunicación conocidos."
         }
       },
       "CE2": {
-        "descripcion": "",
+        "descripcion": "Identificar y rechazar estereotipos y prejuicios lingüísticos valorando la 
+diversidad lingüística de España como fuente de riqueza cultural.",
         "criterios": {
           "2.1": "Detectar con autonomía creciente y en contextos sencillos, prejuicios y estereotipos lingüísticos frecuentes en su entorno",
           "2.2": "Rechazar prejuicios y estereotipos lingüísticos y culturales frecuentes en su entorno siendo capaz de usar un lenguaje respetuoso en el aula",
@@ -1111,7 +1522,10 @@
         }
       },
       "CE3": {
-        "descripcion": "",
+        "descripcion": "Interpretar textos orales y multimodales, identificando el sentido general y la 
+información relevante, valorando aspectos formales y de contenidos sencillos y 
+cercanos a la propia realidad, en función de las diferentes necesidades 
+comunicativas.",
         "criterios": {
           "3.1": "Interpretar el sentido de textos orales y multimodales sencillos, siendo capaz de captar las ideas principales y los mensajes explícitos y los implícitos",
           "3.2": "Valorar de manera crítica los contenidos claramente discriminatorios de textos orales y los elementos no verbales más elementales y con ayuda algunos elementos formales más elementales y cercanos a su realidad",
@@ -1119,7 +1533,9 @@
         }
       },
       "CE4": {
-        "descripcion": "",
+        "descripcion": "Producir textos orales y multimodales con coherencia, claridad y registro 
+adecuados, que expresen ideas, sentimientos o acciones, participando con autonomía y una actitud cooperativa y empática en situaciones variadas de 
+interacción.",
         "criterios": {
           "4.1": "Producir textos orales de manera autónoma, coherente y fluida, en contextos formales sencillos y utilizando correctamente recursos verbales y no verbales básicos",
           "4.2": "Participar en interacciones orales espontáneas o regladas, respetando las normas de la cortesía lingüística y desarrollando estrategias sencillas de escucha activa y de cooperación conversacional",
@@ -1127,7 +1543,9 @@
         }
       },
       "CE5": {
-        "descripcion": "contenido y estructura y evaluando su calidad, fiabilidad e idoneidad en función del propósito de lectura.",
+        "descripcion": "Interpretar textos escritos y multimodales, reconociendo el sentido global, las 
+ideas principales, así como sus aspectos formales y de contenido, construyendo 
+conocimiento, en función de necesidades e intereses comunicativos diversos",
         "criterios": {
           "5.1": "Leer de manera silenciosa y en voz alta, con entonación y ritmo fluidos, textos escritos y multimodales sencillos, identificando el sentido global y la información relevante, realizando inferencias directas de manera acompañada y superando la interpretación literal",
           "5.2": "Consolidar el progreso de la construcción de la identidad lectora",
@@ -1136,7 +1554,9 @@
         }
       },
       "CE6": {
-        "descripcion": "",
+        "descripcion": "Producir textos escritos y multimodales, con corrección gramatical y 
+ortográfica básica, secuenciando correctamente los contenidos y aplicando 
+estrategias elementales de planificación, redacción, revisión y edición, en función de demandas comunicativas concretas.",
         "criterios": {
           "6.1": "Producir textos escritos y multimodales de creciente complejidad, en diferentes soportes, seleccionando el modelo discursivo que corresponda a cada situación",
           "6.2": "Demostrar de manera progresiva el uso adecuado de la gramática y ortografía básica en la escritura espontánea",
@@ -1144,7 +1564,11 @@
         }
       },
       "CE7": {
-        "descripcion": "",
+        "descripcion": "Buscar, seleccionar y contrastar información procedente de dos o más fuentes, 
+de forma planificada y con el debido acompañamiento, evaluando su fiabilidad y 
+reconociendo algunos riesgos de manipulación y desinformación, 
+transformándola en conocimiento y comunicándola de manera creativa, 
+adoptando un punto de vista personal y respetuoso con la propiedad intelectual",
         "criterios": {
           "7.1": "Compartir los resultados de un proceso de investigación sencillo, individual o grupal, sobre algún tema de interés personal o ecosocial, realizado de manera acompañada, que implique la localización, selección y contraste de información de distintas fuentes, incluidas las digitales, recreándolas de manera creativa en esquemas propios y citando fuentes",
           "7.2": "Producir, de manera progresivamente autónoma, investigaciones sencillas individuales o colectivas, reelaborando la búsqueda, en distintos soportes y complementándolos con otros, respetando la propiedad intelectual",
@@ -1152,7 +1576,9 @@
         }
       },
       "CE8": {
-        "descripcion": "",
+        "descripcion": "Leer de manera autónoma obras diversas, adecuadas a la propia madurez, 
+gustos e intereses, disfrutando, compartiendo socialmente las experiencias de 
+lectura e iniciando la construcción de la identidad lectora.",
         "criterios": {
           "8.1": "Leer de manera autónoma, con entonación y ritmo fluidos, de textos de diversos autores y autoras, también extremeños y extremeñas, ajustados a sus gustos e intereses, seleccionados con criterio propio",
           "8.2": "Consolidar el progreso de la construcción de la identidad lectora",
@@ -1160,7 +1586,12 @@
         }
       },
       "CE9": {
-        "descripcion": "",
+        "descripcion": "Leer, interpretar y analizar (con acompañamiento y ayuda) obras o fragmentos 
+literarios adecuados a su desarrollo, estableciendo relaciones entre ellos e 
+identificando el género literario y sus convenciones fundamentales, iniciándose 
+en el reconocimiento de la literatura como manifestación artística y fuente de 
+placer, conocimiento e inspiración para la creación de textos sencillos de 
+intención literaria.",
         "criterios": {
           "9.1": "Escuchar y leer de manera acompañada textos literarios adecuados a su edad, que recojan diversidad de autoras y autores",
           "9.2": "Relacionar, interpretar y valorar los textos literarios en función de los temas y de aspectos elementales de cada género literario",
@@ -1169,7 +1600,10 @@
         }
       },
       "CE10": {
-        "descripcion": "",
+        "descripcion": "Reflexionar de forma guiada sobre el lenguaje a partir de procesos de 
+producción e interpretación de textos en contextos significativos, utilizando la 
+terminología elemental adecuada, iniciándose en el desarrollo de la conciencia 
+lingüística y mejorando las destrezas de producción y comprensión oral y escrita.",
         "criterios": {
           "10.1": "Formular y establecer generalizaciones sobre aspectos básicos del funcionamiento de la lengua de manera acompañada, formulando hipótesis y buscando contraejemplos, a partir de la observación, comparación y manipulación de palabras, enunciados y textos, en un proceso acompañado de producción o comprensión de textos en contextos significativos",
           "10.2": "Producir estrategias para la construcción guiada de conclusiones propias sobre el sistema lingüístico, observando y transformando los enunciados (sustitución, inserción, supresión, cambio de orden, manipulación) como parte del proceso de consolidación de la conciencia lingüística",
@@ -1178,7 +1612,10 @@
         }
       },
       "CE11": {
-        "descripcion": "",
+        "descripcion": "Poner las propias prácticas comunicativas al servicio de la convivencia 
+democrática, utilizando un lenguaje no discriminatorio, detectando y rechazando 
+los abusos de poder a través de la palabra para favorecer un uso, no solo eficaz, 
+sino también ético del lenguaje.",
         "criterios": {
           "11.1": "Rechazar los usos lingüísticos discriminatorios y los abusos de poder a través de la palabra, identificados mediante la reflexión grupal acompañada sobre distintos aspectos, verbales y no verbales, que rigen la comunicación, teniendo en cuenta una perspectiva de género",
           "11.2": "Movilizar, con el acompañamiento y planificación necesarios, estrategias básicas para la deliberación argumentada y la gestión dialogada de conflictos, proponiendo soluciones creativas."
