@@ -188,7 +188,7 @@
         }
       },
       "CE2": {
-        "descripcion": "con la erradicación de la violencia de género, a partir del conocimiento y análisis crítico de la situación secular de desigualdad entre mujeres y hombres.",
+        "descripcion": "Impulsar una convivencia democrática comprometida con la erradicación de la violencia de género, a partir del conocimiento y análisis crítico de la situación secular de desigualdad entre mujeres y hombres.",
         "criterios": {
           "2.1": "Promover y demostrar un modo de convivencia democrática, justa, inclusiva, respetuosa y pacífica a partir de la investigación y comprensión de la naturaleza social y política del ser humano y mediante el uso crítico de los conceptos de ley, ética, civismo, democracia, justicia y paz",
           "2.2": "Interactuar con otros adoptando, de forma motivada y autónoma, conductas cívicas y éticas, orientadas por valores comunes, a partir del conocimiento de los derechos humanos y los principios constitucionales fundamentales, en relación con contextos y problemas concretos, así como por una consideración crítica y dialogada acerca de cómo debemos relacionarnos con los demás",
@@ -208,11 +208,11 @@
         }
       },
       "CE4": {
-        "descripcion": "interacción.",
+        "descripcion": "Desarrollar habilidades socioemocionales que promuevan el cuidado de uno mismo, de los demás y del entorno en cada interacción.",
         "criterios": {
           "4.1": "Gestionar equilibradamente pensamientos, sentimientos y emociones, y desarrollar actitudes de estima y cuidado de sí mismo o sí misma, de los demás y del entorno",
           "4.2": "Identificar, analizar y expresar de manera asertiva las emociones, afectos y sentimientos propios, reconociendo y valorando los de otras personas, en distintos contextos y en relación con actividades creativas y de reflexión individual o dialogada sobre cuestiones éticas y cívicas",
-          "4.3": "Adoptar actitudes basadas en la amistad, el amor y el cuidado de los demás partiendo de las experiencias afectivas que surgen de la interacción cívica y ética con otras personas y con el medio, y reflexionando sobre dicha"
+          "4.3": "Adoptar actitudes basadas en la amistad, el amor y el cuidado de los demás partiendo de las experiencias afectivas que surgen de la interacción cívica y ética con otras personas y con el medio, y reflexionando sobre dicha interacción."
         }
       }
     }
@@ -253,12 +253,12 @@
         }
       },
       "CE5": {
-        "descripcion": "para la expresión de gustos e intereses, aspectos formales y no verbales elementales de diferentes tipos de textos escritos y multimodales sencillos.",
+        "descripcion": "Identificar y utilizar recursos básicos para la expresión de gustos e intereses, atendiendo a aspectos formales y no verbales elementales de diferentes tipos de textos escritos y multimodales sencillos.",
         "criterios": {
           "5.1": "Leer de manera silenciosa (lectura comprensiva) y en voz alta (lectura mecánica) con entonación y ritmo adecuados a su nivel",
           "5.2": "Iniciar la construcción de la identidad lectora y establecer una base consolidada para el aprendizaje lectoescritor, necesario para el desarrollo posterior de toda la etapa. Criterio 5.3 Interpretar diferentes tipos de textos multimodales adecuados a su desarrollo dando así la posibilidad de otro tipo de acceso que no sea solamente el código escrito, especialmente para el alumnado con dificultades de acceso a este tipo de código",
           "5.4": "Analizar, de manera acompañada, el contenido y aspectos formales y no verbales elementales de textos escritos y multimodales sencillos, valorando su contenido y estructura",
-          "5.5": "Generar estrategias de reconocimiento, selección e interpretación de la información general y del sentido global del texto, de manera acompañada,"
+          "5.5": "Generar estrategias de reconocimiento, selección e interpretación de la información general y del sentido global del texto, de manera acompañada, empleando apoyos diversos."
         }
       },
       "CE6": {
@@ -359,7 +359,7 @@
         }
       },
       "CE7": {
-        "descripcion": "información de distintas fuentes, incluidas las digitales, y su recreación mediante la adaptación creativa de modelos dados y citando las fuentes.",
+        "descripcion": "Planificar y producir textos propios a partir de la información de distintas fuentes, incluidas las digitales, recreándola mediante la adaptación creativa de modelos dados y citando las fuentes.",
         "criterios": {
           "7.1": "Compartir los resultados de un proceso de investigación sencillo, individual o grupal, sobre algún tema de interés personal o ecosocial, realizado de manera acompañada, que implique la localización, selección y contraste de",
           "7.2": "Producir, de manera acompañada, investigaciones sencillas individuales o colectivas, recreando de manera personal los modelos dados, en distintos soportes y complementándolos con otros, respetando la propiedad intelectual",
@@ -383,7 +383,7 @@
         }
       },
       "CE10": {
-        "descripcion": "significativos como parte del proceso de consolidación del desarrollo de la conciencia lingüística.",
+        "descripcion": "Revisar aspectos significativos como parte del proceso de consolidación del desarrollo de la conciencia lingüística.",
         "criterios": {
           "10.1": "Formular conclusiones elementales sobre el funcionamiento de la lengua prestando especial atención a la relación entre el sujeto y el verbo, a partir de la observación",
           "10.2": "Comparar y manipular palabras, enunciados y textos, en un proceso acompañado de producción o comprensión de textos en contextos",
@@ -433,7 +433,7 @@
         }
       },
       "CE5": {
-        "descripcion": "contenido y estructura y evaluando su calidad, fiabilidad e idoneidad en función del propósito de lectura.",
+        "descripcion": "Seleccionar y evaluar la información atendiendo a su contenido y estructura, valorando su calidad, fiabilidad e idoneidad en función del propósito de lectura.",
         "criterios": {
           "5.1": "Leer de manera silenciosa y en voz alta, con entonación y ritmo fluidos, textos escritos y multimodales sencillos, identificando el sentido global y la información relevante, realizando inferencias directas de manera acompañada y superando la interpretación literal",
           "5.2": "Consolidar el progreso de la construcción de la identidad lectora",
@@ -504,11 +504,11 @@
         }
       },
       "CE2": {
-        "descripcion": "encuestas, tests...).",
+        "descripcion": "Diseñar y participar en investigaciones sencillas (observaciones, encuestas, tests...) orientadas al descubrimiento del entorno natural, social y cultural.",
         "criterios": {
           "2.1": "Mostrar curiosidad por objetos, hechos y fenómenos cercanos, formulando preguntas y realizando predicciones",
           "2.2": "Buscar información sencilla de diferentes fuentes seguras y fiables de forma guiada, que luego se utilice en investigaciones relacionadas con el medio natural, social y cultural",
-          "2.3": "Conocer y aplicar técnicas sencillas de indagación (observación,",
+          "2.3": "Conocer y aplicar técnicas sencillas de indagación (observación, experimentación, encuestas y tests) en investigaciones sobre el medio.",
           "2.4": "Conocer y utilizar de forma segura instrumentos y herramientas sencillos para el registro de observaciones",
           "2.5": "Participar de forma activa en experimentos e investigaciones sencillas de manera guiada",
           "2.6": "Proponer respuestas a las preguntas planteadas sobre hechos y fenómenos que ocurren en el medio, natural social y cultural, comparando la información y los resultados obtenidos con las predicciones realizadas",
@@ -597,7 +597,7 @@
         "criterios": {}
       },
       "CE2": {
-        "descripcion": "científico básico.",
+        "descripcion": "Desarrollar investigaciones guiadas aplicando el método científico básico.",
         "criterios": {
           "2.1": "Formular preguntas y realizar predicciones razonadas, demostrando curiosidad por el medio natural, social y cultural cercano",
           "2.2": "Buscar y seleccionar información, de diferentes fuentes seguras y fiables, adquiriendo léxico científico básico, que se utilizará en investigaciones relacionadas con el medio natural, social y cultural y adquiriendo léxico",
@@ -644,7 +644,7 @@
         }
       },
       "CE6": {
-        "descripcion": "para afrontar problemas ecosociales, buscar soluciones de manera cooperativa y actuar para su resolución, a partir del análisis crítico de las causas y consecuencias de la intervención humana en el entorno.",
+        "descripcion": "Impulsar la participación activa del alumnado para afrontar problemas ecosociales, buscar soluciones de manera cooperativa y actuar para su resolución, a partir del análisis crítico de las causas y consecuencias de la intervención humana en el entorno.",
         "criterios": {
           "6.1": "Identificar problemas ecosociales y proponer posibles soluciones a los mismos",
           "6.2": "Adoptar estilos de vida sostenibles y respetuosos en relación a la conservación y protección de la naturaleza",
@@ -688,7 +688,7 @@
     },
     "Tercer ciclo": {
       "CE1": {
-        "descripcion": "verificando dicha información, que permita resolver problemas, desarrollar nuevas ideas o adquirir conocimientos para llevar a cabo proyectos escolares o personales. con los demás (saludos y despedidas, normas básicas de respeto, empatía con los demás, uso de mayúsculas para elevar la voz, autocontrol emocional ante una descortesía, paciencia con los usuarios y dispositivos, etc.) evitando la generación de conflictos y frustraciones innecesarias.",
+        "descripcion": "Integrar de forma segura y crítica el uso de recursos digitales, verificando la información para resolver problemas, desarrollar nuevas ideas o adquirir conocimientos para proyectos escolares o personales, comunicándose con los demás mediante normas básicas de respeto y netiqueta para evitar conflictos y frustraciones innecesarias.",
         "criterios": {
           "1.1": "Utilizar recursos digitales de acuerdo con las necesidades del contexto educativo de forma segura y eficiente, buscando información, comunicándose y trabajando de forma individual, en equipo y en red para crear contenidos digitales más elaborados",
           "1.2": "Valorar el cuidado de los dispositivos utilizados, contribuyendo a su mantenimiento y buen funcionamiento, teniendo en consideración al resto de usuarios de los mismos",
@@ -731,7 +731,7 @@
         }
       },
       "CE4": {
-        "descripcion": "emocional y social.",
+        "descripcion": "Consolidar hábitos de bienestar personal que favorezcan el equilibrio emocional y social.",
         "criterios": {
           "4.1": "Asumir y aceptar los cambios físicos que conlleva la pubertad y la adolescencia de manera positiva, tanto en uno mismo como en los demás",
           "4.2": "Promover actitudes que fomenten el bienestar emocional y social",
@@ -755,13 +755,13 @@
         }
       },
       "CE6": {
-        "descripcion": "de cooperación y de respeto hacia las personas y el planeta.",
+        "descripcion": "Fomentar el compromiso con la sostenibilidad mediante acciones de cooperación y de respeto hacia las personas y el planeta.",
         "criterios": {
           "6.1": "Adoptar y promover estilos de vida sostenibles y consecuentes con el respeto, los cuidados, la corresponsabilidad y la protección de las personas y del planeta",
           "6.2": "Practicar un consumo responsable en la vida diaria y fomentarlo entre las personas de su entorno familiar y social",
           "6.3": "Mostrar actitudes críticas con el sistema de producción y consumo, de energía y ciclos materiales del planeta buscando soluciones más beneficiosas para el medio ambiente",
           "6.4": "Participar con una actitud emprendedora en la búsqueda, contraste y evaluación de propuestas para afrontar problemas ecosociales, buscar soluciones y actuar para su resolución a partir del análisis crítico de las causas y consecuencias de la intervención humana en el entorno",
-          "6.5": "Ejercer y fomentar en su entorno social cercano actitudes críticas,",
+          "6.5": "Ejercer y fomentar en su entorno social cercano actitudes críticas, responsables y solidarias ante los problemas ecosociales.",
           "6.6": "Reconocer y promover la utilización de energías renovables para impulsar el equilibrio del planeta."
         }
       },
@@ -777,7 +777,7 @@
         }
       },
       "CE8": {
-        "descripcion": "por las distintas identidades y expresiones de género.",
+        "descripcion": "Promover una ciudadanía activa comprometida con la igualdad y el respeto por las distintas identidades y expresiones de género.",
         "criterios": {
           "8.1": "Contribuir, a través del respeto de la diversidad, al logro de los valores de la integración europea",
           "8.2": "Investigar sobre los procesos geográficos, históricos y culturales que han conformado la sociedad actual",
@@ -894,7 +894,7 @@
         }
       },
       "CE6": {
-        "descripcion": "culturales y lingüísticos elementales y habituales que fomenten la convivencia pacífica y el respeto por los demás.",
+        "descripcion": "Valorar la diversidad lingüística y cultural mediante el conocimiento de referentes culturales y lingüísticos elementales y habituales que fomenten la convivencia pacífica y el respeto por los demás.",
         "criterios": {
           "6.1": "Actuar con respeto en situaciones interculturales, identificando y comparando semejanzas y diferencias elementales entre lenguas y culturas, y mostrando rechazo frente a discriminaciones, prejuicios y estereotipos de cualquier tipo en contextos comunicativos cotidianos y habituales",
           "6.2": "Reconocer y apreciar la diversidad lingüística, cultural y artística propia de países donde se habla la lengua extranjera como fuente de enriquecimiento personal, mostrando interés por comprender elementos",
@@ -1057,7 +1057,7 @@
   "Educación Física": {
     "Primer ciclo": {
       "CE1": {
-        "descripcion": "situaciones cotidianas medidas básicas de cuidado de la salud personal a través de la higiene corporal, el descanso, la educación postural y la alimentación e hidratación.",
+        "descripcion": "Adquirir medidas básicas de cuidado de la salud personal en situaciones cotidianas a través de la higiene corporal, el descanso, la educación postural y la alimentación e hidratación.",
         "criterios": {
           "1.1": "Identificar el ejercicio físico como práctica saludable, conociendo algunos de sus beneficios físicos mediante la realización de actividad lúdico- motriz con su grupo de iguales, en contextos variados e inclusivos y en entornos cercanos conocidos, para el fomento de un estilo de vida activo",
           "1.2": "Explorar y vivenciar las posibilidades de la propia motricidad y de la de los demás desarrollando las capacidades y competencias motrices básicas a través de la actividad física y del juego (populares, tradicionales y escénicos) como medio de diversión, expresión y comunicación, y aplicando en distintas",
@@ -1122,7 +1122,7 @@
         }
       },
       "CE4": {
-        "descripcion": "expresivas con arraigo en la cultura propia, tradicional o actual, así como otros procedentes de diversas culturas, contextualizando su origen, su aparición y su transmisión a lo largo del tiempo y valorando su importancia, repercusión e influencia en las sociedades pasadas y presentes.",
+        "descripcion": "Participar y valorar manifestaciones motrices y artístico-expresivas con arraigo en la cultura propia, tradicional o actual, así como otras procedentes de diversas culturas, contextualizando su origen, su aparición y su transmisión a lo largo del tiempo y valorando su importancia, repercusión e influencia en las sociedades pasadas y presentes.",
         "criterios": {
           "4.1": "Participar activamente en juegos y otras manifestaciones artístico-",
           "4.2": "Asumir una visión abierta del deporte a partir del conocimiento de distintas ligas femeninas, masculinas o mixtas, acercándose al deporte federativo e identificando, analizando y rechazando comportamientos contrarios a la convivencia independientemente del contexto en el que tengan lugar",
@@ -1159,7 +1159,7 @@
         }
       },
       "CE3": {
-        "descripcion": "reconociendo las actuaciones de compañeros y rivales.",
+        "descripcion": "Regular la participación en prácticas motrices desde una perspectiva ética, reconociendo las actuaciones de compañeros y rivales.",
         "criterios": {
           "3.1": "Participar en actividades de carácter motor, desde la autorregulación de su actuación, con predisposición, esfuerzo, perseverancia y mentalidad de crecimiento, controlando la impulsividad, gestionando las emociones y expresándolas de forma asertiva y respetuosa",
           "3.2": "Respetar las normas consensuadas, así como las reglas del juego, y actuar desde los parámetros de la deportividad y el juego limpio, aceptando la victoria y la derrota de manera saludable ante el resto de participantes y",
@@ -1176,7 +1176,7 @@
         }
       },
       "CE5": {
-        "descripcion": "deportiva con una actitud no consumista y de máximo aprovechamiento posible, pudiéndose derivar para otros usos.",
+        "descripcion": "Gestionar de forma responsable la práctica físico-deportiva con una actitud no consumista y de máximo aprovechamiento posible, pudiéndose derivar para otros usos.",
         "criterios": {
           "5.1": "Valorar los diferentes espacios naturales y artificiales en los que se realizan actividades físico-deportivas, reflexionando sobre sus posibilidades y potencialidades y actuando desde una perspectiva ecosostenible y comunitaria del entorno",
           "5.2": "Adaptar las acciones motrices a la incertidumbre propia del medio natural y urbano en contextos terrestres y acuáticos de forma eficiente y segura",
