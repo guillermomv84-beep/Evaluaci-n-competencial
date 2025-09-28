@@ -26,3 +26,20 @@ body { background:#fff; color:#111; font: 12px/1.5 Inter, Arial, sans-serif; }
   #printSelected, #printSelected * { visibility: visible !important; }
   #printSelected { position: absolute; left: 0; top: 0; width: 100%; }
 }
+
+
+/* === Print only report and avoid blanks === */
+@media print {
+  /* Oculta TODO menos el informe */
+  body * { display: none !important; }
+  #printSelected, #printSelected * { display: block !important; }
+
+  /* Asegura ancho completo y resetea posiciones */
+  #printSelected { position: static !important; width: 100% !important; }
+
+  /* Evitar cortes feos dentro de tarjetas/tablas */
+  .card, .summary, .tbl, .header-pdf, .h-doc { break-inside: avoid !important; page-break-inside: avoid !important; }
+
+  /* Cada trimestre empieza en página nueva (aplicado por clase page-start) */
+  .page-start { break-before: page !important; page-break-before: always !important; }
+}

@@ -193,7 +193,7 @@ function addRow(grid,preset){
     <input placeholder="Indicador de logro" value="${esc(preset?.indicador||'')}"/>
     <input placeholder="Tarea" value="${esc(preset?.tarea||'')}"/>
     <select>${renderInstrumentOptions(preset?.instrumento)}</select>
-    <input type="number" min="0" max="100" step="1" placeholder="Ponderación (0-100)" value="${preset?.peso??''}"/>
+    <input type="number" min="0" max="10" step="0.1" placeholder="Ponderación (0-10)" value="${preset?.peso??''}"/>
     <button class="del" title="Eliminar fila">×</button>`;
   grid.appendChild(row);
 }
@@ -243,12 +243,12 @@ function updateTotalsBar(){
   const t = computeTotals(tri).total;
   const val = document.getElementById('totalesValor');
   const est = document.getElementById('totalesEstado');
-  if(val) val.textContent = `${t} / 100`;
+  if(val) val.textContent = `${t} / 10`;
   if(est){
     est.className = 'estado';
-    if(t===100){ est.textContent='OK (100/100)'; est.classList.add('ok'); }
-    else if(t<100){ est.textContent=`Falta ${100-t}`; est.classList.add('warn'); }
-    else { est.textContent=`Te pasas por ${t-100}`; est.classList.add('bad'); }
+    if(t===10){ est.textContent='OK (100/100)'; est.classList.add('ok'); }
+    else if(t<10){ est.textContent=`Falta ${(10-t).toFixed(1)}`; est.classList.add('warn'); }
+    else { est.textContent=`Te pasas por ${(t-10).toFixed(1)}`; est.classList.add('bad'); }
   }
 }
 
@@ -270,7 +270,7 @@ function exportSelectedAllTrimestres(){
   const h=document.createElement('div'); h.className='h-doc'; h.innerHTML=`<h2 style="margin:0">${state.area} · ${state.ciclo}</h2>`; cont.appendChild(h);
 
   const ces = state.data?.[state.area]?.[state.ciclo]; if(!ces) return;
-  ['1º Trimestre','2º Trimestre','3º Trimestre'].forEach(tri=>{
+  ['1º Trimestre','2º Trimestre','3º Trimestre'].forEach((tri, idx)=>{
     const seleccionados=[];
     Object.entries(ces).forEach(([ceKey,ceObj])=>{
       Object.entries(ceObj.criterios||{}).forEach(([critCode,critDesc])=>{
@@ -283,6 +283,7 @@ function exportSelectedAllTrimestres(){
     if(!seleccionados.length) return;
 
     const sec=document.createElement('section'); sec.innerHTML = `<h3 class="h-tri">${tri}</h3>`;
+    if(idx>0) sec.classList.add('page-start');
     let totalTri=0;
     seleccionados.forEach(item=>{
       const card=document.createElement('div'); card.className='card';
@@ -298,8 +299,8 @@ function exportSelectedAllTrimestres(){
       sec.appendChild(card);
     });
     const sum=document.createElement('div'); sum.className='summary';
-    const estado = totalTri===100 ? 'OK (100/100)' : (totalTri<100? `Falta ${100-totalTri}` : `Se excede en ${totalTri-100}`);
-    sum.innerHTML = `<h4>Resumen ${tri}</h4><div>Total de ponderación: <strong>${totalTri} / 100</strong> · ${estado}</div>`;
+    const estado = totalTri===10 ? 'OK (100/100)' : (totalTri<10? `Falta ${(10-totalTri).toFixed(1)}` : `Se excede en ${(totalTri-10).toFixed(1)}`);
+    sum.innerHTML = `<h4>Resumen ${tri}</h4><div>Total de ponderación: <strong>${totalTri} / 10</strong> · ${estado}</div>`;
     sec.appendChild(sum);
     cont.appendChild(sec);
   });
