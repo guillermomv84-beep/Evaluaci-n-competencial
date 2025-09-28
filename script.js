@@ -12,22 +12,7 @@ function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)retur
 } catch(e){} }
 
 
-
 async function boot(){
-  try{
-    // Tomamos siempre el dataset embebido para evitar bloqueos al abrir desde file://
-    if(window.__DATASET__){
-      state.data = window.__DATASET__;
-    }else{
-      // Fallback al viejo script#dataset por si acaso
-      const node = document.getElementById('dataset');
-      state.data = node ? JSON.parse(node.textContent || '{}') : {};
-    }
-  }catch(e){
-    console.error('Error cargando dataset embebido', e);
-    state.data = {};
-  }
-
   try{
     const res = await fetch('evaluacion_competencial.json');
     if(res.ok){
