@@ -1,18 +1,24 @@
-
-// === Persistencia de sesión (borra todo al cerrar el navegador) ===
-const storage = window.sessionStorage;
-const STORAGE_KEY = (typeof STORAGE_KEY !== 'undefined' && STORAGE_KEY) ? STORAGE_KEY : 'evaluacion_competencial_v10';
-(() => {
+// === Redirigir localStorage -> sessionStorage (sin dejar rastro al cerrar) ===
+(function () {
   try {
-    const hadLocal = window.storage.getItem(STORAGE_KEY);
-    const hasSession = storage.getItem(STORAGE_KEY);
-    if (hadLocal && !hasSession) {
-      storage.setItem(STORAGE_KEY, hadLocal);
-      window.storage.removeItem(STORAGE_KEY);
+    const sess = window.sessionStorage;
+    const loc  = window.localStorage;
+    // Migración 1 vez: copia claves existentes a session si no están
+    for (let i = 0; i < loc.length; i++) {
+      const k = loc.key(i);
+      if (k && sess.getItem(k) === null) {
+        sess.setItem(k, loc.getItem(k));
+      }
     }
-  } catch (e) {}
+    // Monkey-patch: de aquí en adelante cualquier uso de localStorage va a sessionStorage
+    loc.getItem    = (...a) => sess.getItem(...a);
+    loc.setItem    = (...a) => sess.setItem(...a);
+    loc.removeItem = (...a) => sess.removeItem(...a);
+    loc.clear      = (...a) => sess.clear(...a);
+  } catch (e) { /* noop */ }
 })();
-// ================================================================
+// ===============================================================================
+
 
 const STORAGE_KEY = 'evalcomp:v6:stable';
 const state = {
@@ -22,8 +28,8 @@ const state = {
 const $ = id => document.getElementById(id);
 const esc = s => (s||'').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
 
-function save(){ try{ storage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){} }
-function load(){ try{ const raw=storage.getItem(STORAGE_KEY); if(!raw)return; const p=JSON.parse(raw);
+function save(){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){} }
+function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)return; const p=JSON.parse(raw);
   state.work=p.work||{}; state.instruments=p.instruments||[]; state.cfg=p.cfg||state.cfg; state.area=p.area||state.area; state.ciclo=p.ciclo||state.ciclo; state.trimestre=p.trimestre||state.trimestre;
 } catch(e){} }
 
