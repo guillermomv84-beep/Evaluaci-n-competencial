@@ -1,25 +1,3 @@
-// === Redirigir localStorage -> sessionStorage (sin dejar rastro al cerrar) ===
-(function () {
-  try {
-    const sess = window.sessionStorage;
-    const loc  = window.localStorage;
-    // Migración 1 vez: copia claves existentes a session si no están
-    for (let i = 0; i < loc.length; i++) {
-      const k = loc.key(i);
-      if (k && sess.getItem(k) === null) {
-        sess.setItem(k, loc.getItem(k));
-      }
-    }
-    // Monkey-patch: de aquí en adelante cualquier uso de localStorage va a sessionStorage
-    loc.getItem    = (...a) => sess.getItem(...a);
-    loc.setItem    = (...a) => sess.setItem(...a);
-    loc.removeItem = (...a) => sess.removeItem(...a);
-    loc.clear      = (...a) => sess.clear(...a);
-  } catch (e) { /* noop */ }
-})();
-// ===============================================================================
-
-
 const STORAGE_KEY = 'evalcomp:v6:stable';
 const state = {
   data: null, area: null, ciclo: null, trimestre: '1º Trimestre',
