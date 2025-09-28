@@ -1,3 +1,19 @@
+
+// === Persistencia de sesión (borra todo al cerrar el navegador) ===
+const storage = window.sessionStorage;
+const STORAGE_KEY = (typeof STORAGE_KEY !== 'undefined' && STORAGE_KEY) ? STORAGE_KEY : 'evaluacion_competencial_v10';
+(() => {
+  try {
+    const hadLocal = window.storage.getItem(STORAGE_KEY);
+    const hasSession = storage.getItem(STORAGE_KEY);
+    if (hadLocal && !hasSession) {
+      storage.setItem(STORAGE_KEY, hadLocal);
+      window.storage.removeItem(STORAGE_KEY);
+    }
+  } catch (e) {}
+})();
+// ================================================================
+
 const STORAGE_KEY = 'evalcomp:v6:stable';
 const state = {
   data: null, area: null, ciclo: null, trimestre: '1º Trimestre',
@@ -6,8 +22,8 @@ const state = {
 const $ = id => document.getElementById(id);
 const esc = s => (s||'').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
 
-function save(){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){} }
-function load(){ try{ const raw=localStorage.getItem(STORAGE_KEY); if(!raw)return; const p=JSON.parse(raw);
+function save(){ try{ storage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){} }
+function load(){ try{ const raw=storage.getItem(STORAGE_KEY); if(!raw)return; const p=JSON.parse(raw);
   state.work=p.work||{}; state.instruments=p.instruments||[]; state.cfg=p.cfg||state.cfg; state.area=p.area||state.area; state.ciclo=p.ciclo||state.ciclo; state.trimestre=p.trimestre||state.trimestre;
 } catch(e){} }
 
