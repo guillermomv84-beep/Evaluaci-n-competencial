@@ -291,7 +291,7 @@ function exportSelectedAllTrimestres(){
         return `<tr><td>${esc(i.indicador||'')}</td><td>${esc(i.tarea||'')}</td><td>${esc(i.instrumento||'')}</td><td>${i.peso??''}</td></tr>`; }).join('');
       card.innerHTML=`
         <div class="meta"><span class="badge">${item.ceKey}</span> <strong>${item.critCode}</strong></div>
-        <div class="desc">${esc(item.critDesc)}</div>
+        <div class="desc">${esc((item.critDesc||'').replace(/\s*END\s*$/,'').trim())}</div>
         <table class="tbl">
           <thead><tr><th>Indicador de logro</th><th>Tarea</th><th>Instrumento de evaluación</th><th>Peso</th></tr></thead>
           <tbody>${rows || '<tr><td colspan="4" class="small">(Sin indicadores añadidos)</td></tr>'}</tbody>
